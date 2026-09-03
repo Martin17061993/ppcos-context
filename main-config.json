@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "clients": [
+    {
+      "name": "stay-cold",
+      "displayName": "Stay Cold Apparel",
+      "website": "https://www.staycoldapparel.com/",
+      "googleAdsCustomerId": "3599116618",
+      "enabled": true
+    },
+    {
+      "name": "kollabo",
+      "displayName": "Kollabo",
+      "website": "https://kollabo.com/",
+      "googleAdsCustomerId": "1487707588",
+      "enabled": true
+    }
+  ]
+}

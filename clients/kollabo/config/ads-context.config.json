@@ -1,0 +1,172 @@
+{
+  "googleAds": {
+    "customerId": "1487707588",
+    "loginCustomerId": "5591362086",
+    "dateRange": 30,
+    "clientName": "Kollabo",
+    "conversionActions": [
+      "SF: Qualified (2)",
+      "SF - Closed Won (Final)"
+    ]
+  },
+  "competitors": {
+    "domains": [
+      "jobs.ch",
+      "jobup.ch",
+      "jobscout24.ch",
+      "coople.com"
+    ],
+    "location_code": 2756,
+    "_umland_note": "PRIMARY market is Switzerland (2756). Martin flagged 2026-08-10 that the account ALSO runs an UMLAND campaign (cross-border / neighbouring-region targeting, listed as a top performer in the Obsidian client note). location_code is a single scalar consumed by competitor-scraper, so it cannot express both. Umland target countries are NOT yet confirmed — resolve during /gads-context from the campaign geo settings, then decide whether a second scrape run against that code is worth it.",
+    "_location_reference": "2756 = Switzerland. NOT listed in .claude/skills/competitor-scraper/references/location-codes.json (that file only carries US/UK/NL/CA/AU/DE/FR/BE) — 2756 is the Google geo-target ID for Switzerland and DataForSEO reuses Google IDs, but this was not verified against a live scrape. Confirm on first competitor-scraper run."
+  },
+  "searchTermAnalysis": {
+    "brandedCampaigns": [
+      "EX | 25 | CH | SEARCH | LEAD | Brand"
+    ],
+    "excludeBrandedCampaigns": true,
+    "minSpendToFlag": 5,
+    "conversionLagDays": 14,
+    "negativeMatchType": "Broad",
+    "biddingStrategy": "cpa",
+    "inefficientCPAMultiplier": 1.5,
+    "inefficientROASMultiplier": 0.7,
+    "minSpendForInefficient": 50,
+    "minClicksForInefficient": 3,
+    "protectedTerms": {
+      "alwaysInclude": [],
+      "neverExclude": []
+    },
+    "_sharedNegativeLists_note": "Verifiziert gegen API 2026-08-10. Im Konto existieren: NKL_Generisch (466 KWs/312 Kampagnen), NKW_Compeditor (1035/35), NKW_Brand (48/35) + 3 Legacy-Listen (Negative KWs, Negative KWs 1-Campaigns, Negative KWs DE). Die frueheren Template-Namen (Search Term Exclusions / Non-Converting N-grams / Inefficient N-grams) existierten NICHT. ngram-Listen bewusst null, damit ein Push laut scheitert statt in die falsche Liste zu schreiben.",
+    "sharedNegativeLists": {
+      "primary": "NKL_Generisch",
+      "ngramNonConverting": null,
+      "ngramInefficient": null
+    },
+    "targetCPA": 50,
+    "maxCPA": 75,
+    "targetROAS": null,
+    "_targets_source": "Kein kundenfreigegebenes Ziel (business.md GAP-2). targetCPA 50 = Konto-Ist-CPA auf Qualified-Basis (49,98). maxCPA 75 = 1,5x Konto-Oe = Kollabos eigene, aus 149 bewerteten Aenderungen validierte Pause-Schwelle (business.md 8.5). Beide sind operative Schwellen, KEIN margenbasierter Break-even.",
+    "brandTerms": [
+      "kollabo",
+      "kolabo",
+      "collabo",
+      "kallabo",
+      "kollbo",
+      "kollabro",
+      "kollabi",
+      "kolaboo"
+    ],
+    "_brandTerms_source": "Aus den 16 real im Konto vorhandenen Brand-Keywords der Brand-Kampagne abgeleitet (verifiziert 2026-08-10). Keine generischen Woerter enthalten.",
+    "includeExperiments": false
+  },
+  "ngramAnalysis": {
+    "minImpressions": 50,
+    "minClicks": 5,
+    "minDistinctTerms": 2,
+    "biddingStrategy": "cpa",
+    "defaultAOV": 200,
+    "nonConvertingSpendMultiplier": 2.0,
+    "inefficientCPAMultiplier": 1.75,
+    "inefficientROASMultiplier": 0.7,
+    "stopwords": []
+  },
+  "accountCurrency": "CHF",
+  "budgetAudit": {
+    "monthlyBudgetTotal": 8500,
+    "_monthlyBudgetTotal_source": "Budgetplan 8.5k (2026-06-13), Obsidian — Freigabe dokumentiert; 280 CHF/Tag x 30,4 = 8.512. Freigabe fuer 15k NICHT dokumentiert (business.md GAP-6).",
+    "seasonalityProfile": {
+      "mode": "none",
+      "_note": "Geschaefts-Saisonalitaet von Kollabo undokumentiert (business.md GAP-8). Konto-Saisonalitaet: Aug/Sep teuerste Monate, Feb-Apr guenstigste."
+    },
+    "includeExperiments": true,
+    "lastConfirmed": "2026-08-18",
+    "_lastConfirmed_note": "monthlyBudgetTotal 8500 am 2026-08-18 gegen business.md §5.3 rebestaetigt: seit 2026-08-11 kundenseitig freigegeben (GAP-6 fuer 8,5k geschlossen, fuer 15k weiter offen). seasonalityProfile bleibt none — Kollabos Geschaefts-Saisonalitaet ist undokumentiert (GAP-8).",
+    "businessMdHash": "3fd67857455b6b63"
+  },
+  "keywordAudit": {
+    "primaryKPI": "cpa",
+    "breakEvenCPA": 75,
+    "_breakEvenCPA_source": "NICHT margenbasiert. 1,5 x Konto-Durchschnitts-CPA (49,98 CHF) = Kollabos eigene, aus 149 bewerteten Aenderungen 2024/2025 empirisch validierte INEFFICIENT/Pause-Schwelle (business.md Abschnitt 8.5). Echter Break-even nicht berechenbar, solange der Erloes je Vermittlung fehlt (GAP-1). Jede Rentabilitaetsaussage in diesem Audit ist gegen diese operative Schwelle gemessen, nicht gegen echte Marge.",
+    "conversionActionValues": {
+      "SF: Qualified (2)": 0,
+      "SF - Closed Won (Final)": 0
+    },
+    "_conversionActionValues_note": "Werte unbekannt (GAP-1). 0 = nicht gesetzt, nicht 'wertlos'. Ein Qualified Lead fuehrt in 18,1% der Faelle zu einer Vermittlung.",
+    "primaryConversionAction": "SF: Qualified (2)",
+    "coreProductTokens": [
+      "job",
+      "jobs",
+      "stelle",
+      "stellen",
+      "stellenangebot",
+      "stellenangebote",
+      "arbeit",
+      "bewerbung",
+      "temporaer",
+      "temporar",
+      "festanstellung",
+      "kollabo",
+      "schweiz",
+      "efz"
+    ],
+    "targetFallbackMode": null,
+    "lastConfirmed": "2026-08-10",
+    "businessMdHash": "a10e8ef6f7eb5661"
+  },
+  "qualityScoreAudit": {
+    "primaryKPI": "cpa",
+    "evaluationPeriod": 30,
+    "historicalPeriod": 180,
+    "competitorCampaigns": [
+      "EX | 26 | CH | SEARCH | LEAD | Compeditor"
+    ],
+    "_competitorCampaigns_note": "Bewusste Conquesting-Kampagne. Laut search-terms-rules.md sind Competitor-Terms dort RELEVANT, nicht negativ. Ad-Relevanz Below Avg ist dort strukturell erwartbar.",
+    "competitorBrandNames": [
+      "jobs.ch",
+      "jobup.ch",
+      "jobscout24.ch",
+      "indeed",
+      "jobcloud",
+      "adecco",
+      "randstad",
+      "manpower",
+      "kelly services",
+      "coople",
+      "job24",
+      "jop.ch",
+      "dasteam"
+    ],
+    "lastConfirmed": "2026-08-18",
+    "businessMdHash": "3fd67857455b6b63",
+    "thresholds": {
+      "minImpressionsPerWeek": 10,
+      "_note": "Von 25 auf 10 gesenkt (2026-08-10): bei 25 fielen 75,9% der Keywords als INSUFFICIENT_DATA raus. Konto ist Low-Volume (386 Keywords, Median ~12 Impr/Woche)."
+    },
+    "_lastConfirmed_note": "Am 2026-08-18 rebestaetigt. business.md-Aenderungen vom 11.08. (Kriterienwechsel, UMLAND-tCPA entfernt, Budgetfreigabe) beruehren die QS-Klassifikation nicht."
+  },
+  "competitiveAnalyst": {
+    "primaryKPI": "cpa",
+    "breakEvenCPA": 75,
+    "_breakEvenCPA_note": "Geerbt aus keywordAudit. Operative Schwelle (1,5x Konto-Oe), KEIN margenbasierter Break-even.",
+    "conversionLagDays": 14,
+    "lastConfirmed": "2026-08-11"
+  },
+  "biddingAudit": {
+    "primaryKPI": "cpa",
+    "breakEvenCPA": 75,
+    "_breakEvenCPA_source": "PROXY, NICHT margenbasiert. 1,5 x Konto-Durchschnitts-CPA auf Qualified-Basis. Echter Break-even nicht berechenbar solange der Erloes je Vermittlung fehlt (business.md GAP-1, /strategy-specialist D04+D08 = ASK). Alle break-even-abhaengigen Diagnostiken (BID-D05/D06) laufen deshalb SKIP/INFO — sie haben ohnehin keine Flaeche, weil 30/30 Kampagnen ohne Zielvorgabe laufen.",
+    "conversionActionValues": {
+      "SF: Qualified (2)": 0,
+      "SF - Closed Won (Final)": 0
+    },
+    "primaryConversionAction": "SF: Qualified (2)",
+    "growthEfficiencyPosture": "efficiency",
+    "parTarget": 2.0,
+    "_parTarget_source": "Vom Nutzer am 2026-08-18 gewaehlt: bewusst konservativ bis GAP-1 geklaert ist.",
+    "tCpaSafetyMargin": 0.7,
+    "includeExperiments": false,
+    "lastConfirmed": "2026-08-18",
+    "businessMdHash": "3fd67857455b6b63"
+  }
+}

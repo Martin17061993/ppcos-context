@@ -1,0 +1,31 @@
+# Credentials — niemals ins Repo
+.env
+**/.env
+**/config/.env
+
+# Lizenzierte Software (Managed Files aus PPC OS)
+**/.claude/
+**/CLAUDE.md
+.managed-hub.json
+**/.managed.json
+
+# Rohdaten und Ableitungen (holt sich jeder selbst per /gads-context)
+**/context/google-ads/
+**/context/competitor-ads/
+**/context/feed/cache/
+**/context/analysis/**/evidence/
+**/created/
+**/.backup/
+**/node_modules/
+
+# Interne Session-Notizen
+**/context/memory/
+**/context/.logs/
+
+# Rohe Changelog-CSVs (die aufbereitete .md liegt im Repo)
+**/account-changelog.csv
+**/account-changelog-invisible.csv
+
+# OS
+.DS_Store
+Thumbs.db

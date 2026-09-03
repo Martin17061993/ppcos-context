@@ -1,0 +1,305 @@
+{
+  "_verified": "2026-08-03 — template placeholders replaced with values verified against the live account. See context/business.md for derivation.",
+  "accountCurrency": "EUR",
+  "biddingAudit": {
+    "_confirmed_note": "Confirmed by Martin 2026-08-06 in the bidding-auditor Phase 0 interview. Three decisions were explicit, not defaults — see the _decision notes below. Re-run /bidding-auditor reconfirm if business.md changes materially.",
+    "primaryKPI": "roas",
+    "breakEvenROAS": 1.9,
+    "_breakEvenROAS_decision": "1.9 chosen over the 1.6 net-value alternative. business.md §2 derives both and says 'Use 1.9 (conservative) until resolved'. Gap G1 (whether Google receives gross or net conversion values) is still open and moves this threshold by a factor of 1.19 — the single most important unresolved number in the account. Resolving G1 requires Shopify read_orders.",
+    "conversionActionValues": {
+      "purchase_gads_mable": 143
+    },
+    "_conversionActionValues_note": "143 EUR = AOV as tracked by Google, derived 2026-08-03 from the purchase-only series (clean value 255,105 / clean conversions 1,788.53). Key matches googleAds.conversionActions exactly. Probably VAT-inclusive — unverified, this is Gap G1.",
+    "primaryConversionAction": "purchase_gads_mable",
+    "growthEfficiencyPosture": "growth",
+    "parTarget": 1.2,
+    "_parTarget_decision": "business.md §3 labels the account 'Cost Control' but sets a non-brand target of clean 2.5 against a 1.9 break-even = 1.32x, which is nearest the growth PAR of 1.2 (implying 2.28). Martin's ruling 2026-08-06: 'Cost Control' describes spend discipline (do not raise budgets), not a demand for 2x return. Using PAR 1.2 keeps the audit aligned to the numeric target Jonas would actually be held to. Efficiency PAR 2.0 would demand clean 3.80 — far above anything signed off.",
+    "tCpaSafetyMargin": 0.7,
+    "_tCpaSafetyMargin_note": "Left at default. Inert for this account — no campaign runs tCPA (verified 2026-08-03: every campaign is Target ROAS, Maximize Conversion Value, or Target Impression Share).",
+    "lastConfirmed": "2026-08-06",
+    "businessMdHash": "7bbedf9130b8a944",
+    "targetFallbackMode": null,
+    "_measurementLayer_WARNING": "MEASUREMENT LAYER IS ACTIVE-BLOCKING. breakEvenROAS 1.9 is a CLEAN (purchase-only) threshold, but the Google Ads API returns metrics.conversions_value on the INFLATED series — purchase_gads_mable plus 'Custom NewCustomerPurchase - Stay Cold Mable', x1.28-1.94 per campaign, x1.50 account-wide. Any engine comparing reported ROAS against 1.9 will overstate profitability by roughly 50%. Martin's ruling 2026-08-06: run the engines, then treat this as an active M-layer block in the constraint cascade, which forbids every target and strategy mutation until conversion goals are fixed. Deflate per campaign with the documented factors before drawing any conclusion. Root cause is 14 of 15 enabled campaigns overriding the account default with custom conversion goal 6446192748 (see account-audit AUD-D24, 2026-08-06). Fix is DON'T-8: humans only."
+  },
+  "competitiveAnalyst": {
+    "_confirmed_note": "Written 2026-08-06 without a fresh interview — Martin was in auto-mode. All values INHERITED from sibling blocks per the skill's Phase 0.0 Branch B fallback: primaryKPI and breakEvenROAS from biddingAudit (confirmed by Martin the same day), conversionLagDays from searchTermAnalysis. No new assumptions introduced.",
+    "primaryKPI": "roas",
+    "breakEvenROAS": 1.9,
+    "conversionLagDays": 8,
+    "lastConfirmed": "2026-08-06",
+    "_measurementLayer_WARNING": "Break-even 1.9 is a CLEAN threshold; the API returns the INFLATED conversions_value series (x1.28-1.94 per campaign). Every economics-layer judgement in this audit must deflate first — see biddingAudit._measurementLayer_WARNING. Without deflation the Business Economics cascade layer will rate FOKUSPRODUKTE as having headroom to compete when it is actually below break-even."
+  },
+  "budgetAudit": {
+    "_confirmed_note": "Confirmed by Martin 2026-08-06 in the budget-auditor Phase 0 interview. Two decisions were explicit; seasonality and currency were derived from business.md without a prompt.",
+    "monthlyBudgetTotal": 32500,
+    "_monthlyBudgetTotal_decision": "business.md §3 states a RANGE (€30-35k while non-brand is under clean 2.5), not a single target. Martin chose the €32,500 midpoint 2026-08-06 over treating €35k as a spend goal (which would trigger expansion advice contradicting the documented Cost Control mode) or €31k as the target (which would make pacing report 'on track' by definition). Current run rate ~€31k reads as slightly under target but within range.",
+    "campaignTargets": {
+      "_note": "Priorities derived from business.md §9 campaign priorities and the clean-ROAS positions in §5, approved by Martin 2026-08-06. 'hold' on FOKUSPRODUKTE and PROSPECTING is deliberate: they hold 67% of spend at or below break-even, so they are reduce candidates, never raise candidates. The five zero-impression PMax campaigns are listed at 0 on purpose so the allocation math does not award them a share of the total.",
+      "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING": {
+        "monthly": 10900,
+        "priority": "hold"
+      },
+      "EX I SHOPPING I FOKUSPRODUKTE": {
+        "monthly": 9900,
+        "priority": "hold"
+      },
+      "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types": {
+        "monthly": 5500,
+        "priority": "scale"
+      },
+      "EX | DE | SEARCH | BRAND": {
+        "monthly": 1730,
+        "priority": "protect"
+      },
+      "EX | USA | SEARCH | BRAND": {
+        "monthly": 900,
+        "priority": "scale"
+      },
+      "EX | SKANDI | SEARCH | BRAND": {
+        "monthly": 625,
+        "priority": "protect"
+      },
+      "JM I DSA I FC'S I CAT'S": {
+        "monthly": 600,
+        "priority": "hold"
+      },
+      "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX": {
+        "monthly": 410,
+        "priority": "hold"
+      },
+      "EX | FRA | SEARCH | BRAND": {
+        "monthly": 365,
+        "priority": "protect"
+      },
+      "EX I SHOPPING I PUR I T-ROAS I NEAR INDEX": {
+        "monthly": 25,
+        "priority": "hold"
+      },
+      "EX I WW I PMAX I SCALING I BROAD": {
+        "monthly": 0,
+        "priority": "hold"
+      },
+      "EX I SKANDI I PMAX I TESTING I PROSPECTING": {
+        "monthly": 0,
+        "priority": "hold"
+      },
+      "EX I FRA I PMAX I TESTING I BROAD": {
+        "monthly": 0,
+        "priority": "hold"
+      },
+      "EX I USA I PMAX I TESTING I BROAD": {
+        "monthly": 0,
+        "priority": "hold"
+      },
+      "EX I WW I PMAX I PROSPECTING I BROAD": {
+        "monthly": 0,
+        "priority": "hold"
+      }
+    },
+    "seasonalityProfile": {
+      "mode": "highlight_months",
+      "months": [
+        "october",
+        "november",
+        "december"
+      ],
+      "notes": "Derived from business.md §14 without prompting. Q4 dominant; BFCM is the single biggest event in account history (Nov 2025: €33,877 spend at clean ROAS 19.38, best month ever). Planned windows from Airtable Drop Base: VIP Sale Weekend 2026-10-02..04; Black Week Special Drops 2026-11-23..30 (PROPOSED BY JONAS, NOT CONFIRMED); 3For2 Hoodies 2026-12-02..17. March also carries a historical promo (Black Spring Sale 2026-03-12..20) but is outside the forward window. WARNING: business.md Gap G5 is Critical and unresolved — the locked offer rule (no sitewide discounts, Black Friday slow-movers only) conflicts with an October VIP Sale, and promo_windows.csv is deliberately unwritten pending that answer. Treat these months as demand highlights, not as approved promo budget.",
+      "_bfcm2026_warning": "BFCM 2026 is unconfirmed 16 weeks out (business.md Gap G18) for the channel whose best month ever was BFCM. No ad budget, channel plan, or discount scope exists."
+    },
+    "lastConfirmed": "2026-08-06",
+    "businessMdHash": "7bbedf9130b8a944",
+    "targetFallbackMode": null,
+    "accountChangelogConsentForSession": null,
+    "_staticDefaults_note": "All left at skill defaults — Martin overrode none.",
+    "dailyBudgetToCpaRatio": 2,
+    "overspendAlertPp": 10,
+    "underspendAlertPp": 10,
+    "isLostBudgetThreshold": 10,
+    "minConvVolumeForSmartBidding": 30,
+    "zeroSpendDays": 7,
+    "maxSingleMutationMultiplier": 1.3,
+    "opportunityProjectionMode": "is_lost_budget",
+    "includeExperiments": true,
+    "_measurementLayer_WARNING": "Same M-layer block as biddingAudit applies here. Profitability-dependent budget diagnostics (BUD-D03/D04/D13/D14/D15) resolve break-even from biddingAudit.breakEvenROAS = 1.9, which is a CLEAN threshold — but the API returns the INFLATED conversions_value series (x1.28-1.94 per campaign). Any raise recommendation computed on reported ROAS overstates profitability by roughly 50%. Deflate before acting. See biddingAudit._measurementLayer_WARNING and the 2026-08-06 bidding audit."
+  },
+  "googleAds": {
+    "customerId": "3599116618",
+    "loginCustomerId": "5591362086",
+    "dateRange": 30,
+    "clientName": "Stay Cold Apparel",
+    "_conversionActions_note": "purchase_gads_mable is the ONLY valid conversion for evaluation. 'Custom NewCustomerPurchase - Stay Cold Mable' also counts in metrics.conversions_value and inflates reported ROAS x1.28-1.94 per campaign (x1.50 account-wide, verified 2026-08-03). Never evaluate on the reported series.",
+    "conversionActions": [
+      "purchase_gads_mable"
+    ]
+  },
+  "competitors": {
+    "_note": "Domains intentionally left empty — the competitor brands are documented but their exact domains are unverified, and guessing them would make competitor-scraper fetch the wrong advertisers. Resolve before first run. Brands (source: Stay Cold Marketing Cheat Sheet): Killstar, DropDead, Disturbia, Sullen, Named Collective, Blackcraft Cult, Bad Monday.",
+    "domains": [],
+    "location_code": 2276,
+    "_location_reference": "2276 = Germany. See .claude/skills/competitor-scraper/references/location-codes.json (2840=US, 2826=UK, 2124=CA, 2036=AU, 2528=NL)"
+  },
+  "searchTermAnalysis": {
+    "_brandedCampaigns_note": "All five brand search campaigns. These are DO-NOT-TOUCH (guardrail DON'T-4): observe only, no negatives, no keyword removals, no broad match, bids upward only. ESP had zero spend in the 2026-07-04..2026-08-02 window but exists and is linked to the shared sets.",
+    "brandedCampaigns": [
+      "EX | DE | SEARCH | BRAND",
+      "EX | USA | SEARCH | BRAND",
+      "EX | FRA | SEARCH | BRAND",
+      "EX | SKANDI | SEARCH | BRAND",
+      "EX | ESP | SEARCH | BRAND"
+    ],
+    "excludeBrandedCampaigns": true,
+    "minSpendToFlag": 5,
+    "_conversionLagDays_note": "Unverified (gap G13 in business.md). Apparel typically converts within 1-3 days, so 8 is conservative-but-safe rather than wrong.",
+    "conversionLagDays": 8,
+    "negativeMatchType": "Broad",
+    "_biddingStrategy_note": "Changed from 'cpa' to 'roas' 2026-08-03. Every campaign in this account runs Target ROAS, Maximize Conversion Value, or Target Impression Share. There is no tCPA campaign, so CPA-based efficiency judgements were meaningless.",
+    "biddingStrategy": "roas",
+    "inefficientCPAMultiplier": 1.5,
+    "inefficientROASMultiplier": 0.7,
+    "minSpendForInefficient": 50,
+    "minClicksForInefficient": 3,
+    "_protectedTerms_note": "Hard rule: no term matching 'stay ?cold' is ever proposed as a negative, in any campaign or list (source: search-terms-rules.md rule 1). Brand+product queries route to brand campaigns, they are never negated outright.",
+    "protectedTerms": {
+      "alwaysInclude": [],
+      "neverExclude": [
+        "stay cold",
+        "staycold",
+        "stay-cold",
+        "stay cold apparel",
+        "staycold apparel",
+        "staycoldapparel"
+      ]
+    },
+    "_sharedNegativeLists_note": "VERIFIED 2026-08-03: the account contains exactly TWO shared negative sets. 'EX I ALL' (78 keywords, id 9606244993, applied broadly across search/shopping/video) and 'EXCLUSIONS FOR BRAND' (3,135 keywords, id 11415316346, applied to all five brand campaigns AND to EX I SHOPPING I FOKUSPRODUKTE). The previous config named three lists that do not exist — writes would have failed silently. The two n-gram lists are set to null on purpose so a run fails loudly instead of writing into the wrong list; Jonas must create them before n-gram push is enabled (gap G20).",
+    "sharedNegativeLists": {
+      "primary": "EX I ALL",
+      "ngramNonConverting": null,
+      "ngramInefficient": null
+    },
+    "_targets_note": "Cached 2026-08-06 by search-term-auditor Phase 0.1 from business.md §3. This audit scopes to NON-BRAND (excludeBrandedCampaigns=true), so the non-brand targets apply, not the account-wide ones. business.md: non-brand clean ROAS floor 1.9 (break-even), target 2.5. Account-wide targets (floor 4.0 / target 6.0) are NOT used here because brand campaigns are out of scope.",
+    "targetROAS": 2.5,
+    "maxCPA": null,
+    "targetCPA": null,
+    "_targetCPA_note": "Null on purpose. No campaign in this account runs tCPA — every one is Target ROAS, Maximize Conversion Value or Target Impression Share (verified 2026-08-03). The implied break-even CPA would be AOV 143 / break-even ROAS 1.9 = ~EUR75, but the account is not steered on CPA so caching it would invite the wrong comparison.",
+    "_targetROAS_INFLATION_WARNING": "targetROAS 2.5 is a CLEAN threshold. The API returns the INFLATED conversions_value series. IMPORTANT PER-CAMPAIGN NUANCE established 2026-08-06: the non-brand SEARCH campaign (EX I EN I WW I TOF ...) has inflation factor 1.00 - it is the one campaign using the clean account-default conversion goal (business.md 6, corroborated by account-audit AUD-D24). So for non-brand SEARCH terms, reported == clean and 2.5 is directly comparable. Shopping/PMax terms in scope ARE inflated (FOKUSPRODUKTE 1.81, NEAR INDEX 1.28, PMax PROSPECTING 1.88) and must be deflated before judgement.",
+    "brandTerms": [
+      "stay cold",
+      "staycold",
+      "stay-cold",
+      "stay cold apparel",
+      "staycold apparel",
+      "staycoldapparel",
+      "stay-cold apparel",
+      "staycoldapperal",
+      "stay cold apperal",
+      "stay cold aparel",
+      "stey cold",
+      "stay clod"
+    ],
+    "_brandTerms_note": "Written 2026-08-06. Core variants plus typos that remain unmistakably the brand (swapped/doubled/dropped letters, spacing). Deliberately EXCLUDED generic strings that would misclassify via substring matching - e.g. no bare cold, no apparel. Kept stay cold despite being two dictionary words because it IS the brand name and business.md protectedTerms.neverExclude already treats it as such; the ST-D25 brand-share figure should be read with that substring risk in mind."
+  },
+  "ngramAnalysis": {
+    "minImpressions": 50,
+    "minClicks": 5,
+    "minDistinctTerms": 2,
+    "biddingStrategy": "roas",
+    "_defaultAOV_note": "143 EUR derived 2026-08-03 from the purchase-only series (clean conversion value 255,105 / clean conversions 1,788.53 = 142.63) over 2026-07-04..2026-08-02. Per-campaign range 124-181 EUR. This is the value AS TRACKED by Google, which is probably VAT-inclusive — not verified (gap G1). Replaces the template value of 200.",
+    "defaultAOV": 143,
+    "nonConvertingSpendMultiplier": 2,
+    "inefficientCPAMultiplier": 1.75,
+    "inefficientROASMultiplier": 0.7,
+    "stopwords": []
+  },
+  "merchantCenter": {
+    "enabled": false,
+    "accountId": "116274940",
+    "_accountId_note": "DISCOVERED 2026-08-06 by the feed-auditor, not supplied by the user. Derived from shopping_product.resource_name in the existing Google Ads pull: customers/3599116618/shoppingProducts/116274940~ONLINE~en~DE~shopify_DE_... Consistent across all 1,817 product rows, so it is reliable. Keeping it here saves looking it up during /merchant-auth.",
+    "_enabled_false_reason": "BLOCKED on OAuth, not on the account ID. Attempted a live Merchant pull 2026-08-06; pull-data.js validated Google Ads access fine, then failed with [oauth-failed]: \"Could not exchange GOOGLE_ADS_REFRESH_TOKEN for an access token.\" The stored refresh token carries Ads scopes but not Merchant scopes. Fix requires an interactive browser login: run /merchant-auth \"Stay Cold Apparel\", which regenerates a token with BOTH scopes. Set enabled:true only after that validates.",
+    "_feedLabel": "DE (single target market — 1,817 of 1,817 products; no main-market ambiguity)"
+  },
+  "keywordAudit": {
+    "_confirmed_note": "Written 2026-08-06 in auto-mode without a fresh interview. Every value is either INHERITED from a sibling block confirmed by Martin the same day, or derived from an explicit business.md statement quoted below. No invented values.",
+    "primaryKPI": "roas",
+    "breakEvenROAS": 1.9,
+    "_breakEvenROAS_source": "Inherited from biddingAudit.breakEvenROAS, confirmed by Martin 2026-08-06 (chosen over the 1.6 net-value alternative; business.md §2: \"Use 1.9 (conservative) until resolved\"). Gap G1 still open.",
+    "conversionActionValues": {
+      "purchase_gads_mable": 143
+    },
+    "primaryConversionAction": "purchase_gads_mable",
+    "_conversionActionValues_source": "Inherited from biddingAudit. Key matches googleAds.conversionActions exactly. 143 EUR = AOV derived 2026-08-03 from the purchase-only series.",
+    "coreProductTokens": [
+      "hoodie",
+      "hoodies",
+      "tee",
+      "tees",
+      "shirt",
+      "shirts",
+      "tattoo",
+      "oversized",
+      "heavyweight",
+      "400gsm",
+      "apparel",
+      "clothing",
+      "clothes",
+      "punk",
+      "goth",
+      "metal",
+      "rock",
+      "rocker",
+      "streetwear",
+      "outfit"
+    ],
+    "_coreProductTokens_source": "Derived from business.md §9 Keyword/theme priorities: \"Core product-category terms (heavyweight hoodie, oversized tee, 400gsm, tattoo/dark apparel) - the scene core\" plus §1 \"heavyweight apparel for metal / tattoo / hardcore / dark-streetwear culture\". These tokens grant extra patience before a pause is ever recommended.",
+    "lastConfirmed": "2026-08-06",
+    "businessMdHash": "7bbedf9130b8a944",
+    "targetFallbackMode": null,
+    "_measurementLayer_WARNING": "breakEvenROAS 1.9 is a CLEAN threshold but the API returns the INFLATED conversions_value series (x1.28-1.94 per campaign). Deflate before any profitability judgement. A Measurement hypothesis is ALREADY ACTIVE for this account per the 2026-08-06 bidding audit, which per this skill blocks every KW-D07 pause recommendation regardless of what the flags say."
+  },
+  "placementAudit": {
+    "_confirmed_note": "Written 2026-08-06 in auto-mode. Every value derived from business.md rather than taken as a skill default — reasoning recorded per key.",
+    "extremeCpaMultiplier": 2,
+    "_extremeCpaMultiplier_reason": "Tightened from the 3.0 default. business.md §3 puts the account in Cost Control mode with 67% of spend at or below the 1.9 break-even, and Gap G2 (High) records that repeat-purchase rate / CLV is unavailable, so the +EUR16.46 new-customer bonus is unvalidated. Tight margins warrant stricter waste detection.",
+    "highRoasMultiplier": 0.5,
+    "_highRoasMultiplier_reason": "Default kept. This is a ROAS-mode account (every campaign runs Target ROAS, Maximize Conversion Value or Target Impression Share), so the multiplier is live rather than inert.",
+    "minClicks": 30,
+    "_minClicks_reason": "Lowered from 50. PMax CONTENT spend was EUR3,938 over the 60-day window, roughly EUR1,969/month — under the ~2k/month threshold at which the skill recommends 20-30 to catch issues faster.",
+    "minWasteSpend": 30,
+    "_minWasteSpend_reason": "Lowered from 50. No tCPA exists in this account, so the implied break-even CPA is AOV 143 / break-even ROAS 1.9 = ~EUR75. The skill calls for 0.25-0.5x that, i.e. EUR19-38.",
+    "vtcDiscountFactor": 0.2,
+    "_vtcDiscountFactor_reason": "Lowered from 0.3. D2C apparel is short-consideration direct response; business.md Gap G13 notes apparel typically converts within 1-3 days and calls the configured 8-day lag conservative-but-safe.",
+    "useVtcInWasteCheck": true,
+    "_useVtcInWasteCheck_reason": "Kept true. PMax serves CONTENT, GMAIL and YOUTUBE surfaces, so view-through data is meaningful here.",
+    "_measurementLayer_WARNING": "All conversion figures come from the INFLATED series (x1.28-1.94 per campaign). Deflate before treating any placement CPA or ROAS as real. See biddingAudit._measurementLayer_WARNING."
+  },
+  "qualityScoreAudit": {
+    "primaryKPI": "roas",
+    "_primaryKPI_reason": "Matches keywordAudit and biddingAudit. business.md sets break-even clean ROAS 1.9, non-brand target 2.5. No CPA target exists.",
+    "evaluationPeriod": 90,
+    "_evaluationPeriod_reason": "AUTO-MODE RULING: 90d instead of the 30d default. Only ~37 keywords exist and the competitive audit found just 6 non-brand keywords carrying a QS. A 30d window would leave most keywords below the impression floor and tagged UNSTABLE_QS, gutting M2 denominators. QS itself is point-in-time; the window only governs how much impression weight backs each score.",
+    "historicalPeriod": 180,
+    "competitorCampaigns": [],
+    "_competitorCampaigns_reason": "business.md L276: \"no active competitor campaign\". Scanned all 15 enabled campaign names — no conquest/competitor/conquesting token. Competitor traffic arrives via broad match in Search TOF, so classification must happen at keyword-text level, not campaign level.",
+    "competitorBrandNames": [
+      "killstar",
+      "dropdead",
+      "drop dead",
+      "disturbia",
+      "sullen",
+      "named collective",
+      "blackcraft",
+      "blackcraft cult",
+      "bad monday"
+    ],
+    "_competitorBrandNames_reason": "business.md L284 priority competitors from Stay Cold Marketing Cheat Sheet. Used for keyword-text COMPETITOR classification so AR Below Avg on these is treated as structural, not a copy bug. business.md L276 forbids auto-negating foreign brands.",
+    "brandedCampaigns": [
+      "EX | DE | SEARCH | BRAND",
+      "EX | USA | SEARCH | BRAND",
+      "EX | FRA | SEARCH | BRAND",
+      "EX | SKANDI | SEARCH | BRAND",
+      "EX | ESP | SEARCH | BRAND"
+    ],
+    "lastConfirmed": "2026-08-07",
+    "businessMdHash": "7bbedf9130b8a944",
+    "_autoMode": "Configured without user interview per standing auto-mode instruction 2026-08-06. Thresholds left at SOP defaults."
+  }
+}

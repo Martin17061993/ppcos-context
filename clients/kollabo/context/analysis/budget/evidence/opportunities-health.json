@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "engine": "analyze-budget-health",
+    "generatedAt": "2026-08-18T14:46:30.469Z",
+    "primaryKPI": "cpa",
+    "breakEven": 75
+  },
+  "opportunities": [
+    {
+      "type": "profitable_limited_recovery",
+      "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+      "campaignId": "1509955426",
+      "channel": "SEARCH",
+      "isLostBudget": 26.8,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.26845991561181437,
+        "incrementalClicks": 312,
+        "incrementalConv": 8.4,
+        "incrementalCost": 141,
+        "incrementalValue": 0,
+        "projected": 16.75,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise",
+      "rationale": "Profitable + budget-limited — raising budget recovers lost IS at a profitable projected unit cost."
+    },
+    {
+      "type": "profitable_limited_recovery",
+      "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+      "campaignId": "15210620317",
+      "channel": "SEARCH",
+      "isLostBudget": 28.9,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.289492207139266,
+        "incrementalClicks": 62,
+        "incrementalConv": 3.3,
+        "incrementalCost": 108,
+        "incrementalValue": 0,
+        "projected": 33.01,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise",
+      "rationale": "Profitable + budget-limited — raising budget recovers lost IS at a profitable projected unit cost."
+    },
+    {
+      "type": "profitable_limited_recovery",
+      "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+      "campaignId": "20691357994",
+      "channel": "SEARCH",
+      "isLostBudget": 20.2,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.2021600243383024,
+        "incrementalClicks": 46,
+        "incrementalConv": 1.5,
+        "incrementalCost": 60,
+        "incrementalValue": 0,
+        "projected": 39.54,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise",
+      "rationale": "Profitable + budget-limited — raising budget recovers lost IS at a profitable projected unit cost."
+    },
+    {
+      "type": "profitable_limited_recovery",
+      "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+      "campaignId": "23369525700",
+      "channel": "SEARCH",
+      "isLostBudget": 36,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.360276825908755,
+        "incrementalClicks": 179,
+        "incrementalConv": 7.6,
+        "incrementalCost": 354,
+        "incrementalValue": 0,
+        "projected": 46.89,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise",
+      "rationale": "Profitable + budget-limited — raising budget recovers lost IS at a profitable projected unit cost."
+    },
+    {
+      "type": "profitable_limited_recovery",
+      "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+      "campaignId": "23473587776",
+      "channel": "SEARCH",
+      "isLostBudget": 21.3,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.21294117647058824,
+        "incrementalClicks": 97,
+        "incrementalConv": 2,
+        "incrementalCost": 147,
+        "incrementalValue": 0,
+        "projected": 72.79,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise",
+      "rationale": "Profitable + budget-limited — raising budget recovers lost IS at a profitable projected unit cost."
+    },
+    {
+      "type": "profitable_limited_recovery",
+      "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+      "campaignId": "23473608146",
+      "channel": "SEARCH",
+      "isLostBudget": 31.3,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.31310533984743294,
+        "incrementalClicks": 95,
+        "incrementalConv": 3,
+        "incrementalCost": 168,
+        "incrementalValue": 0,
+        "projected": 56.63,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise",
+      "rationale": "Profitable + budget-limited — raising budget recovers lost IS at a profitable projected unit cost."
+    },
+    {
+      "type": "profitable_limited_recovery",
+      "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+      "campaignId": "23478250789",
+      "channel": "SEARCH",
+      "isLostBudget": 31.8,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.31765314034634273,
+        "incrementalClicks": 49,
+        "incrementalConv": 3.2,
+        "incrementalCost": 68,
+        "incrementalValue": 0,
+        "projected": 20.84,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise",
+      "rationale": "Profitable + budget-limited — raising budget recovers lost IS at a profitable projected unit cost."
+    },
+    {
+      "type": "profitable_limited_recovery",
+      "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+      "campaignId": "23619183073",
+      "channel": "SEARCH",
+      "isLostBudget": 33,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.32973708805721486,
+        "incrementalClicks": 222,
+        "incrementalConv": 7.1,
+        "incrementalCost": 298,
+        "incrementalValue": 0,
+        "projected": 41.83,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise",
+      "rationale": "Profitable + budget-limited — raising budget recovers lost IS at a profitable projected unit cost."
+    },
+    {
+      "type": "winner_underfunded",
+      "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+      "channel": "SEARCH",
+      "sharePct": 4.7,
+      "isLostBudget": 26.8,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.26845991561181437,
+        "incrementalClicks": 312,
+        "incrementalConv": 8.4,
+        "incrementalCost": 141,
+        "incrementalValue": 0,
+        "projected": 16.75,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise"
+    },
+    {
+      "type": "winner_underfunded",
+      "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+      "channel": "SEARCH",
+      "sharePct": 3.2,
+      "isLostBudget": 28.9,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.289492207139266,
+        "incrementalClicks": 62,
+        "incrementalConv": 3.3,
+        "incrementalCost": 108,
+        "incrementalValue": 0,
+        "projected": 33.01,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise"
+    },
+    {
+      "type": "winner_underfunded",
+      "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+      "channel": "SEARCH",
+      "sharePct": 2.9,
+      "isLostBudget": 20.2,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.2021600243383024,
+        "incrementalClicks": 46,
+        "incrementalConv": 1.5,
+        "incrementalCost": 60,
+        "incrementalValue": 0,
+        "projected": 39.54,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise"
+    },
+    {
+      "type": "winner_underfunded",
+      "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+      "channel": "SEARCH",
+      "sharePct": 7.7,
+      "isLostBudget": 36,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.360276825908755,
+        "incrementalClicks": 179,
+        "incrementalConv": 7.6,
+        "incrementalCost": 354,
+        "incrementalValue": 0,
+        "projected": 46.89,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise"
+    },
+    {
+      "type": "winner_underfunded",
+      "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+      "channel": "SEARCH",
+      "sharePct": 6.6,
+      "isLostBudget": 21.3,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.21294117647058824,
+        "incrementalClicks": 97,
+        "incrementalConv": 2,
+        "incrementalCost": 147,
+        "incrementalValue": 0,
+        "projected": 72.79,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise"
+    },
+    {
+      "type": "winner_underfunded",
+      "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+      "channel": "SEARCH",
+      "sharePct": 4.5,
+      "isLostBudget": 31.3,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.31310533984743294,
+        "incrementalClicks": 95,
+        "incrementalConv": 3,
+        "incrementalCost": 168,
+        "incrementalValue": 0,
+        "projected": 56.63,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise"
+    },
+    {
+      "type": "winner_underfunded",
+      "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+      "channel": "SEARCH",
+      "sharePct": 1.8,
+      "isLostBudget": 31.8,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.31765314034634273,
+        "incrementalClicks": 49,
+        "incrementalConv": 3.2,
+        "incrementalCost": 68,
+        "incrementalValue": 0,
+        "projected": 20.84,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise"
+    },
+    {
+      "type": "winner_underfunded",
+      "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+      "channel": "SEARCH",
+      "sharePct": 7.4,
+      "isLostBudget": 33,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.32973708805721486,
+        "incrementalClicks": 222,
+        "incrementalConv": 7.1,
+        "incrementalCost": 298,
+        "incrementalValue": 0,
+        "projected": 41.83,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "description": "Search term optimizer — 2026-08-18 — ST-E03 promote only",
+  "generated_from": "context/analysis/search-term/search-term-audit.md",
+  "generated_at": "2026-08-18T00:00:00Z",
+  "total_operations": 3,
+  "operations": [
+    {
+      "type": "create",
+      "resource": "ad_group_criterion",
+      "fields": {
+        "ad_group": "customers/1487707588/adGroups/190557736766",
+        "keyword": { "text": "stellenanzeigen sanitärinstallateur", "match_type": "PHRASE" },
+        "status": "ENABLED",
+        "type": "KEYWORD"
+      },
+      "meta": {
+        "action_id": "ST-E03",
+        "category": "promote",
+        "target": "stellenanzeigen sanitärinstallateur",
+        "term": "stellenanzeigen sanitärinstallateur",
+        "match_type": "PHRASE",
+        "scope": "ad_group:AG | RSA | Sanitärinstallateur",
+        "campaign": "EX | 26 | CH | SEARCH | LEAD | Sanitärinstallateur",
+        "ad_group": "AG | RSA | Sanitärinstallateur",
+        "rationale": "4,00 Conv / 3 Klicks / 1,78 CHF / CPA 0,45 — weit unter Konto-90T-CPA 28,18. Begriff deckt sich exakt mit dem Gewerk der Ad Group. Mix EXACT+PHRASE (4/7/5) → PHRASE.",
+        "source_diagnostic": "ST-D20"
+      }
+    },
+    {
+      "type": "create",
+      "resource": "ad_group_criterion",
+      "fields": {
+        "ad_group": "customers/1487707588/adGroups/194724430511",
+        "keyword": { "text": "gipser gesucht", "match_type": "PHRASE" },
+        "status": "ENABLED",
+        "type": "KEYWORD"
+      },
+      "meta": {
+        "action_id": "ST-E03",
+        "category": "promote",
+        "target": "gipser gesucht",
+        "term": "gipser gesucht",
+        "match_type": "PHRASE",
+        "scope": "ad_group:AG | RSA | Gipser",
+        "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+        "ad_group": "AG | RSA | Gipser",
+        "rationale": "2,50 Conv / 3 Klicks / 6,33 CHF / CPA 2,53. Begriff deckt sich exakt mit dem Gewerk der Ad Group. Mix EXACT+PHRASE (1/5/4) → PHRASE.",
+        "source_diagnostic": "ST-D20"
+      }
+    },
+    {
+      "type": "create",
+      "resource": "ad_group_criterion",
+      "fields": {
+        "ad_group": "customers/1487707588/adGroups/154000335045",
+        "keyword": { "text": "automatikmonteur jobs", "match_type": "PHRASE" },
+        "status": "ENABLED",
+        "type": "KEYWORD"
+      },
+      "meta": {
+        "action_id": "ST-E03",
+        "category": "promote",
+        "target": "automatikmonteur jobs",
+        "term": "automatikmonteur jobs",
+        "match_type": "PHRASE",
+        "scope": "ad_group:AG | RSA | Automatikmonteur",
+        "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatikmonteur",
+        "ad_group": "AG | RSA | Automatikmonteur",
+        "rationale": "2,00 Conv / 4 Klicks / 16,13 CHF / CPA 8,07. UMLEITUNG: die Conversions stammen aus 'AG | DSA | Automatikmonteur' (SEARCH_DYNAMIC_ADS, nicht ENABLED) — dort sind positive Keywords nicht anlegbar. Ziel ist die aktive Schwester-Ad-Group derselben Kampagne. Mix EXACT+PHRASE (2/3/2) → PHRASE.",
+        "source_diagnostic": "ST-D20"
+      }
+    }
+  ]
+}

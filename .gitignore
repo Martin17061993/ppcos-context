@@ -9,22 +9,15 @@
 .managed-hub.json
 **/.managed.json
 
-# Rohdaten und Ableitungen (holt sich jeder selbst per /gads-context)
+# Google-Ads-Rohdaten (~940 MB, per /gads-context reproduzierbar und aktueller)
 **/context/google-ads/
 **/context/competitor-ads/
 **/context/feed/cache/
-**/context/analysis/**/evidence/
-**/created/
-**/.backup/
+
+# Build-Artefakte
 **/node_modules/
-
-# Interne Session-Notizen
-**/context/memory/
-**/context/.logs/
-
-# Rohe Changelog-CSVs (die aufbereitete .md liegt im Repo)
-**/account-changelog.csv
-**/account-changelog-invisible.csv
+**/.backup/
+**/tmp/
 
 # OS
 .DS_Store

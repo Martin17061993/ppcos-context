@@ -1,0 +1,673 @@
+{
+  "app_audit": {
+    "total_categories": 140,
+    "excluded_count": 0,
+    "missing_categories": [
+      {
+        "id": "60001",
+        "name": "Books & Reference"
+      },
+      {
+        "id": "60002",
+        "name": "Business"
+      },
+      {
+        "id": "60003",
+        "name": "Comics"
+      },
+      {
+        "id": "60004",
+        "name": "Communication"
+      },
+      {
+        "id": "60005",
+        "name": "Education"
+      },
+      {
+        "id": "60006",
+        "name": "Entertainment"
+      },
+      {
+        "id": "60007",
+        "name": "Finance"
+      },
+      {
+        "id": "60009",
+        "name": "Health & Fitness"
+      },
+      {
+        "id": "60010",
+        "name": "Libraries & Demo"
+      },
+      {
+        "id": "60011",
+        "name": "Lifestyle"
+      },
+      {
+        "id": "60013",
+        "name": "Video Players & Editors"
+      },
+      {
+        "id": "60014",
+        "name": "Medical"
+      },
+      {
+        "id": "60015",
+        "name": "Music & Audio"
+      },
+      {
+        "id": "60016",
+        "name": "News & Magazines"
+      },
+      {
+        "id": "60017",
+        "name": "Personalization"
+      },
+      {
+        "id": "60018",
+        "name": "Photography"
+      },
+      {
+        "id": "60019",
+        "name": "Productivity"
+      },
+      {
+        "id": "60020",
+        "name": "Shopping"
+      },
+      {
+        "id": "60021",
+        "name": "Social"
+      },
+      {
+        "id": "60022",
+        "name": "Sports"
+      },
+      {
+        "id": "60023",
+        "name": "Tools"
+      },
+      {
+        "id": "60024",
+        "name": "Maps & Navigation"
+      },
+      {
+        "id": "60025",
+        "name": "Travel & Local"
+      },
+      {
+        "id": "60026",
+        "name": "Weather"
+      },
+      {
+        "id": "60028",
+        "name": "Arcade"
+      },
+      {
+        "id": "60029",
+        "name": "Board"
+      },
+      {
+        "id": "60030",
+        "name": "Cards"
+      },
+      {
+        "id": "60031",
+        "name": "Casual"
+      },
+      {
+        "id": "60033",
+        "name": "Racing"
+      },
+      {
+        "id": "60034",
+        "name": "Sports Games"
+      },
+      {
+        "id": "60036",
+        "name": "Action"
+      },
+      {
+        "id": "60037",
+        "name": "Adventure"
+      },
+      {
+        "id": "60038",
+        "name": "Casino"
+      },
+      {
+        "id": "60039",
+        "name": "Educational"
+      },
+      {
+        "id": "60040",
+        "name": "Family"
+      },
+      {
+        "id": "60041",
+        "name": "Music"
+      },
+      {
+        "id": "60042",
+        "name": "Puzzle"
+      },
+      {
+        "id": "60043",
+        "name": "Role Playing"
+      },
+      {
+        "id": "60044",
+        "name": "Simulation"
+      },
+      {
+        "id": "60045",
+        "name": "Strategy"
+      },
+      {
+        "id": "60046",
+        "name": "Trivia"
+      },
+      {
+        "id": "60047",
+        "name": "Word"
+      },
+      {
+        "id": "60048",
+        "name": "Art & Design"
+      },
+      {
+        "id": "60049",
+        "name": "Auto & Vehicles"
+      },
+      {
+        "id": "60050",
+        "name": "Beauty"
+      },
+      {
+        "id": "60051",
+        "name": "Dating"
+      },
+      {
+        "id": "60052",
+        "name": "Events"
+      },
+      {
+        "id": "60053",
+        "name": "Food & Drink"
+      },
+      {
+        "id": "60054",
+        "name": "House & Home"
+      },
+      {
+        "id": "60055",
+        "name": "Parenting"
+      },
+      {
+        "id": "60057",
+        "name": "Action & Adventure"
+      },
+      {
+        "id": "60058",
+        "name": "Brain Games"
+      },
+      {
+        "id": "60059",
+        "name": "Creativity"
+      },
+      {
+        "id": "60060",
+        "name": "Education"
+      },
+      {
+        "id": "60061",
+        "name": "Music & Video"
+      },
+      {
+        "id": "60062",
+        "name": "Pretend Play"
+      },
+      {
+        "id": "60501",
+        "name": "Book"
+      },
+      {
+        "id": "60502",
+        "name": "Business"
+      },
+      {
+        "id": "60503",
+        "name": "Education"
+      },
+      {
+        "id": "60504",
+        "name": "Entertainment"
+      },
+      {
+        "id": "60505",
+        "name": "Finance"
+      },
+      {
+        "id": "60507",
+        "name": "Health & Fitness"
+      },
+      {
+        "id": "60508",
+        "name": "Lifestyle"
+      },
+      {
+        "id": "60509",
+        "name": "Medical"
+      },
+      {
+        "id": "60510",
+        "name": "Music"
+      },
+      {
+        "id": "60511",
+        "name": "Navigation"
+      },
+      {
+        "id": "60512",
+        "name": "News"
+      },
+      {
+        "id": "60514",
+        "name": "Photo & Video"
+      },
+      {
+        "id": "60515",
+        "name": "Productivity"
+      },
+      {
+        "id": "60516",
+        "name": "Reference"
+      },
+      {
+        "id": "60517",
+        "name": "Social Networking"
+      },
+      {
+        "id": "60518",
+        "name": "Sports"
+      },
+      {
+        "id": "60519",
+        "name": "Travel"
+      },
+      {
+        "id": "60520",
+        "name": "Utilities"
+      },
+      {
+        "id": "60521",
+        "name": "Weather"
+      },
+      {
+        "id": "60522",
+        "name": "Action"
+      },
+      {
+        "id": "60523",
+        "name": "Adventure"
+      },
+      {
+        "id": "60524",
+        "name": "Arcade"
+      },
+      {
+        "id": "60525",
+        "name": "Board"
+      },
+      {
+        "id": "60526",
+        "name": "Card"
+      },
+      {
+        "id": "60527",
+        "name": "Casino"
+      },
+      {
+        "id": "60528",
+        "name": "Dice"
+      },
+      {
+        "id": "60529",
+        "name": "Educational"
+      },
+      {
+        "id": "60530",
+        "name": "Family"
+      },
+      {
+        "id": "60531",
+        "name": "Kids"
+      },
+      {
+        "id": "60532",
+        "name": "Music"
+      },
+      {
+        "id": "60533",
+        "name": "Puzzle"
+      },
+      {
+        "id": "60534",
+        "name": "Racing"
+      },
+      {
+        "id": "60535",
+        "name": "Role Playing"
+      },
+      {
+        "id": "60536",
+        "name": "Simulation"
+      },
+      {
+        "id": "60537",
+        "name": "Sports"
+      },
+      {
+        "id": "60538",
+        "name": "Strategy"
+      },
+      {
+        "id": "60539",
+        "name": "Trivia"
+      },
+      {
+        "id": "60540",
+        "name": "Word"
+      },
+      {
+        "id": "60541",
+        "name": "Catalogs"
+      },
+      {
+        "id": "60542",
+        "name": "News & Politics"
+      },
+      {
+        "id": "60543",
+        "name": "Fashion & Style"
+      },
+      {
+        "id": "60544",
+        "name": "Home & Garden"
+      },
+      {
+        "id": "60545",
+        "name": "Outdoors & Nature"
+      },
+      {
+        "id": "60546",
+        "name": "Sports & Leisure"
+      },
+      {
+        "id": "60547",
+        "name": "Automotive"
+      },
+      {
+        "id": "60548",
+        "name": "Arts & Photography"
+      },
+      {
+        "id": "60549",
+        "name": "Brides & Weddings"
+      },
+      {
+        "id": "60550",
+        "name": "Business & Investing"
+      },
+      {
+        "id": "60551",
+        "name": "Children's Magazines"
+      },
+      {
+        "id": "60552",
+        "name": "Computers & Internet"
+      },
+      {
+        "id": "60553",
+        "name": "Cooking, Food & Drink"
+      },
+      {
+        "id": "60554",
+        "name": "Crafts & Hobbies"
+      },
+      {
+        "id": "60555",
+        "name": "Electronics & Audio"
+      },
+      {
+        "id": "60556",
+        "name": "Entertainment"
+      },
+      {
+        "id": "60557",
+        "name": "Health, Mind & Body"
+      },
+      {
+        "id": "60558",
+        "name": "History"
+      },
+      {
+        "id": "60559",
+        "name": "Literary Magazines & Journals"
+      },
+      {
+        "id": "60560",
+        "name": "Men's Interest"
+      },
+      {
+        "id": "60561",
+        "name": "Movies & Music"
+      },
+      {
+        "id": "60562",
+        "name": "Parenting & Family"
+      },
+      {
+        "id": "60563",
+        "name": "Pets"
+      },
+      {
+        "id": "60564",
+        "name": "Professional & Trade"
+      },
+      {
+        "id": "60565",
+        "name": "Regional News"
+      },
+      {
+        "id": "60566",
+        "name": "Science"
+      },
+      {
+        "id": "60567",
+        "name": "Teens"
+      },
+      {
+        "id": "60568",
+        "name": "Travel & Regional"
+      },
+      {
+        "id": "60569",
+        "name": "Women's Interest"
+      },
+      {
+        "id": "60570",
+        "name": "Food & Drink"
+      },
+      {
+        "id": "60571",
+        "name": "Shopping"
+      },
+      {
+        "id": "60573",
+        "name": "Emoji & Expressions"
+      },
+      {
+        "id": "60574",
+        "name": "Animals & Nature"
+      },
+      {
+        "id": "60575",
+        "name": "Art"
+      },
+      {
+        "id": "60576",
+        "name": "Celebrations"
+      },
+      {
+        "id": "60577",
+        "name": "Celebrities"
+      },
+      {
+        "id": "60578",
+        "name": "Comics & Cartoons"
+      },
+      {
+        "id": "60579",
+        "name": "Eating & Drinking"
+      },
+      {
+        "id": "60580",
+        "name": "Gaming"
+      },
+      {
+        "id": "60581",
+        "name": "Movies & TV"
+      },
+      {
+        "id": "60582",
+        "name": "Music"
+      },
+      {
+        "id": "60583",
+        "name": "People"
+      },
+      {
+        "id": "60584",
+        "name": "Places & Objects"
+      },
+      {
+        "id": "60585",
+        "name": "Sports & Activities"
+      },
+      {
+        "id": "60586",
+        "name": "Kids & Family"
+      },
+      {
+        "id": "60587",
+        "name": "Fashion"
+      }
+    ],
+    "app_placement_spend_dollars": "0.00",
+    "app_placement_conversions": 0,
+    "total_placement_spend_dollars": "2918.66",
+    "app_spend_share_pct": "0.0"
+  },
+  "campaign_coverage": {
+    "total_eligible_campaigns": 7,
+    "fully_covered": 0,
+    "partially_covered": 0,
+    "uncovered": 7,
+    "uncovered_campaigns": [
+      {
+        "id": "21137012770",
+        "name": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+        "channel_type": "PERFORMANCE_MAX"
+      },
+      {
+        "id": "20369175508",
+        "name": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+        "channel_type": "PERFORMANCE_MAX"
+      },
+      {
+        "id": "18788654586",
+        "name": "EX I WW I PMAX I SCALING I BROAD",
+        "channel_type": "PERFORMANCE_MAX"
+      },
+      {
+        "id": "20289440565",
+        "name": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+        "channel_type": "PERFORMANCE_MAX"
+      },
+      {
+        "id": "20311845501",
+        "name": "EX I FRA I PMAX I TESTING I BROAD",
+        "channel_type": "PERFORMANCE_MAX"
+      },
+      {
+        "id": "20521524704",
+        "name": "EX I USA I PMAX I TESTING I BROAD",
+        "channel_type": "PERFORMANCE_MAX"
+      },
+      {
+        "id": "21127105111",
+        "name": "EX I WW I PMAX I PROSPECTING I BROAD",
+        "channel_type": "PERFORMANCE_MAX"
+      }
+    ],
+    "coverage_matrix": [
+      {
+        "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+        "campaign_id": "21137012770",
+        "channel_type": "PERFORMANCE_MAX",
+        "lists_linked": []
+      },
+      {
+        "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+        "campaign_id": "20369175508",
+        "channel_type": "PERFORMANCE_MAX",
+        "lists_linked": []
+      },
+      {
+        "campaign": "EX I WW I PMAX I SCALING I BROAD",
+        "campaign_id": "18788654586",
+        "channel_type": "PERFORMANCE_MAX",
+        "lists_linked": []
+      },
+      {
+        "campaign": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+        "campaign_id": "20289440565",
+        "channel_type": "PERFORMANCE_MAX",
+        "lists_linked": []
+      },
+      {
+        "campaign": "EX I FRA I PMAX I TESTING I BROAD",
+        "campaign_id": "20311845501",
+        "channel_type": "PERFORMANCE_MAX",
+        "lists_linked": []
+      },
+      {
+        "campaign": "EX I USA I PMAX I TESTING I BROAD",
+        "campaign_id": "20521524704",
+        "channel_type": "PERFORMANCE_MAX",
+        "lists_linked": []
+      },
+      {
+        "campaign": "EX I WW I PMAX I PROSPECTING I BROAD",
+        "campaign_id": "21127105111",
+        "channel_type": "PERFORMANCE_MAX",
+        "lists_linked": []
+      }
+    ]
+  },
+  "list_hygiene": {
+    "total_lists": 1,
+    "lists": [
+      {
+        "name": "BROAD Ausschlüsse + Konkurrenz",
+        "id": "11001087871",
+        "member_count": 38208,
+        "capacity_pct": 58.8,
+        "reference_count": 3,
+        "status": "OK"
+      }
+    ],
+    "cross_list_overlaps": 0
+  }
+}

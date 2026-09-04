@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "engine": "analyze-pacing",
+    "generatedAt": "2026-08-06T14:42:29.854Z",
+    "accountCurrency": "EUR",
+    "monthlyTarget": 32500,
+    "seasonalityState": {
+      "mode": "highlight_months",
+      "currentMonth": "august",
+      "nextMonth": "september",
+      "isHighlight": false,
+      "approachingHighlight": false
+    },
+    "projection": {
+      "mtdSpend": 14290,
+      "projectedMonth": 88595,
+      "daysElapsed": 6,
+      "daysInMonth": 31,
+      "avgDaily": 2857.92
+    }
+  },
+  "findings": [
+    {
+      "id": "BUD-D09",
+      "verdict": "WARN",
+      "severity": "medium",
+      "message": "MTD spend 14290 EUR vs proportional target 6290 (+24.6pp).",
+      "blocking": [],
+      "mtdSpend": 14290,
+      "proportionalTarget": 6290,
+      "monthlyTarget": 32500,
+      "daysElapsed": 6,
+      "daysInMonth": 31,
+      "deviationPp": 24.6
+    },
+    {
+      "id": "BUD-D10",
+      "verdict": "FAIL",
+      "severity": "high",
+      "message": "Projected to overspend by 172.6% (target 32500, projected 88595).",
+      "blocking": [],
+      "projectedMonth": 88595,
+      "target": 32500,
+      "deviationPct": 172.6
+    },
+    {
+      "id": "BUD-D11",
+      "verdict": "PASS",
+      "severity": "info",
+      "message": "Pacing within 10% under-target band.",
+      "blocking": [],
+      "projectedMonth": 88595,
+      "target": 32500,
+      "deviationPct": 172.6,
+      "isHighlightMonth": false
+    },
+    {
+      "id": "BUD-D12",
+      "verdict": "INFO",
+      "severity": "info",
+      "message": "Seasonality mode: highlight_months. Current month: august.",
+      "blocking": [],
+      "seasonalityState": {
+        "mode": "highlight_months",
+        "currentMonth": "august",
+        "nextMonth": "september",
+        "isHighlight": false,
+        "approachingHighlight": false
+      }
+    },
+    {
+      "id": "BUD-D06",
+      "verdict": "WARN",
+      "severity": "medium",
+      "message": "2 campaign(s) hit daily budget on >=50% of recent days — possible mid-day exhaustion.",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+          "campaignId": "17820068572",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 240
+        },
+        {
+          "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+          "campaignId": "20369175508",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 45
+        }
+      ],
+      "note": "Hourly segmentation deferred to v1.1; daily 95% threshold used as v1 heuristic."
+    }
+  ]
+}

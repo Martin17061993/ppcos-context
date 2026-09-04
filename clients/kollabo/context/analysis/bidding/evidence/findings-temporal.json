@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "1509955426",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "1509955426",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "1509955426",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "1509955426",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 6% vs prior 14d.",
+    "campaign_id": "1509955426",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "1509955426",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 8.4 incremental conv at projected CPA $16.75 if budget loosens.",
+    "campaign_id": "1509955426",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 312,
+    "incrementalConv": 8.4,
+    "incrementalCost": 141.18,
+    "projectedCpa": 16.75,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "6496821254",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Dachdecker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "6496821254",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Dachdecker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "6496821254",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Dachdecker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "6496821254",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Dachdecker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 5% vs prior 14d.",
+    "campaign_id": "6496821254",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Dachdecker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "6496821254",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Dachdecker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 0.9 incremental conv at projected CPA $35.94 if budget loosens.",
+    "campaign_id": "6496821254",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Dachdecker",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 28,
+    "incrementalConv": 0.9,
+    "incrementalCost": 32.5,
+    "projectedCpa": 35.94,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "6503042592",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maler",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "6503042592",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maler",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "6503042592",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maler",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "6503042592",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maler",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -6% vs prior 14d.",
+    "campaign_id": "6503042592",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maler",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "6503042592",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maler",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 2 incremental conv at projected CPA $74.88 if budget loosens.",
+    "campaign_id": "6503042592",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maler",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 93,
+    "incrementalConv": 2,
+    "incrementalCost": 146.56,
+    "projectedCpa": 74.88,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "15145890855",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "15145890855",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "15145890855",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "15145890855",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 24% vs prior 14d.",
+    "campaign_id": "15145890855",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC rising for 3 consecutive periods: $1.84 → $2.30 → $2.54.",
+    "campaign_id": "15145890855",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "buckets": [
+      1.8357142857142859,
+      2.3048,
+      2.5433333333333334
+    ]
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 1 incremental conv at projected CPA $130.31 if budget loosens.",
+    "campaign_id": "15145890855",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 62,
+    "incrementalConv": 1,
+    "incrementalCost": 133.03,
+    "projectedCpa": 130.31,
+    "profitable": false
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "15210620317",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "15210620317",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "15210620317",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "15210620317",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -2% vs prior 14d.",
+    "campaign_id": "15210620317",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC rising for 3 consecutive periods: $1.53 → $1.55 → $1.84.",
+    "campaign_id": "15210620317",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "buckets": [
+      1.5250000000000004,
+      1.5538461538461537,
+      1.8354838709677421
+    ]
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 3.3 incremental conv at projected CPA $33.01 if budget loosens.",
+    "campaign_id": "15210620317",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 62,
+    "incrementalConv": 3.3,
+    "incrementalCost": 107.87,
+    "projectedCpa": 33.01,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "15210620323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Sanitärinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "15210620323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Sanitärinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "15210620323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Sanitärinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "15210620323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Sanitärinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 14% vs prior 14d.",
+    "campaign_id": "15210620323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Sanitärinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "15210620323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Sanitärinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 1.5 incremental conv at projected CPA $99.78 if budget loosens.",
+    "campaign_id": "15210620323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Sanitärinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 89,
+    "incrementalConv": 1.5,
+    "incrementalCost": 147.03,
+    "projectedCpa": 99.78,
+    "profitable": false
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "15347327648",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Metallbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "15347327648",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Metallbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "15347327648",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Metallbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "15347327648",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Metallbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 5% vs prior 14d.",
+    "campaign_id": "15347327648",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Metallbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "15347327648",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Metallbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 1.9 incremental conv at projected CPA $53.09 if budget loosens.",
+    "campaign_id": "15347327648",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Metallbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 68,
+    "incrementalConv": 1.9,
+    "incrementalCost": 103.33,
+    "projectedCpa": 53.09,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20685916051",
+    "campaign": "EX | DE | DACH | SEARCH | LEAD | UMLAND TEST",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20685916051",
+    "campaign": "EX | DE | DACH | SEARCH | LEAD | UMLAND TEST",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20685916051",
+    "campaign": "EX | DE | DACH | SEARCH | LEAD | UMLAND TEST",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20685916051",
+    "campaign": "EX | DE | DACH | SEARCH | LEAD | UMLAND TEST",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -11% vs prior 14d.",
+    "campaign_id": "20685916051",
+    "campaign": "EX | DE | DACH | SEARCH | LEAD | UMLAND TEST",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "20685916051",
+    "campaign": "EX | DE | DACH | SEARCH | LEAD | UMLAND TEST",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "20685916051",
+    "campaign": "EX | DE | DACH | SEARCH | LEAD | UMLAND TEST",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20691357994",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20691357994",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20691357994",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20691357994",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 22% vs prior 14d.",
+    "campaign_id": "20691357994",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC rising for 3 consecutive periods: $1.15 → $1.39 → $1.52.",
+    "campaign_id": "20691357994",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "buckets": [
+      1.15,
+      1.3948888888888888,
+      1.524
+    ]
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 1.5 incremental conv at projected CPA $39.54 if budget loosens.",
+    "campaign_id": "20691357994",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 46,
+    "incrementalConv": 1.5,
+    "incrementalCost": 59.95,
+    "projectedCpa": 39.54,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20702215351",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Polymechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20702215351",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Polymechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20702215351",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Polymechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20702215351",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Polymechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 13% vs prior 14d.",
+    "campaign_id": "20702215351",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Polymechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC rising for 3 consecutive periods: $1.65 → $1.69 → $2.08.",
+    "campaign_id": "20702215351",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Polymechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "buckets": [
+      1.6469230769230767,
+      1.6900000000000002,
+      2.084736842105263
+    ]
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 0.8 incremental conv at projected CPA $72.58 if budget loosens.",
+    "campaign_id": "20702215351",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Polymechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 32,
+    "incrementalConv": 0.8,
+    "incrementalCost": 57,
+    "projectedCpa": 72.58,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20707086616",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Produktionsmechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20707086616",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Produktionsmechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20707086616",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Produktionsmechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20707086616",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Produktionsmechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 1% vs prior 14d.",
+    "campaign_id": "20707086616",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Produktionsmechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "20707086616",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Produktionsmechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 1.1 incremental conv at projected CPA $50.03 if budget loosens.",
+    "campaign_id": "20707086616",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Produktionsmechaniker",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 59,
+    "incrementalConv": 1.1,
+    "incrementalCost": 54.09,
+    "projectedCpa": 50.03,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20768068758",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatikmonteur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20768068758",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatikmonteur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20768068758",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatikmonteur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20768068758",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatikmonteur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -15% vs prior 14d.",
+    "campaign_id": "20768068758",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatikmonteur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "20768068758",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatikmonteur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 2 incremental conv at projected CPA $30.9 if budget loosens.",
+    "campaign_id": "20768068758",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatikmonteur",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 44,
+    "incrementalConv": 2,
+    "incrementalCost": 63.1,
+    "projectedCpa": 30.9,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23369525700",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23369525700",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23369525700",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23369525700",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 4% vs prior 14d.",
+    "campaign_id": "23369525700",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC rising for 3 consecutive periods: $1.89 → $1.99 → $2.02.",
+    "campaign_id": "23369525700",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "buckets": [
+      1.891818181818182,
+      1.9892063492063496,
+      2.023
+    ]
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 7.6 incremental conv at projected CPA $46.89 if budget loosens.",
+    "campaign_id": "23369525700",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 179,
+    "incrementalConv": 7.6,
+    "incrementalCost": 354.47,
+    "projectedCpa": 46.89,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23468547546",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gärtner",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23468547546",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gärtner",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23468547546",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gärtner",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23468547546",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gärtner",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -8% vs prior 14d.",
+    "campaign_id": "23468547546",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gärtner",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23468547546",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gärtner",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 1.1 incremental conv at projected CPA $68.86 if budget loosens.",
+    "campaign_id": "23468547546",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gärtner",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 59,
+    "incrementalConv": 1.1,
+    "incrementalCost": 74.57,
+    "projectedCpa": 68.86,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23468556621",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23468556621",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23468556621",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23468556621",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 8% vs prior 14d.",
+    "campaign_id": "23468556621",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23468556621",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 2 incremental conv at projected CPA $75.12 if budget loosens.",
+    "campaign_id": "23468556621",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 84,
+    "incrementalConv": 2,
+    "incrementalCost": 153.36,
+    "projectedCpa": 75.12,
+    "profitable": false
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23468568174",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Kranführer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23468568174",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Kranführer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23468568174",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Kranführer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23468568174",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Kranführer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 5% vs prior 14d.",
+    "campaign_id": "23468568174",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Kranführer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23468568174",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Kranführer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "23468568174",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Kranführer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23468574954",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Montage-Schreiner",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23468574954",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Montage-Schreiner",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23468574954",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Montage-Schreiner",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23468574954",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Montage-Schreiner",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -6% vs prior 14d.",
+    "campaign_id": "23468574954",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Montage-Schreiner",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23468574954",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Montage-Schreiner",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 0.2 incremental conv at projected CPA $247.16 if budget loosens.",
+    "campaign_id": "23468574954",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Montage-Schreiner",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 37,
+    "incrementalConv": 0.2,
+    "incrementalCost": 54.9,
+    "projectedCpa": 247.16,
+    "profitable": false
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23468591016",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Zimmermann",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23468591016",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Zimmermann",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23468591016",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Zimmermann",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23468591016",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Zimmermann",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 20% vs prior 14d.",
+    "campaign_id": "23468591016",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Zimmermann",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23468591016",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Zimmermann",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 1.7 incremental conv at projected CPA $41.79 if budget loosens.",
+    "campaign_id": "23468591016",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Zimmermann",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 46,
+    "incrementalConv": 1.7,
+    "incrementalCost": 69.57,
+    "projectedCpa": 41.79,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23473547006",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Abdichter",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23473547006",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Abdichter",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23473547006",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Abdichter",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23473547006",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Abdichter",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 12% vs prior 14d.",
+    "campaign_id": "23473547006",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Abdichter",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC rising for 3 consecutive periods: $1.15 → $1.30 → $1.32.",
+    "campaign_id": "23473547006",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Abdichter",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "buckets": [
+      1.153125,
+      1.30375,
+      1.3192000000000002
+    ]
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 0.5 incremental conv at projected CPA $152.16 if budget loosens.",
+    "campaign_id": "23473547006",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Abdichter",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 56,
+    "incrementalConv": 0.5,
+    "incrementalCost": 70.44,
+    "projectedCpa": 152.16,
+    "profitable": false
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23473551299",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Baumaschinenführer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23473551299",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Baumaschinenführer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23473551299",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Baumaschinenführer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23473551299",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Baumaschinenführer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC spike: $1.10 vs $0.80 prior 14d (+37%).",
+    "campaign_id": "23473551299",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Baumaschinenführer",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "recent": 1.1007894736842105,
+    "prior": 0.8023076923076923,
+    "pctChange": 37.202906595347436,
+    "isSpike": true
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC rising for 3 consecutive periods: $0.72 → $1.08 → $1.12.",
+    "campaign_id": "23473551299",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Baumaschinenführer",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "buckets": [
+      0.7158620689655172,
+      1.077894736842105,
+      1.1236842105263158
+    ]
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 0.3 incremental conv at projected CPA $90.74 if budget loosens.",
+    "campaign_id": "23473551299",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Baumaschinenführer",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 31,
+    "incrementalConv": 0.3,
+    "incrementalCost": 29.5,
+    "projectedCpa": 90.74,
+    "profitable": false
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23473587776",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23473587776",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23473587776",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23473587776",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -5% vs prior 14d.",
+    "campaign_id": "23473587776",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23473587776",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 2 incremental conv at projected CPA $72.79 if budget loosens.",
+    "campaign_id": "23473587776",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 97,
+    "incrementalConv": 2,
+    "incrementalCost": 147.38,
+    "projectedCpa": 72.79,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23473608146",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23473608146",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23473608146",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23473608146",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -18% vs prior 14d.",
+    "campaign_id": "23473608146",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23473608146",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 3 incremental conv at projected CPA $56.63 if budget loosens.",
+    "campaign_id": "23473608146",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 95,
+    "incrementalConv": 3,
+    "incrementalCost": 167.89,
+    "projectedCpa": 56.63,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23473611323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23473611323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23473611323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23473611323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 3% vs prior 14d.",
+    "campaign_id": "23473611323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23473611323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 2.1 incremental conv at projected CPA $86.65 if budget loosens.",
+    "campaign_id": "23473611323",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 111,
+    "incrementalConv": 2.1,
+    "incrementalCost": 182.57,
+    "projectedCpa": 86.65,
+    "profitable": false
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23473633574",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Trockenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23473633574",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Trockenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23473633574",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Trockenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23473633574",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Trockenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -17% vs prior 14d.",
+    "campaign_id": "23473633574",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Trockenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23473633574",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Trockenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 0.5 incremental conv at projected CPA $84.81 if budget loosens.",
+    "campaign_id": "23473633574",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Trockenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 14,
+    "incrementalConv": 0.5,
+    "incrementalCost": 41.5,
+    "projectedCpa": 84.81,
+    "profitable": false
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23478160315",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23478160315",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23478160315",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23478160315",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 0% vs prior 14d.",
+    "campaign_id": "23478160315",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC rising for 3 consecutive periods: $1.08 → $1.15 → $1.23.",
+    "campaign_id": "23478160315",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "buckets": [
+      1.082,
+      1.1494117647058824,
+      1.2341176470588233
+    ]
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 0.8 incremental conv at projected CPA $46.49 if budget loosens.",
+    "campaign_id": "23478160315",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 30,
+    "incrementalConv": 0.8,
+    "incrementalCost": 36.85,
+    "projectedCpa": 46.49,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23478231493",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gerüstbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23478231493",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gerüstbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23478231493",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gerüstbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23478231493",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gerüstbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC spike: $2.53 vs $1.91 prior 14d (+32%).",
+    "campaign_id": "23478231493",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gerüstbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "recent": 2.528666666666666,
+    "prior": 1.9095652173913045,
+    "pctChange": 32.42106860959317,
+    "isSpike": true
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23478231493",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gerüstbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "23478231493",
+    "campaign": "EX | 25 | CH | SEARCH | LEAD | Gerüstbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23478250789",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23478250789",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23478250789",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23478250789",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 8% vs prior 14d.",
+    "campaign_id": "23478250789",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23478250789",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 3.2 incremental conv at projected CPA $20.84 if budget loosens.",
+    "campaign_id": "23478250789",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 49,
+    "incrementalConv": 3.2,
+    "incrementalCost": 67.69,
+    "projectedCpa": 20.84,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23478262294",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Strassenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23478262294",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Strassenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23478262294",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Strassenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23478262294",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Strassenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 7% vs prior 14d.",
+    "campaign_id": "23478262294",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Strassenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23478262294",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Strassenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 1.9 incremental conv at projected CPA $88.92 if budget loosens.",
+    "campaign_id": "23478262294",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Strassenbauer",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 99,
+    "incrementalConv": 1.9,
+    "incrementalCost": 168.96,
+    "projectedCpa": 88.92,
+    "profitable": false
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23612966133",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | DYN Catchall",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23612966133",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | DYN Catchall",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23612966133",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | DYN Catchall",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23612966133",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | DYN Catchall",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 4% vs prior 14d.",
+    "campaign_id": "23612966133",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | DYN Catchall",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23612966133",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | DYN Catchall",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 1.5 incremental conv at projected CPA $66.57 if budget loosens.",
+    "campaign_id": "23612966133",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | DYN Catchall",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 83,
+    "incrementalConv": 1.5,
+    "incrementalCost": 102.39,
+    "projectedCpa": 66.57,
+    "profitable": true
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "23619183073",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "23619183073",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "23619183073",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "23619183073",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 6% vs prior 14d.",
+    "campaign_id": "23619183073",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "23619183073",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+    "strategy": "MAXIMIZE_CONVERSIONS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 7.1 incremental conv at projected CPA $41.83 if budget loosens.",
+    "campaign_id": "23619183073",
+    "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+    "strategy": "MAXIMIZE_CONVERSIONS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 222,
+    "incrementalConv": 7.1,
+    "incrementalCost": 297.81,
+    "projectedCpa": 41.83,
+    "profitable": true
+  }
+]

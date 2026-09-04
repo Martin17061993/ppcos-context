@@ -1,0 +1,189 @@
+{
+  "generated_by": "analyze.js (Phase 4–6 real scorer)",
+  "module": "nca-lifecycle",
+  "weight": 12,
+  "campaigns": [
+    {
+      "campaign_id": "18788654586",
+      "campaign_name": "EX I WW I PMAX I SCALING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 85,
+      "band": "watch",
+      "confidence": "low",
+      "metrics": {
+        "nca_mode": "BID_HIGHER_FOR_NEW_CUSTOMER",
+        "premium_value": "",
+        "high_lifetime_value_present": false,
+        "value_premium_check": "skipped-no-ltv"
+      },
+      "findings": [
+        {
+          "type": "value-premium",
+          "status": "skipped",
+          "premium_value": "",
+          "detail": "NCA premium configured (value ) but new-vs-existing LTV is ABSENT — value-premium validation (PMX-D22) SKIPPED. Ask the user for the new-vs-existing value/LTV premium; if genuinely unavailable, leave SKIPPED and route strategy to /strategy-specialist.",
+          "handoff": "/strategy-specialist"
+        },
+        {
+          "type": "nca-intent",
+          "mode": "BID_HIGHER_FOR_NEW_CUSTOMER",
+          "detail": "Mode BID_HIGHER_FOR_NEW_CUSTOMER — bids a premium for new customers while still serving existing ones. Confirm this matches intent; validate the premium (see value-premium).",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20289440565",
+      "campaign_name": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 85,
+      "band": "watch",
+      "confidence": "low",
+      "metrics": {
+        "nca_mode": "BID_HIGHER_FOR_NEW_CUSTOMER",
+        "premium_value": "",
+        "high_lifetime_value_present": false,
+        "value_premium_check": "skipped-no-ltv"
+      },
+      "findings": [
+        {
+          "type": "value-premium",
+          "status": "skipped",
+          "premium_value": "",
+          "detail": "NCA premium configured (value ) but new-vs-existing LTV is ABSENT — value-premium validation (PMX-D22) SKIPPED. Ask the user for the new-vs-existing value/LTV premium; if genuinely unavailable, leave SKIPPED and route strategy to /strategy-specialist.",
+          "handoff": "/strategy-specialist"
+        },
+        {
+          "type": "nca-intent",
+          "mode": "BID_HIGHER_FOR_NEW_CUSTOMER",
+          "detail": "Mode BID_HIGHER_FOR_NEW_CUSTOMER — bids a premium for new customers while still serving existing ones. Confirm this matches intent; validate the premium (see value-premium).",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20311845501",
+      "campaign_name": "EX I FRA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 80,
+      "band": "watch",
+      "confidence": "low",
+      "metrics": {
+        "nca_mode": "TARGET_NEW_CUSTOMER",
+        "premium_value": null,
+        "high_lifetime_value_present": false,
+        "value_premium_check": "not-configured"
+      },
+      "findings": [
+        {
+          "type": "nca-intent",
+          "mode": "TARGET_NEW_CUSTOMER",
+          "detail": "Mode TARGET_NEW_CUSTOMER — this campaign bids ONLY for new customers (existing customers excluded). High-impact; CONFIRM this matches the intended role. Unresolved acquisition strategy routes to /strategy-specialist.",
+          "handoff": "/strategy-specialist"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20369175508",
+      "campaign_name": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+      "vertical": "ecom",
+      "setup": "feed-only",
+      "score": 80,
+      "band": "watch",
+      "confidence": "low",
+      "metrics": {
+        "nca_mode": "TARGET_NEW_CUSTOMER",
+        "premium_value": null,
+        "high_lifetime_value_present": false,
+        "value_premium_check": "not-configured"
+      },
+      "findings": [
+        {
+          "type": "nca-intent",
+          "mode": "TARGET_NEW_CUSTOMER",
+          "detail": "Mode TARGET_NEW_CUSTOMER — this campaign bids ONLY for new customers (existing customers excluded). High-impact; CONFIRM this matches the intended role. Unresolved acquisition strategy routes to /strategy-specialist.",
+          "handoff": "/strategy-specialist"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20521524704",
+      "campaign_name": "EX I USA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 85,
+      "band": "watch",
+      "confidence": "low",
+      "metrics": {
+        "nca_mode": "BID_HIGHER_FOR_NEW_CUSTOMER",
+        "premium_value": "",
+        "high_lifetime_value_present": false,
+        "value_premium_check": "skipped-no-ltv"
+      },
+      "findings": [
+        {
+          "type": "value-premium",
+          "status": "skipped",
+          "premium_value": "",
+          "detail": "NCA premium configured (value ) but new-vs-existing LTV is ABSENT — value-premium validation (PMX-D22) SKIPPED. Ask the user for the new-vs-existing value/LTV premium; if genuinely unavailable, leave SKIPPED and route strategy to /strategy-specialist.",
+          "handoff": "/strategy-specialist"
+        },
+        {
+          "type": "nca-intent",
+          "mode": "BID_HIGHER_FOR_NEW_CUSTOMER",
+          "detail": "Mode BID_HIGHER_FOR_NEW_CUSTOMER — bids a premium for new customers while still serving existing ones. Confirm this matches intent; validate the premium (see value-premium).",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "21127105111",
+      "campaign_name": "EX I WW I PMAX I PROSPECTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 80,
+      "band": "watch",
+      "confidence": "low",
+      "metrics": {
+        "nca_mode": "TARGET_NEW_CUSTOMER",
+        "premium_value": null,
+        "high_lifetime_value_present": false,
+        "value_premium_check": "not-configured"
+      },
+      "findings": [
+        {
+          "type": "nca-intent",
+          "mode": "TARGET_NEW_CUSTOMER",
+          "detail": "Mode TARGET_NEW_CUSTOMER — this campaign bids ONLY for new customers (existing customers excluded). High-impact; CONFIRM this matches the intended role. Unresolved acquisition strategy routes to /strategy-specialist.",
+          "handoff": "/strategy-specialist"
+        }
+      ]
+    },
+    {
+      "campaign_id": "21137012770",
+      "campaign_name": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+      "vertical": "ecom",
+      "setup": "feed-only",
+      "score": 80,
+      "band": "watch",
+      "confidence": "low",
+      "metrics": {
+        "nca_mode": "TARGET_NEW_CUSTOMER",
+        "premium_value": null,
+        "high_lifetime_value_present": false,
+        "value_premium_check": "not-configured"
+      },
+      "findings": [
+        {
+          "type": "nca-intent",
+          "mode": "TARGET_NEW_CUSTOMER",
+          "detail": "Mode TARGET_NEW_CUSTOMER — this campaign bids ONLY for new customers (existing customers excluded). High-impact; CONFIRM this matches the intended role. Unresolved acquisition strategy routes to /strategy-specialist.",
+          "handoff": "/strategy-specialist"
+        }
+      ]
+    }
+  ]
+}

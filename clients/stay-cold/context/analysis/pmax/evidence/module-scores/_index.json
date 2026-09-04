@@ -1,0 +1,447 @@
+{
+  "generated_by": "analyze.js (all 9 module scorers real: brand-defense, url-expansion, nca-lifecycle, asset-groups, asset-performance, audience-signals, feed-integration, channel-allocation, conversion-signal)",
+  "real_scorers": [
+    "brand-defense",
+    "url-expansion",
+    "nca-lifecycle",
+    "asset-groups",
+    "asset-performance",
+    "audience-signals",
+    "feed-integration",
+    "channel-allocation",
+    "conversion-signal"
+  ],
+  "run": "full",
+  "modules_run": [
+    "feed-integration",
+    "conversion-signal",
+    "asset-groups",
+    "brand-defense",
+    "nca-lifecycle",
+    "asset-performance",
+    "audience-signals",
+    "channel-allocation",
+    "url-expansion"
+  ],
+  "is_full_run": true,
+  "fixtures_applied": null,
+  "weights": {
+    "feed-integration": 20,
+    "conversion-signal": 18,
+    "asset-groups": 18,
+    "brand-defense": 15,
+    "nca-lifecycle": 12,
+    "asset-performance": 12,
+    "audience-signals": 10,
+    "channel-allocation": 8,
+    "url-expansion": 5
+  },
+  "campaigns": [
+    {
+      "campaign_id": "18788654586",
+      "campaign_name": "EX I WW I PMAX I SCALING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "denominator": 80,
+      "combined_score": 97,
+      "combined_band": "strong",
+      "scoped_score": null,
+      "scoped_band": null,
+      "module_scores": [
+        {
+          "token": "feed-integration",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "conversion-signal",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "asset-groups",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "brand-defense",
+          "score": 98,
+          "band": "strong"
+        },
+        {
+          "token": "nca-lifecycle",
+          "score": 85,
+          "band": "watch"
+        },
+        {
+          "token": "asset-performance",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "audience-signals",
+          "score": 93,
+          "band": "strong"
+        },
+        {
+          "token": "channel-allocation",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "url-expansion",
+          "score": 100,
+          "band": "strong"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20289440565",
+      "campaign_name": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+      "vertical": "ecom",
+      "setup": "full",
+      "denominator": 80,
+      "combined_score": 97,
+      "combined_band": "strong",
+      "scoped_score": null,
+      "scoped_band": null,
+      "module_scores": [
+        {
+          "token": "feed-integration",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "conversion-signal",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "asset-groups",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "brand-defense",
+          "score": 97,
+          "band": "strong"
+        },
+        {
+          "token": "nca-lifecycle",
+          "score": 85,
+          "band": "watch"
+        },
+        {
+          "token": "asset-performance",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "audience-signals",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "channel-allocation",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "url-expansion",
+          "score": 100,
+          "band": "strong"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20311845501",
+      "campaign_name": "EX I FRA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "denominator": 80,
+      "combined_score": 97,
+      "combined_band": "strong",
+      "scoped_score": null,
+      "scoped_band": null,
+      "module_scores": [
+        {
+          "token": "feed-integration",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "conversion-signal",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "asset-groups",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "brand-defense",
+          "score": 99,
+          "band": "strong"
+        },
+        {
+          "token": "nca-lifecycle",
+          "score": 80,
+          "band": "watch"
+        },
+        {
+          "token": "asset-performance",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "audience-signals",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "channel-allocation",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "url-expansion",
+          "score": 100,
+          "band": "strong"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20369175508",
+      "campaign_name": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+      "vertical": "ecom",
+      "setup": "feed-only",
+      "denominator": 60,
+      "combined_score": 94,
+      "combined_band": "strong",
+      "scoped_score": null,
+      "scoped_band": null,
+      "module_scores": [
+        {
+          "token": "feed-integration",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "conversion-signal",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "asset-groups",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "brand-defense",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "nca-lifecycle",
+          "score": 80,
+          "band": "watch"
+        },
+        {
+          "token": "asset-performance",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "audience-signals",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "channel-allocation",
+          "score": 87,
+          "band": "watch"
+        },
+        {
+          "token": "url-expansion",
+          "score": 100,
+          "band": "strong"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20521524704",
+      "campaign_name": "EX I USA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "denominator": 80,
+      "combined_score": 96,
+      "combined_band": "strong",
+      "scoped_score": null,
+      "scoped_band": null,
+      "module_scores": [
+        {
+          "token": "feed-integration",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "conversion-signal",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "asset-groups",
+          "score": 95,
+          "band": "strong"
+        },
+        {
+          "token": "brand-defense",
+          "score": 95,
+          "band": "strong"
+        },
+        {
+          "token": "nca-lifecycle",
+          "score": 85,
+          "band": "watch"
+        },
+        {
+          "token": "asset-performance",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "audience-signals",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "channel-allocation",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "url-expansion",
+          "score": 100,
+          "band": "strong"
+        }
+      ]
+    },
+    {
+      "campaign_id": "21127105111",
+      "campaign_name": "EX I WW I PMAX I PROSPECTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "denominator": 80,
+      "combined_score": 95,
+      "combined_band": "strong",
+      "scoped_score": null,
+      "scoped_band": null,
+      "module_scores": [
+        {
+          "token": "feed-integration",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "conversion-signal",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "asset-groups",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "brand-defense",
+          "score": 96,
+          "band": "strong"
+        },
+        {
+          "token": "nca-lifecycle",
+          "score": 80,
+          "band": "watch"
+        },
+        {
+          "token": "asset-performance",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "audience-signals",
+          "score": 92,
+          "band": "strong"
+        },
+        {
+          "token": "channel-allocation",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "url-expansion",
+          "score": 100,
+          "band": "strong"
+        }
+      ]
+    },
+    {
+      "campaign_id": "21137012770",
+      "campaign_name": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+      "vertical": "ecom",
+      "setup": "feed-only",
+      "denominator": 60,
+      "combined_score": 96,
+      "combined_band": "strong",
+      "scoped_score": null,
+      "scoped_band": null,
+      "module_scores": [
+        {
+          "token": "feed-integration",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "conversion-signal",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "asset-groups",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "brand-defense",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "nca-lifecycle",
+          "score": 80,
+          "band": "watch"
+        },
+        {
+          "token": "asset-performance",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "audience-signals",
+          "score": null,
+          "band": "not-applicable"
+        },
+        {
+          "token": "channel-allocation",
+          "score": 100,
+          "band": "strong"
+        },
+        {
+          "token": "url-expansion",
+          "score": 100,
+          "band": "strong"
+        }
+      ]
+    }
+  ]
+}

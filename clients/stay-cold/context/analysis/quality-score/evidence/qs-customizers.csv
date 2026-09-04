@@ -1,0 +1,6 @@
+campaign_id,campaign_name,ad_group_id,ad_group_name,has_kw_level_bindings,kw_level_keyword_count,kw_level_attributes,has_ag_level_bindings,ag_level_attributes,rsa_references_customizers,referenced_attribute_names,missing_attribute_names,static_attribute_names,effective_resolution,integrity_status,headline_test_mode
+17820068572,EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types,142609568599,STAN I BROAD I HOME,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+20530080445,EX | FRA | SEARCH | BRAND,151062191217,FRA | STAN | BRAND,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+20520282363,EX | SKANDI | SEARCH | BRAND,152816606829,SWE | STAN | BRAND,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+20520677694,EX | DE | SEARCH | BRAND,154062129540,DE | STAN | BRAND (EN),false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+20520258918,EX | USA | SEARCH | BRAND,158916156691,USA | STAN | BRAND,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD

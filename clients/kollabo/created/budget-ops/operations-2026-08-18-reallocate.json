@@ -1,0 +1,72 @@
+{
+  "description": "Budget-Umschichtung 2026-08-18 — budget-neutral, Netto 0. Quelle: /budget-auditor + /bidding-auditor + /quality-score-auditor (alle 2026-08-18).",
+  "generated_from": "context/analysis/budget/budget-audit.md",
+  "generated_at": "2026-08-18T00:00:00Z",
+  "total_operations": 3,
+  "operations": [
+    {
+      "type": "update",
+      "resource": "campaign_budget",
+      "resource_name": "customers/1487707588/campaignBudgets/15306076720",
+      "fields": {
+        "amount_micros": 4000000
+      },
+      "meta": {
+        "action_id": "BUD-E-REALLOCATE",
+        "campaign": "EX | 25 | CH | SEARCH | LEAD | Abdichter",
+        "from": "5.00 CHF/Tag",
+        "to": "4.00 CHF/Tag",
+        "delta": "-1.00 (-20%)",
+        "rationale": "CPA 152,16 = 2,99x Konto-Oe (50,92). Guardrail #5 Schwelle 76,38 ueberschritten. Reduktion auf 4,00 haelt das 3-4-CHF-Minimum aus Guardrail #10 (keine Profession pausieren).",
+        "confirmed": true
+      }
+    },
+    {
+      "type": "update",
+      "resource": "campaign_budget",
+      "resource_name": "customers/1487707588/campaignBudgets/14815203560",
+      "fields": {
+        "amount_micros": 6400000
+      },
+      "meta": {
+        "action_id": "BUD-E-REALLOCATE",
+        "campaign": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+        "from": "8.00 CHF/Tag",
+        "to": "6.40 CHF/Tag",
+        "delta": "-1.60 (-20%)",
+        "rationale": "CPA 130,31 = 2,56x Konto-Oe. Dreifach belegt: QS faellt 7->5 (DECLINING_SHARP), CPC steigt 1,84->2,30->2,54 (BID-D23). Schritt exakt -20% (Guardrail #8).",
+        "confirmed": true
+      }
+    },
+    {
+      "type": "update",
+      "resource": "campaign_budget",
+      "resource_name": "customers/1487707588/campaignBudgets/14820960147",
+      "fields": {
+        "amount_micros": 28600000
+      },
+      "meta": {
+        "action_id": "BUD-E-REALLOCATE",
+        "campaign": "EX | DE | DACH | SEARCH | LEAD | UMLAND TEST",
+        "from": "26.00 CHF/Tag",
+        "to": "28.60 CHF/Tag",
+        "delta": "+2.60 (+10%)",
+        "rationale": "Einzige Kampagne mit belegtem Limitierungs-Wechsel: Rang-Verlust 79,9->47,1%, Budget-Verlust 3,4->31,5% (7T vor/nach Throttle-Entfernung 11.08.). Zugleich eine von nur zwei Kampagnen ueber der Smart-Bidding-Lernschwelle (16 Conv/30T). Saettigungsdeckel Guardrail #1 bei ~85 CHF/Tag. Schritt +10%, unter dem 20%-Cap.",
+        "confirmed": true,
+        "peer_confirmations": [
+          {
+            "warn": "Bid-Strategy-Wechsel am 2026-08-11 (tCPA 11 entfernt -> Max Conversions ohne Ziel), 7 Tage her, Matrix-Fenster 14 Tage",
+            "confirmed_by": "user",
+            "confirmed_at": "2026-08-18",
+            "reason": "Ausdrueckliche Freigabe des Nutzers am 18.08. Der Budget-Schritt ist die gewollte Folge der Throttle-Entfernung: die Kampagne ist dadurch von rang- auf budget-limitiert gewechselt (Rang-Verlust 79,9->47,1%, Budget-Verlust 3,4->31,5%). Nachkontrolle am 25.08. ist terminiert."
+          }
+        ]
+      }
+    }
+  ],
+  "user_approval": {
+    "granted": true,
+    "at": "2026-08-18",
+    "scope": "live apply, 3 ops, budget-neutral"
+  }
+}

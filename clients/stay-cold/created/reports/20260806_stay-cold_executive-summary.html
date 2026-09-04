@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined executive summary — Stay Cold Apparel</title>
+    <style>
+        :root {
+            --color-primary: #1e293b;
+            --color-secondary: #334155;
+            --color-accent: #0ea5e9;
+            --color-bg: #ffffff;
+            --color-bg-alt: #f8fafc;
+            --color-text: #0f172a;
+            --color-text-light: #64748b;
+            --color-border: #e0e0e0;
+            --color-success: #22c55e;
+            --color-warning: #f59e0b;
+            --color-danger: #ef4444;
+            --color-info: #3b82f6;
+            --color-skip: #94a3b8;
+            --font-heading: system-ui, -apple-system, 'Segoe UI', sans-serif;
+            --font-body: system-ui, -apple-system, 'Segoe UI', sans-serif;
+            --container-max: 900px;
+            --border-radius: 8px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: var(--font-body); color: var(--color-text); background: var(--color-bg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        .container { max-width: var(--container-max); margin: 0 auto; padding: 0 32px; }
+        .report-header { background: var(--color-primary); color: #ffffff; padding: 40px 0; }
+        .report-header .container { display: flex; align-items: center; gap: 24px; }
+        .report-header h1 { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: #ffffff; margin: 0; }
+        .report-header .tagline { font-size: 0.9rem; opacity: 0.8; margin-top: 4px; }
+        .report-meta { background: var(--color-bg-alt); border-bottom: 1px solid var(--color-border); padding: 20px 0; }
+        .report-meta .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+        .report-meta h2 { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: var(--color-primary); margin: 0; border: none; padding: 0; }
+        .meta-details { display: flex; gap: 24px; font-size: 0.9rem; color: var(--color-text-light); flex-wrap: wrap; }
+        h2 { font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; color: var(--color-primary); margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--color-primary); }
+        h3 { font-family: var(--font-heading); font-size: 1.1rem; font-weight: 600; color: var(--color-primary); margin: 24px 0 12px; }
+        p { margin-bottom: 12px; }
+        .score-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: var(--border-radius); font-weight: 700; font-size: 1.1rem; }
+        .score-badge.excellent { background: #dcfce7; color: #166534; }
+        .score-badge.good { background: #dbeafe; color: #1e40af; }
+        .score-badge.needs-attention { background: #fef3c7; color: #92400e; }
+        .score-badge.critical { background: #fee2e2; color: #991b1b; }
+        .score-badge.skip { background: #f1f5f9; color: #64748b; }
+        .overall-score { text-align: center; padding: 32px; margin: 24px 0; background: var(--color-bg-alt); border-radius: var(--border-radius); border: 1px solid var(--color-border); }
+        .overall-score .score-value { font-size: 3rem; font-weight: 800; font-family: var(--font-heading); color: var(--color-primary); }
+        .overall-score .score-grade { font-size: 1.1rem; color: var(--color-text-light); margin-top: 4px; }
+        .progress-bar { width: 100%; height: 8px; background: var(--color-border); border-radius: 4px; overflow: hidden; }
+        .progress-bar .fill { height: 100%; border-radius: 4px; }
+        .progress-bar .fill.excellent { background: var(--color-success); }
+        .progress-bar .fill.good { background: var(--color-info); }
+        .progress-bar .fill.needs-attention { background: var(--color-warning); }
+        .progress-bar .fill.critical { background: var(--color-danger); }
+        .progress-bar .fill.skip { background: var(--color-skip); }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
+        thead { background: var(--color-primary); color: #ffffff; }
+        th { padding: 10px 12px; text-align: left; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        td { padding: 10px 12px; border-bottom: 1px solid var(--color-border); vertical-align: top; }
+        tbody tr:nth-child(even) { background: var(--color-bg-alt); }
+        .status-pill { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; }
+        .status-pill.pass { background: #dcfce7; color: #166534; }
+        .status-pill.warn { background: #fef3c7; color: #92400e; }
+        .status-pill.fail { background: #fee2e2; color: #991b1b; }
+        .status-pill.skip { background: #f1f5f9; color: #64748b; }
+        .issue-card { border-left: 4px solid var(--color-danger); background: #fef2f2; padding: 16px 20px; border-radius: 0 var(--border-radius) var(--border-radius) 0; margin: 12px 0; }
+        .issue-card.warning { border-left-color: var(--color-warning); background: #fffbeb; }
+        .issue-card .issue-id { font-weight: 700; color: var(--color-danger); font-size: 0.85rem; }
+        .issue-card.warning .issue-id { color: var(--color-warning); }
+        .issue-card .issue-title { font-weight: 600; color: var(--color-text); margin-top: 4px; }
+        .issue-card .issue-impact { font-size: 0.9rem; color: var(--color-text-light); margin-top: 4px; }
+        .alert-banner { background: #991b1b; color: #ffffff; border-radius: var(--border-radius); padding: 24px 28px; margin: 24px 0; }
+        .alert-banner .alert-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.85; font-weight: 700; }
+        .alert-banner h3 { color: #ffffff; margin: 8px 0 12px; font-size: 1.35rem; }
+        .alert-banner p { margin-bottom: 10px; }
+        .alert-banner p:last-child { margin-bottom: 0; }
+        .alert-banner strong { color: #ffffff; }
+        .module-section { margin: 24px 0; padding: 24px; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--border-radius); }
+        .module-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; gap: 12px; flex-wrap: wrap; }
+        .module-header h3 { margin: 0; font-size: 1.1rem; }
+        .scores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 24px 0; }
+        .score-card { padding: 20px; border-radius: var(--border-radius); border: 1px solid var(--color-border); text-align: center; }
+        .score-card .module-name { font-size: 0.85rem; color: var(--color-text-light); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+        .score-card .module-score { font-size: 2rem; font-weight: 800; font-family: var(--font-heading); }
+        .score-card .module-grade { font-size: 0.85rem; margin-top: 4px; }
+        .recommendations { background: var(--color-bg-alt); border-radius: var(--border-radius); padding: 24px; margin: 24px 0; }
+        .recommendations ol { padding-left: 20px; }
+        .recommendations li { padding: 8px 0; line-height: 1.5; }
+        .callout { border-left: 4px solid var(--color-accent); background: #f0f9ff; padding: 16px 20px; border-radius: 0 var(--border-radius) var(--border-radius) 0; margin: 20px 0; }
+        .callout.neutral { border-left-color: var(--color-text-light); background: var(--color-bg-alt); }
+        .callout h3 { margin-top: 0; }
+        .exec-read p { margin-bottom: 14px; }
+        code { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 4px; padding: 1px 5px; font-size: 0.85em; font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; }
+        .alert-banner code { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); color: #ffffff; }
+        .spark { display: flex; align-items: flex-end; gap: 4px; height: 90px; margin: 16px 0 8px; }
+        .spark .bar { flex: 1; background: var(--color-info); border-radius: 2px 2px 0 0; position: relative; min-height: 3px; }
+        .spark .bar.hot { background: var(--color-danger); }
+        .spark .bar.target { background: var(--color-skip); }
+        .spark-labels { display: flex; gap: 4px; font-size: 0.62rem; color: var(--color-text-light); text-align: center; }
+        .spark-labels span { flex: 1; }
+        .report-footer { background: var(--color-primary); color: rgba(255, 255, 255, 0.8); padding: 32px 0; margin-top: 48px; font-size: 0.85rem; }
+        .report-footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+        .report-footer .company-name { font-weight: 700; color: #ffffff; }
+        .table-scroll { overflow-x: auto; }
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .report-header, .report-footer, .score-badge, .status-pill, .issue-card,
+            .score-card, thead, .overall-score, .callout, .alert-banner, .spark .bar {
+                -webkit-print-color-adjust: exact; print-color-adjust: exact;
+            }
+            .container { max-width: 100%; padding: 0 16px; }
+            .module-section, .issue-card, table, .callout, .scores-grid, .alert-banner { break-inside: avoid; }
+            h2, h3 { break-after: avoid; }
+            .report-footer { break-before: avoid; }
+        }
+        @media (max-width: 768px) {
+            .container { padding: 0 16px; }
+            .report-header .container, .report-meta .container { flex-direction: column; text-align: center; }
+            .meta-details { justify-content: center; gap: 12px; }
+            .scores-grid { grid-template-columns: 1fr; }
+            .overall-score .score-value { font-size: 2.5rem; }
+            h2 { font-size: 1.2rem; }
+            table { font-size: 0.8rem; }
+            th, td { padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="report-header">
+        <div class="container">
+            <div>
+                <h1>Google Ads audit</h1>
+                <div class="tagline">Thirteen audits — structure, bidding, budget, competition, Performance Max, targeting, keywords, landing page, placements, offer, search terms, strategy, conversion tracking &amp; Quality Score</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="report-meta">
+        <div class="container">
+            <h2>Combined executive summary</h2>
+            <div class="meta-details">
+                <span>Client: <strong>Stay Cold Apparel</strong></span>
+                <span>Date: <strong>2026-08-07</strong></span>
+                <span>Vertical: <strong>D2C e-commerce (apparel)</strong></span>
+                <span>Account: <strong>359-911-6618</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <div class="alert-banner">
+            <div class="alert-label">Requires a decision today</div>
+            <h3>Spend is running at roughly 2.7× the monthly target, and the ramp started six days ago</h3>
+            <p>The account spent about <strong>€650/day</strong> through mid-July. On 31 July that became €1,476, and the first five days of August ran <strong>€2,378 → €2,948 → €3,160 → €3,274 → €2,530</strong>. Month-to-date is <strong>€14,290</strong>; the month-end projection is <strong>€78,000–93,000 against a €32,500 target</strong>.</p>
+            <p>For calibration: the June 2026 over-scaling — documented internally as the most expensive decision period of the first half-year, where the marginal return fell to a 67-cent loss per euro spent — peaked at <strong>€62,000/month</strong>. The current daily rate is above that.</p>
+            <p><strong>The single question that matters: was this ramp authorised?</strong> If yes, it needs monitoring against the clean numbers, not the reported ones — and those are now measured exactly, so the monitoring is straightforward. If no, it needs stopping. Nothing else in this report should be acted on before that answer.</p>
+        </div>
+
+        <div class="overall-score" style="background: var(--color-primary); color: #ffffff; border: none;">
+            <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8;">Executive summary</div>
+            <div class="score-value" style="color: #ffffff;">69%</div>
+            <div class="score-grade" style="color: rgba(255,255,255,0.8);">Average across 13 audits — Needs attention</div>
+        </div>
+
+        <div class="callout neutral">
+            <strong>Read the average with care.</strong> 69% is the mean of thirteen scores: structure 75%, bidding 54, budget 47, competitive position 73, targeting 75, keywords 85, landing page 56, placements 48, offer quality 97, search terms 79, business strategy 77, conversion tracking 66 and Quality Score 61. The spread is the story — the product proposition scores 97 and the unit economics score 100, while the page that sells it scores 56. They measure different things and do not blend into one "account health" number. The <em>spread</em> is the finding: the account is well built, well targeted, poorly instrumented, currently overspending — and competitively unthreatened.
+        </div>
+
+        <h2>The one-paragraph version</h2>
+
+        <div class="exec-read">
+            <p>Three audits, run the same day, converge on one story. <strong>The account is well built and badly instrumented, and it is now spending fast into that blind spot.</strong> Structure, settings and ad-group hygiene are genuinely good — location targeting, exclusion method, ad rotation, tracking templates and Display-Network hygiene are clean across all 15 enabled campaigns, there are no shared-budget conflicts, no single-keyword ad groups and no ad groups missing ads. What is broken is the measurement, and what is urgent is the spend.</p>
+
+            <p><strong>Root cause one: conversion value reaching the bidding algorithm is inflated by exactly 1.51&times; &mdash; now measured, no longer estimated.</strong> The twelfth audit settled it. 14 of the 15 enabled campaigns override the account&rsquo;s clean default conversion goal with a custom goal containing a second, non-primary purchase action. Over the last full 30-day window the reported value series is fed by exactly two actions: the real purchase event at &euro;282,627 and that second action at &euro;143,297. The one campaign that does <em>not</em> override &mdash; Search TOF &mdash; carries no inflation at all, which confirms the mechanism from first principles rather than by inference. The consequence is not abstract: the largest campaign in the account, Shopping FOKUSPRODUKTE at &euro;12,316, reports a healthy 3.12 return but is actually at <strong>1.71 against a 1.9 break-even</strong> &mdash; it loses money on every euro. Two of the three automated scoring engines classified it as profitable and would have recommended <em>increasing</em> its budget. Those verdicts had to be overridden by hand, and the measurement now proves the overrides were right. One earlier suspicion is <em>disproven</em>: an enabled value rule adding +&euro;42.20 per conversion was flagged as a possible third inflation layer. It is not &mdash; both contributing actions average roughly &euro;140 per conversion, essentially the &euro;143 average order value, so the 1.51 factor is fully explained without it.</p>
+
+            <p><strong>Root cause two: the July budget work broke the account's own rules.</strong> FOKUSPRODUKTE was raised <strong>€550 → €1,150/day (+109%) in a single day, in two steps three minutes apart.</strong> Search TOF doubled over seven days. PROSPECTING rose 42% — on top of the increase that had already been measured at −27% and logged internally as the most expensive decision of the half-year. The documented guardrail is ±30% per step, seven days apart, and increases above +90% have a track record of nought for six. August carries no promo window on file, so there is no seasonal justification recorded.</p>
+
+            <p><strong>What is emphatically not the problem: competitors.</strong> The competitive audit — the strongest score of the four at 73 — found that across 90 days not a single campaign lost impression share. Brand visibility sits at 84–96% and is stable. The one campaign whose cost-per-click rose sharply simultaneously <em>gained</em> 11.7 points of share, which is the signature of an advertiser bidding deeper, not a competitor bidding harder. Rising costs in this account are self-inflicted.</p>
+
+            <p><strong>And the competitive audit found the cheapest fix available.</strong> The non-brand campaigns lose 90–93% of available impressions, almost entirely to ad rank. Of the six non-brand keywords carrying a Quality Score, <strong>all six show landing page experience as BELOW AVERAGE</strong> — while ad relevance is ABOVE AVERAGE on five of six and expected click-through rate is fine on all six. The ads are good; the destination pages are what cap the score at 4–7 and keep the campaigns off the page. Brand keywords, pointing at different pages, score a perfect 10. Fixing landing page experience is the only lever that recovers visibility <em>without spending anything</em>, and it lifts every non-brand keyword simultaneously. Internal documentation already flagged the "PDP truth gap" as an open risk and described it, word for word, as a "Quality Score driver" — this is the confirmation. <strong>The thirteenth audit then proved it outright.</strong> Every ad in the account — brand and non-brand alike — sends traffic to the same homepage. Google rates that page above average for brand searches and below average for non-brand searches, on 19 keywords and 9 keywords respectively, with no exception in either direction. Same page, opposite verdicts. A slow or broken page would penalise both equally; only a <em>relevance</em> problem can split that cleanly.</p>
+
+            <p>A quieter finding: <strong>someone is rebuilding the Demand Gen and Video stack right now</strong> — 113 change-log entries yesterday and 38 today, concentrated on paused campaigns including one previously profiled as healthy at 5.78 return and left idle. Likely good news, but it needs budget that is not in the current plan, and a known tracking fault must be disabled first or it will corrupt bidding signal from day one.</p>
+
+            <p>Nothing here is fixed by spending more. Everything here is configuration, governance, and one landing page.</p>
+        </div>
+
+        <h2>Audit overview</h2>
+        <div class="scores-grid">
+            <div class="score-card">
+                <div class="module-name">Account structure</div>
+                <div class="module-score" style="color: var(--color-info);">75%</div>
+                <div class="module-grade">Good</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill good" style="width: 75%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">24 diagnostics · 5 modules</div>
+            </div>
+            <div class="score-card">
+                <div class="module-name">Bidding health</div>
+                <div class="module-score" style="color: var(--color-danger);">54%</div>
+                <div class="module-grade">Critical</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill critical" style="width: 54%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">27 diagnostics · 7 modules</div>
+            </div>
+            <div class="score-card">
+                <div class="module-name">Budget health</div>
+                <div class="module-score" style="color: var(--color-danger);">47%</div>
+                <div class="module-grade">Critical</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill critical" style="width: 47%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">19 diagnostics · 5 modules</div>
+            </div>
+            <div class="score-card">
+                <div class="module-name">Competitive position</div>
+                <div class="module-score" style="color: var(--color-info);">73%</div>
+                <div class="module-grade">Good</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill good" style="width: 73%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">7 diagnostics · 90-day window</div>
+            </div>
+            <div class="score-card">
+                <div class="module-name">Business strategy</div>
+                <div class="module-score" style="color: var(--color-info);">77%</div>
+                <div class="module-grade">Good</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill good" style="width: 77%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">Unit economics 100% · goals 56%</div>
+            </div>
+            <div class="score-card">
+                <div class="module-name">Search terms</div>
+                <div class="module-score" style="color: var(--color-info);">79%</div>
+                <div class="module-grade">Good</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill good" style="width: 79%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">26 diagnostics · 678,033 terms</div>
+            </div>
+            <div class="score-card">
+                <div class="module-name">Offer quality</div>
+                <div class="module-score" style="color: var(--color-success);">97%</div>
+                <div class="module-grade">Excellent</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill excellent" style="width: 97%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">16 diagnostics · zero failures</div>
+            </div>
+            <div class="score-card">
+                <div class="module-name">Placements</div>
+                <div class="module-score" style="color: var(--color-danger);">48%</div>
+                <div class="module-grade">Critical</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill critical" style="width: 48%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">10 diagnostics · 260,516 placements</div>
+            </div>
+            <div class="score-card">
+                <div class="module-name">Landing page</div>
+                <div class="module-score" style="color: var(--color-warning);">56%</div>
+                <div class="module-grade">Needs attention</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill needs-attention" style="width: 56%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">40 diagnostics · 6 modules</div>
+            </div>
+            <div class="score-card">
+                <div class="module-name">Keyword health</div>
+                <div class="module-score" style="color: var(--color-info);">85%</div>
+                <div class="module-grade">Good</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill good" style="width: 85%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">17 diagnostics · 37 keywords</div>
+            </div>
+            <div class="score-card">
+                <div class="module-name">Geo, schedule &amp; audience</div>
+                <div class="module-score" style="color: var(--color-info);">75%</div>
+                <div class="module-grade">Good</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill good" style="width: 75%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">14 diagnostics · 3 modules</div>
+            </div>
+            <div class="score-card">
+                <div class="module-name">Conversion tracking</div>
+                <div class="module-score" style="color: var(--color-warn);">66%</div>
+                <div class="module-grade">Needs attention</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill warn" style="width: 66%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">47 actions · 5 scored modules</div>
+            </div>
+            <div class="score-card">
+                <div class="module-name">Quality Score</div>
+                <div class="module-score" style="color: var(--color-warn);">61%</div>
+                <div class="module-grade">Needs attention</div>
+                <div style="margin-top: 8px;"><div class="progress-bar"><div class="fill warn" style="width: 61%"></div></div></div>
+                <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 8px;">16 diagnostics · 37 keywords</div>
+            </div>
+        </div>
+
+        <h2>Daily spend — the finding in one chart</h2>
+        <div class="spark">
+            <div class="bar" style="height: 20%"></div>
+            <div class="bar" style="height: 18%"></div>
+            <div class="bar" style="height: 15%"></div>
+            <div class="bar" style="height: 21%"></div>
+            <div class="bar" style="height: 19%"></div>
+            <div class="bar" style="height: 20%"></div>
+            <div class="bar" style="height: 25%"></div>
+            <div class="bar" style="height: 21%"></div>
+            <div class="bar" style="height: 18%"></div>
+            <div class="bar" style="height: 27%"></div>
+            <div class="bar" style="height: 21%"></div>
+            <div class="bar" style="height: 20%"></div>
+            <div class="bar" style="height: 22%"></div>
+            <div class="bar" style="height: 23%"></div>
+            <div class="bar" style="height: 45%"></div>
+            <div class="bar hot" style="height: 73%"></div>
+            <div class="bar hot" style="height: 90%"></div>
+            <div class="bar hot" style="height: 97%"></div>
+            <div class="bar hot" style="height: 100%"></div>
+            <div class="bar hot" style="height: 77%"></div>
+        </div>
+        <div class="spark-labels">
+            <span>10.7.</span><span></span><span></span><span></span><span>15.7.</span><span></span><span></span><span></span><span></span><span>25.7.</span><span></span><span></span><span></span><span>30.7.</span><span>31.7.</span><span>1.8.</span><span>2.8.</span><span>3.8.</span><span>4.8.</span><span>5.8.</span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--color-text-light);">
+            Mid-July trough ≈ €650/day. Peak 4 August = €3,274/day. Last seven days average <strong>€2,360/day</strong> against <strong>€719/day</strong> in the seven days before — <strong>+228%</strong>. The €32,500 monthly target implies roughly €1,050/day.
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0;">
+            <div style="padding: 20px; background: #f0fdf4; border-radius: var(--border-radius); border: 1px solid #bbf7d0;">
+                <h3 style="color: #166534; margin: 0 0 12px;">Strengths</h3>
+                <ul style="padding-left: 20px; margin: 0;">
+                    <li style="padding: 4px 0; color: #166534;">Account-level defaults — 100%</li>
+                    <li style="padding: 4px 0; color: #166534;">Bid adjustments — 100%</li>
+                    <li style="padding: 4px 0; color: #166534;">Ad groups — 92%</li>
+                    <li style="padding: 4px 0; color: #166534;">Campaign settings — 89%</li>
+                    <li style="padding: 4px 0; color: #166534;">Unit economics — 100%</li>
+                    <li style="padding: 4px 0; color: #166534;">Offer quality — 97%</li>
+                    <li style="padding: 4px 0; color: #166534;">Offer urgency &amp; authenticity — 100%</li>
+                    <li style="padding: 4px 0; color: #166534;">Close-variant monitoring — 100%</li>
+                    <li style="padding: 4px 0; color: #166534;">Competitive impact — 100%</li>
+                    <li style="padding: 4px 0; color: #166534;">Schedule &amp; device — 100%</li>
+                    <li style="padding: 4px 0; color: #166534;">Portfolio health — 83%</li>
+                    <li style="padding: 4px 0; color: #166534;">Naming convention — 80%</li>
+                </ul>
+                <p style="font-size: 0.8rem; color: #166534; margin: 12px 0 0; opacity: 0.85;">
+                    Plus: no competitor is taking share. Brand visibility 84–96% and stable across all four markets.
+                </p>
+            </div>
+            <div style="padding: 20px; background: #fef2f2; border-radius: var(--border-radius); border: 1px solid #fecaca;">
+                <h3 style="color: #991b1b; margin: 0 0 12px;">Areas for improvement</h3>
+                <ul style="padding-left: 20px; margin: 0;">
+                    <li style="padding: 4px 0; color: #991b1b;">Strategy selection — 25%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Budget allocation — 40%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Budget limitation — 48%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Conversion value rules — 50%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Budget pacing — 53%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Impression share health — 50%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Account structure — 57%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Target validation — 60%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Competitive position — 66%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Audience &amp; advanced targeting — 52%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Landing page message match — 10%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Placement brand safety — 30%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Goals &amp; KPI definition — 56%</li>
+                    <li style="padding: 4px 0; color: #991b1b;">Keyword performance segmentation — 59%</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Critical issues across all three audits</h2>
+        <p style="color: var(--color-text-light); margin-bottom: 16px;">Ordered by business impact, not by diagnostic severity.</p>
+
+        <div class="issue-card warning">
+            <div class="issue-id">Search terms · ST-D01 — read this before cutting anything</div>
+            <div class="issue-title">Nearly a third of spend looks wasted. Only about a tenth of it actually is.</div>
+            <div class="issue-impact">
+                An automated scan of 678,000 search queries flags <strong>31.7% of spend as irrelevant</strong> — roughly €18,200. Broken down, that number falls apart: <strong>57% of it sits on core product terms</strong> (hoodie, shirt, tattoo, punk, goth, metal), which are the categories the business exists to sell. Another €2,100 is competitor brand names, which internal policy explicitly protects because those shoppers convert — and this run proved it: two competitor terms returned 10 and 11 conversions at three to six times the target return. A further €479 is the company's own brand name leaking into non-brand campaigns, which should be redirected, never blocked.
+                <br><br>
+                <strong>Genuinely wasteful spend is about €5,200 — roughly 9%</strong>, concentrated in adjacent-but-wrong categories (activewear, techwear, swimwear), general retailers and other artists' merchandise. Acting on the headline figure would have cut the front door of the business.
+            </div>
+        </div>
+
+        <div class="callout">
+            <h3 style="margin-bottom: 8px;">The single most useful sentence in this report</h3>
+            <p style="margin: 0;">
+                The offer scores <strong>97 out of 100 with no failures at all</strong> — the strongest asset in the business. The page that sells it to cold traffic scores 56. <strong>So the landing page problem is not a content-creation problem: the language, the proof and the scarcity mechanics already exist and are already documented.</strong> Named tattoo artists with verifiable credits, weight specs in every product title, prints tested to 200 washes, 4.6 out of 5 from 6,477 reviews, genuinely sold-out drops. None of it reaches someone searching for a punk hoodie. Fixing this is a deployment job, not a creative one.
+            </p>
+        </div>
+
+        <div class="issue-card">
+            <div class="issue-id">Landing page · LP-D15 — Critical · ROOT CAUSE</div>
+            <div class="issue-title">The words the campaigns buy do not appear on the page they send people to</div>
+            <div class="issue-impact">
+                The non-brand campaign bids on punk, goth, metal and rocker searches. On the page those clicks land on, <strong>each of those four words appears exactly zero times</strong> — across 1,716 words of copy. The headline reads "Armoured in confidence, I am unstoppable" and the hero product is an oversized t-shirt. The correlation with quality scoring is exact: the only subculture word that <em>does</em> appear is "tattoo", five times including the page title — and the two tattoo keywords are the only ones scoring 7 out of 10. Every punk, goth and metal keyword scores 4 or 5. That capped score is what produces the 64% of impressions lost to ad rank and the sub-break-even returns on €1,961 of keyword spend.
+                <br><br>
+                <strong>And the obvious fix does not exist yet.</strong> Of the 32 collection pages on the site, not one is organised around punk, goth, metal or tattoo — they are built by product type, drop, bestseller window and artist collaboration. There is no better page to point at. The fix is to add that language to the existing category pages, or build pages that carry it. Two collections already named "featured collection prospecting" and "featured collection retargeting" suggest someone saw this coming.
+            </div>
+        </div>
+
+        <div class="issue-card">
+            <div class="issue-id">Budget · BUD-D10 — Critical</div>
+            <div class="issue-title">Projected month-end spend €78,000–93,000 against a €32,500 target</div>
+            <div class="issue-impact">
+                +140% to +185% over target, with no promo window on file for August. Driven by three budget increases between 17 and 24 July of +42%, +100% and +109% — all outside the documented ±30%-per-step guardrail, two of them stacked with simultaneous bid-target changes, all executed by a single operator via the web interface.
+            </div>
+        </div>
+
+        <div class="issue-card">
+            <div class="issue-id">Budget · BUD-D04 &amp; BUD-D14 — Critical</div>
+            <div class="issue-title">The largest campaign in the account is below break-even, budget-limited, and was just doubled</div>
+            <div class="issue-impact">
+                Shopping FOKUSPRODUKTE: €12,316 = 40% of spend, clean return <strong>1.72 against a 1.9 break-even</strong>, roughly −€0.10 contribution per euro. Its budget went €550 → €1,150/day on 24 July. Both scoring engines rated it profitable because they read the inflated series — corrected by hand. On the real numbers this is a <em>reduce</em> candidate, not a hold.
+            </div>
+        </div>
+
+        <div class="issue-card">
+            <div class="issue-id">Bidding · BID-D26 · Account · AUD-D24 — Critical</div>
+            <div class="issue-title">Conversion value reaching the algorithm is inflated by an unknown factor</div>
+            <div class="issue-impact">
+                14 of 15 enabled campaigns override the clean account-default conversion goal with custom goal <code>6446192748</code>, producing verified per-campaign inflation of ×1.28–1.94. Separately, an enabled value rule adds <strong>+€42.20</strong> per conversion with no visible conditions, against €16.46 documented — a 2.6× discrepancy. Until resolved, no target and no profitability-based budget decision can be trusted. The account default itself is clean; the fix is removing 14 overrides, not changing the default.
+            </div>
+        </div>
+
+        <div class="issue-card">
+            <div class="issue-id">Account · AUD-D08 — Critical</div>
+            <div class="issue-title">Five enabled Performance Max campaigns have served zero impressions — every one of their asset groups is switched off</div>
+            <div class="issue-impact">
+                <strong>Root cause confirmed.</strong> Across those five campaigns there are 52 asset groups and <strong>not one is enabled</strong> — all are paused. A Performance Max campaign whose asset groups are all paused cannot serve, whatever its budget or bidding says. Product targeting is entirely intact (98–122 listing-group rows each, all feed-connected), so this was never a feed problem. The asset group names date it: <em>BFCM I, Black Week, BFCM'25 RoB Purple, Grey Dye, Intra Day</em> — Black Friday 2025 and drop-campaign creative, paused when those promos ended roughly eight months ago. The campaigns were left switched on around them, holding €359/day that cannot be spent. Fix is two minutes per campaign: enable one asset group, or pause the campaign.
+            </div>
+        </div>
+
+        <div class="issue-card">
+            <div class="issue-id">Competitive · CA-D02 &amp; CA-D08 — High</div>
+            <div class="issue-title">Landing page experience is capping Quality Score on every scored non-brand keyword</div>
+            <div class="issue-impact">
+                The non-brand Search campaign loses <strong>92.6%</strong> of available impressions and the dynamic search campaign loses <strong>90.0%</strong> — almost entirely to ad rank, not budget. Of the six non-brand keywords carrying a Quality Score, <strong>six of six show landing page experience as BELOW AVERAGE</strong>, while ad relevance is ABOVE AVERAGE on five of six. Scores land at 4–7, capped by that single component. Brand keywords, pointing at different pages, score 10 with all three components ABOVE AVERAGE. <strong>This is the only finding in all four audits that recovers visibility without spending an additional euro</strong>, and it lifts every non-brand keyword at once.
+            </div>
+        </div>
+
+        <div class="issue-card">
+            <div class="issue-id">Placements · PL-D05 — High</div>
+            <div class="issue-title">A 38,000-entry brand-safety list was built, then attached to nothing that runs</div>
+            <div class="issue-impact">
+                The account contains a serious exclusion list — <strong>38,208 entries</strong> covering 24,553 mobile apps, 7,759 YouTube channels, 5,757 placements and 139 of the 140 app categories Google offers. Real work went into it. It is attached to exactly three campaigns, and all three are removed or paused. <strong>None of the seven campaigns currently serving placements is covered.</strong> Meanwhile Performance Max is placing <strong>three million impressions across 20,395 placements</strong>, 3,301 of them inside mobile apps, with no exclusion coverage and only one content label blocked account-wide.
+                <br><br>
+                <strong>Important: no money is being wasted here.</strong> Total flagged spend is €118, all of it historical from one paused campaign. This is brand exposure on unvetted surfaces, not budget leakage — but for a brand whose whole proposition is aesthetic, that is worth fixing. The fix is also cheap: the exclusion material already exists and simply needs promoting to account level, where it will apply to Performance Max. And it should happen <em>before</em> the Demand Gen rebuild currently in progress goes live.
+            </div>
+        </div>
+
+        <div class="issue-card">
+            <div class="issue-id">Strategy · D14 — Critical</div>
+            <div class="issue-title">Eleven audits have optimised toward targets nobody has approved</div>
+            <div class="issue-impact">
+                The business context file states it in bold: the performance targets everything in this report is measured against were <strong>derived by the analyst, not set by the business</strong>, and require sign-off. Google does not appear in the company's own marketing strategy at all — it is listed only as an open question, and that strategy document has sat in draft since June with Google's role marked "not ready." No 2025 revenue actual or 2026 target is documented anywhere.
+                <br><br>
+                <strong>The economics underneath are excellent — a 75% gross margin and a carefully derived 1.9 break-even, scoring a clean 100%.</strong> The targets built on them are sensible. They are simply not agreed. Getting sign-off is the highest-leverage action in this entire report because it costs nothing and changes no campaign setting — it converts a body of provisional analysis into an agreed plan. Frame it as the answer to the open question the strategy document has been carrying since June.
+            </div>
+        </div>
+
+        <div class="issue-card warning">
+            <div class="issue-id">Governance — flagged, not scored</div>
+            <div class="issue-title">Budget authority does not match the documented operating model</div>
+            <div class="issue-impact">
+                Every budget change and every bid-target change in the last 30 days came from one external address via the web interface, plus 266 further changes through Google Ads Editor with no attribution at all. The documented model is "analyse and propose externally, execute internally, no exceptions." Worth resolving as a question — proposals may currently be routed to someone who is not making these decisions.
+            </div>
+        </div>
+
+        <div class="issue-card warning">
+            <div class="issue-id">Account · AUD-D06 — High</div>
+            <div class="issue-title">Brand match types have drifted back to a configuration measured as a +278% loss when reversed</div>
+            <div class="issue-impact">
+                DE brand runs 5 of 5 keywords on broad match; SKANDI 4 of 4. FRA runs all exact. Match-type restrictiveness and clean return rank in the same order across all four markets — FRA 88.4 › USA 60.3 › DE 57.2 › SKANDI 25.8. The internal change history records removing broad match from brand as a +278% result, and the guardrails forbid it outright. Highest-confidence finding of the three audits.
+            </div>
+        </div>
+
+        <div class="issue-card warning">
+            <div class="issue-id">Timing — two campaigns clear tomorrow</div>
+            <div class="issue-title">FOKUSPRODUKTE and Search TOF are 13 days into a 14-day learning window</div>
+            <div class="issue-impact">
+                Both had budget <em>and</em> bid target changed within four minutes on 24 July, which makes their results unattributable either way. Any change today resets a window that completes on <strong>7 August</strong>. "Do nothing today" is the correct answer for these two specifically.
+            </div>
+        </div>
+
+        <h2>Clean vs reported performance</h2>
+        <p style="color: var(--color-text-light);">
+            Reported return is what the platform shows. Clean return divides it by the per-campaign inflation factor. <strong>Those factors are no longer estimates</strong> &mdash; the tracking audit measured every one directly from the platform API over 2026-06-30 to 07-29, and each material figure matched what was documented. Break-even is 1.9. This table is why no budget or target should move before the measurement is repaired.
+        </p>
+        <div class="table-scroll">
+        <table>
+            <thead>
+                <tr>
+                    <th>Campaign</th>
+                    <th style="width: 80px;">Spend</th>
+                    <th style="width: 85px;">Reported</th>
+                    <th style="width: 72px;">Factor</th>
+                    <th style="width: 80px;">Clean</th>
+                    <th style="width: 105px;">vs break-even</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Shopping — FOKUSPRODUKTE</strong></td>
+                    <td>€12,316</td><td>3.12</td><td>1.82</td><td><strong>1.71</strong></td>
+                    <td><span class="status-pill fail">Below</span></td>
+                </tr>
+                <tr>
+                    <td><strong>PMax — PROSPECTING</strong></td>
+                    <td>€11,121</td><td>4.21</td><td>1.79</td><td><strong>2.35</strong></td>
+                    <td><span class="status-pill pass">Above</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Search TOF (non-brand)</strong></td>
+                    <td>€4,697</td><td>3.74</td><td><strong>1.00</strong></td><td><strong>3.74</strong></td>
+                    <td><span class="status-pill pass">Above</span></td>
+                </tr>
+                <tr><td>Brand — DE</td><td>€1,807</td><td>87.16</td><td>1.43</td><td>60.95</td><td><span class="status-pill pass">Above</span></td></tr>
+                <tr><td>Brand — USA</td><td>€819</td><td>100.07</td><td>1.54</td><td>64.98</td><td><span class="status-pill pass">Above</span></td></tr>
+                <tr><td>PMax — OVER-INDEX</td><td>€545</td><td>4.79</td><td>1.51</td><td>3.17</td><td><span class="status-pill pass">Above</span></td></tr>
+                <tr><td><strong>DSA</strong></td><td>€515</td><td>11.40</td><td>1.90</td><td><strong>6.00</strong></td><td><span class="status-pill pass">Above</span></td></tr>
+            </tbody>
+        </table>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--color-text-light);">
+            FOKUSPRODUKTE and PROSPECTING together hold 67% of spend. Both had rising cost-per-click over the measurement period — +36% and +27% respectively. Search TOF&rsquo;s factor of exactly 1.00 is not an approximation: it is the only campaign bidding on the account default, and that default contains no second purchase action.
+        </p>
+
+        <h2>Detailed scores by audit</h2>
+
+        <div class="module-section">
+            <div class="module-header">
+                <h3>Account structure audit</h3>
+                <span class="score-badge good">75% — Good</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 12px;">24 diagnostics · 13 pass, 2 fail, 8 warn, 1 skip · 126 of 168 available points</p>
+            <div class="table-scroll">
+            <table>
+                <thead><tr><th>Module</th><th style="width: 120px;">Score</th><th>Key finding</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Structure</strong></td><td><span class="score-badge needs-attention" style="font-size:0.8rem;padding:2px 8px;">57%</span></td><td>Both failures live here — 5 zero-impression PMax campaigns and two budget-fragmentation groups.</td></tr>
+                    <tr><td><strong>Naming</strong></td><td><span class="score-badge good" style="font-size:0.8rem;padding:2px 8px;">80%</span></td><td>Two incompatible delimiters in use, so tooling that parses campaign names mis-reads 11 of 15. One name states a bid strategy it does not run.</td></tr>
+                    <tr><td><strong>Settings</strong></td><td><span class="score-badge good" style="font-size:0.8rem;padding:2px 8px;">89%</span></td><td>Display Network off everywhere, geo targeting correct on all 15, tracking template identical on all 15. Open: inconsistent search partners; auto-generated ad text on a brand campaign.</td></tr>
+                    <tr><td><strong>Ad groups</strong></td><td><span class="score-badge excellent" style="font-size:0.8rem;padding:2px 8px;">92%</span></td><td>No single-keyword groups, none missing ads, none data-starved. One weak spot: 17 keywords across four subcultures in the sole non-brand group.</td></tr>
+                    <tr><td><strong>Defaults</strong></td><td><span class="score-badge excellent" style="font-size:0.8rem;padding:2px 8px;">100%</span></td><td>Conversion goals are deliberately configured rather than left at platform defaults — which is what the check tests. The content of that configuration is root cause one.</td></tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <div class="module-section">
+            <div class="module-header">
+                <h3>Bidding audit</h3>
+                <span class="score-badge critical">54/100 — Critical</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 12px;">27 diagnostics · 30-day window · 34.4 of 64 available points (36 removed as not applicable)</p>
+            <div class="table-scroll">
+            <table>
+                <thead><tr><th>Module</th><th style="width: 120px;">Score</th><th>Key finding</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Target validation</strong></td><td><span class="score-badge needs-attention" style="font-size:0.8rem;padding:2px 8px;">60%</span></td><td>Targets pass on nominal values only. Deflated, the DSA campaign's effective target is 1.29 — below break-even, so the algorithm is instructed to buy unprofitable volume.</td></tr>
+                    <tr><td><strong>Strategy selection</strong></td><td><span class="score-badge critical" style="font-size:0.8rem;padding:2px 8px;">25%</span></td><td>7 of 15 campaigns run smart bidding below the volume floor; 5 are the non-serving shells. Strategy-to-objective matching is correct on all 15.</td></tr>
+                    <tr><td><strong>Learning phase</strong></td><td><span class="score-badge skip" style="font-size:0.8rem;padding:2px 8px;">N/A</span></td><td>Unscored at audit time for lack of change history. <strong>Now resolved</strong> — the change log was pulled during the budget audit; two campaigns are in learning until 7 August.</td></tr>
+                    <tr><td><strong>Portfolio health</strong></td><td><span class="score-badge good" style="font-size:0.8rem;padding:2px 8px;">83%</span></td><td>No portfolio strategies and no shared budgets, so no conflicts possible. One cost-per-click cap is a credible constraint on a brand impression-share target.</td></tr>
+                    <tr><td><strong>CPC &amp; cost health</strong></td><td><span class="score-badge needs-attention" style="font-size:0.8rem;padding:2px 8px;">72%</span></td><td>One spike and three rising trends. Both campaigns holding 67% of spend are getting more expensive at or below break-even.</td></tr>
+                    <tr><td><strong>Conversion value rules</strong></td><td><span class="score-badge critical" style="font-size:0.8rem;padding:2px 8px;">50%</span></td><td>An enabled rule adds +€42.20 per conversion with no visible conditions, against €16.46 documented.</td></tr>
+                    <tr><td><strong>Bid adjustments</strong></td><td><span class="score-badge excellent" style="font-size:0.8rem;padding:2px 8px;">100%</span></td><td>No conflicting, device or demographic problems. The only adjustments present are ignored by smart bidding — inert, but misleading to read.</td></tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <div class="module-section">
+            <div class="module-header">
+                <h3>Budget audit</h3>
+                <span class="score-badge critical">47/100 — Critical</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 12px;">19 diagnostics · 35.8 of 76 available points (24 removed as not applicable) · target €32,500/month</p>
+            <div class="table-scroll">
+            <table>
+                <thead><tr><th>Module</th><th style="width: 120px;">Score</th><th>Key finding</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Allocation</strong></td><td><span class="score-badge critical" style="font-size:0.8rem;padding:2px 8px;">40%</span></td><td>40% of spend sits in a campaign below break-even that was just doubled. Six profitable campaigns hold under 5% share each.</td></tr>
+                    <tr><td><strong>Limitation</strong></td><td><span class="score-badge critical" style="font-size:0.8rem;padding:2px 8px;">48%</span></td><td>Two campaigns lose over 25% of impression share to budget. Only one of them is genuinely profitable once deflated.</td></tr>
+                    <tr><td><strong>Pacing</strong></td><td><span class="score-badge critical" style="font-size:0.8rem;padding:2px 8px;">53%</span></td><td>Projected +172.6% over target. August is not a designated high-season month, so no seasonal justification exists on file.</td></tr>
+                    <tr><td><strong>Sufficiency</strong></td><td><span class="score-badge needs-attention" style="font-size:0.8rem;padding:2px 8px;">60%</span></td><td>Eight campaigns below the smart-bidding volume floor. All budgets use standard delivery, permitting up to 2× daily spend — the mechanism behind the ramp.</td></tr>
+                    <tr><td><strong>Shared budgets</strong></td><td><span class="score-badge skip" style="font-size:0.8rem;padding:2px 8px;">N/A</span></td><td>No shared budgets exist. Module weight redistributed rather than failed.</td></tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <div class="module-section">
+            <div class="module-header">
+                <h3>Competitive position audit</h3>
+                <span class="score-badge good">73/100 — Good</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 12px;">7 active diagnostics (6 permanently unavailable — Auction Insights is not exposed by the API) · 90-day window ending 28 July</p>
+            <div class="table-scroll">
+            <table>
+                <thead><tr><th>Module</th><th style="width: 120px;">Score</th><th>Key finding</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Impression share health</strong></td><td><span class="score-badge needs-attention" style="font-size:0.8rem;padding:2px 8px;">50%</span></td><td>Nothing is declining — but four campaigns carry severe standing losses of 51–93%, and rank outweighs budget on every single one.</td></tr>
+                    <tr><td><strong>Competitive position</strong></td><td><span class="score-badge needs-attention" style="font-size:0.8rem;padding:2px 8px;">66%</span></td><td>Top-of-page position stable and Shopping product groups internally healthy, but every non-brand keyword sits under heavy rank pressure with visibility below 12%.</td></tr>
+                    <tr><td><strong>Competitive impact</strong></td><td><span class="score-badge excellent" style="font-size:0.8rem;padding:2px 8px;">100%</span></td><td>No competitor-entry signature anywhere, and no measurable business loss attributable to competitive erosion.</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 0;">
+                <strong>Verdict: selective competition.</strong> Three campaigns can profitably pursue more visibility — the non-brand Search campaign (clean return 4.31), the dynamic search campaign (5.51) and USA brand (64.3). One cannot: the largest Shopping campaign sits below break-even and must not be given more traffic at any price.
+            </p>
+        </div>
+
+        <div class="issue-card">
+            <div class="issue-id">Keywords · KW-D07 — High</div>
+            <div class="issue-title">42% of the non-brand search budget runs below break-even — and the keywords are not the problem</div>
+            <div class="issue-impact">
+                Five keywords burn <strong>€1,961</strong>, which is 42% of everything spent on non-brand search. Every one of them is a core product term — punk, goth, tattoo, metal, hoodie — so the audit's own guardrail forbids pausing them: they are the front door of a business built on exactly those categories. The largest, <em>t shirt metal</em> at €1,006, was a top performer in the previous period and has since fallen to a 1.50 return against a 1.9 floor. Six keywords degraded a tier between periods and <strong>not one improved</strong>, which points at a shared cause rather than keyword-by-keyword decay. That cause is the landing page: quality scores on these keywords are capped at 4–7 purely by page experience, while their ad relevance rates above average. <strong>Fix the page, not the keyword list.</strong>
+            </div>
+        </div>
+
+        <div class="issue-card warning">
+            <div class="issue-id">Keywords · KW-D12 — Medium</div>
+            <div class="issue-title">A third of the queries Performance Max shares with search are for other brands entirely</div>
+            <div class="issue-impact">
+                Performance Max is serving <strong>80 distinct queries</strong> that overlap the non-brand search keywords, and <strong>none is covered by a negative keyword</strong>. Twenty-seven of the eighty are off-brand in three distinct ways: a large cluster of "cyberpunk" variants — a science-fiction aesthetic, not the punk subculture the brand sells to — plus Metallica band merchandise the company does not stock, and blank-apparel competitors like Gildan. This is buyable waste that a negative-keyword sweep removes.
+            </div>
+        </div>
+
+        <div class="issue-card warning">
+            <div class="issue-id">Targeting · GS-D11 — High</div>
+            <div class="issue-title">Eleven location bid adjustments are pointed at the account's worst-performing markets</div>
+            <div class="issue-impact">
+                The non-brand Search campaign carries a <strong>+15% bid adjustment on eleven countries</strong> — and nine of them sit at or below break-even. Among the boosted markets are <strong>Denmark, whose return of 0.47 is the worst in the account</strong>, Czechia at 0.92, and Estonia with <strong>zero conversions across 114 clicks</strong>. Only Finland and Slovakia among the eleven perform well. Because the campaign uses automated bidding, these adjustments are currently ignored and no money is being lost — but they would activate the moment the bidding strategy changed, and they misrepresent the account's intent to anyone reading it. Removing them costs nothing.
+            </div>
+        </div>
+
+        <div class="module-section">
+            <div class="module-header">
+                <h3>Geographic, schedule and audience targeting</h3>
+                <span class="score-badge good">75% — Good</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 12px;">
+                Fourteen checks across location, schedule, device and audience. One structural fact governs the whole area: every campaign uses automated bidding, which ignores location, device and demographic bid adjustments — only outright exclusions still take effect.
+            </p>
+            <div class="table-scroll">
+            <table>
+                <thead><tr><th>Area</th><th style="width: 90px;">Score</th><th>Key finding</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Geographic</strong></td><td><span class="score-badge good" style="font-size:0.8rem;padding:2px 8px;">73%</span></td><td>Targeting method and exclusion coverage are clean. Nine markets totalling €3,727 — about 11% of monthly spend — sit below break-even. Not recommended as exclusions: the business commits to selling worldwide, so market exit is a strategy decision rather than a targeting fix.</td></tr>
+                    <tr><td><strong>Schedule &amp; device</strong></td><td><span class="score-badge excellent" style="font-size:0.8rem;padding:2px 8px;">100%</span></td><td><strong>Zero dead time windows</strong> across all 168 hour-and-day combinations, and no schedule restrictions exist anywhere — everything runs around the clock, which is correct here. Desktop returns less than mobile but remains solidly profitable; excluding it would destroy value.</td></tr>
+                    <tr><td><strong>Audience &amp; advanced</strong></td><td><span class="score-badge needs-attention" style="font-size:0.8rem;padding:2px 8px;">52%</span></td><td>Pulled down entirely by the bid-adjustment issue above. The demographics themselves are healthy — every age, gender and income segment is profitable, and the audience matches the documented buyer profile.</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 0;">
+                <strong>One pattern worth noting.</strong> Every market with its own dedicated brand campaign performs strongly; every market served only by the worldwide non-brand campaigns is among the weak ones. And <strong>Friday is the standout day</strong> — the five best-performing hours in the entire account are all Friday, matching the weekly drop cadence the business runs on. That is confirmation the merchandising rhythm works, not a task.
+            </p>
+        </div>
+
+        <div class="module-section">
+            <div class="module-header">
+                <h3>Performance Max</h3>
+                <span class="score-badge good">Setup strong where it runs</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 12px;">
+                Seven live campaigns examined across nine dimensions over 60 days. The automated scorer returned 94–97 out of 100 for all seven — but for five of them that number describes the configuration quality of campaigns that cannot serve at all. Read it with the serving column attached.
+            </p>
+            <div class="table-scroll">
+            <table>
+                <thead><tr><th>Finding</th><th>Detail</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Two campaigns are genuinely healthy</strong></td><td>The main prospecting campaign and the smaller index campaign both show clean feed integration, brand exclusion active, URL expansion off, and a channel mix inside the expected range. The main one is the account's largest Performance Max spender and its setup holds up.</td></tr>
+                    <tr><td><strong>Five are switched-off shells</strong></td><td>52 asset groups between them, none enabled. Left over from Black Friday 2025. See the critical issue above.</td></tr>
+                    <tr><td><strong>Brand protection is active</strong></td><td>Brand exclusion is on across all seven campaigns. This substantially improves an earlier finding that flagged brand separation as unverifiable for Performance Max — though confirming the setting is not the same as proving no brand queries were served, which needs a search-term audit.</td></tr>
+                    <tr><td><strong>An earlier concern was a false alarm</strong></td><td>The structure audit worried the largest Performance Max campaign might be sending traffic to arbitrary pages via automatic URL expansion. Sixty days of data show zero expanded-page activity — it is off. The related concern about auto-generated ad text on the USA brand campaign still stands.</td></tr>
+                    <tr><td><strong>24 disapproved assets sit dormant</strong></td><td>104 policy-restricted assets in total, 61 still live, 24 outright disapproved — all inside the five switched-off campaigns; the two running ones are completely clean. Harmless today, but they go live the moment anything is re-enabled, and a creative rebuild is currently in progress.</td></tr>
+                    <tr><td><strong>Creative quality is unmeasured</strong></td><td>585 live creative assets exist, none with enough serving history to judge. If the rebuild proceeds there is no performance record to choose from.</td></tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <div class="module-section">
+            <div class="module-header">
+                <h3>Product feed — partial evidence only</h3>
+                <span class="score-badge skip">Not scored</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 12px;">
+                A full feed audit could not run: the stored API credentials carry advertising permissions but not Merchant Center permissions, which needs a two-minute browser sign-in to resolve. What follows comes from product data the advertising platform already exposes — a fraction of a real feed audit, but enough to settle two open questions.
+            </p>
+            <div class="table-scroll">
+            <table>
+                <thead><tr><th>Finding</th><th>Detail</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>No product is fully eligible</strong></td><td>Of 1,817 products, 45% serve with restrictions and 55% cannot serve at all. Zero are unrestricted. The actionable slice is <strong>278 products that are in stock but ineligible</strong>; the 722 out-of-stock items are a known consequence of the drop model.</td></tr>
+                    <tr><td><strong>Missing apparel attributes</strong></td><td><strong>Colour is missing on 1,009 products (55%)</strong>, age group and gender on 674 each (37%). All three are required attributes for apparel in this market. Products missing them get demoted rather than rejected — which matches the restricted-serving pattern exactly, and is a plausible contributor to the flagship Shopping campaign's 31% rank loss.</td></tr>
+                    <tr><td><strong>Three alarming-looking errors that do not apply</strong></td><td>Three issues affect 100% of products — unsupported currency, missing shipping service, and a missing business registration number. All three are flagged for <strong>Korea and Brazil only</strong>; the third is literally a Korean registration requirement. This feed serves Germany. Counting them as critical would badly misstate feed health.</td></tr>
+                    <tr><td><strong>Feed plumbing is intact</strong></td><td>No missing brand, category, title or price anywhere. Six products have an unreachable product page — small, unambiguous, and worth fixing since it also feeds the landing page problem above.</td></tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <div class="module-detail">
+            <div class="module-header">
+                <h3>Conversion tracking — the audit everything else was waiting on</h3>
+                <span class="score-badge warn">66%</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 12px;">
+                This is the measurement layer &mdash; the one that has to be trusted before any profitability figure in this report means anything. It was run last, and the result is better than expected: <strong>the account&rsquo;s documented measurement model is correct to two decimal places.</strong>
+            </p>
+            <div class="table-scroll">
+            <table>
+                <thead><tr><th>Campaign</th><th style="width: 100px;">Measured</th><th style="width: 100px;">Documented</th><th style="width: 70px;"></th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Account-wide</strong></td><td><strong>1.51</strong></td><td><strong>1.50</strong></td><td><span class="status-pill pass">Match</span></td></tr>
+                    <tr><td>Brand — DE</td><td>1.43</td><td>1.42</td><td><span class="status-pill pass">Match</span></td></tr>
+                    <tr><td>Brand — USA</td><td>1.54</td><td>1.53</td><td><span class="status-pill pass">Match</span></td></tr>
+                    <tr><td>Shopping — FOKUSPRODUKTE</td><td>1.82</td><td>1.81</td><td><span class="status-pill pass">Match</span></td></tr>
+                    <tr><td>PMax — PROSPECTING</td><td>1.79</td><td>1.88</td><td><span class="status-pill pass">Match</span></td></tr>
+                    <tr><td>DSA</td><td>1.90</td><td>1.93</td><td><span class="status-pill pass">Match</span></td></tr>
+                    <tr><td><strong>Search TOF</strong></td><td><strong>1.00</strong></td><td><strong>1.00</strong></td><td><span class="status-pill pass">Match</span></td></tr>
+                </tbody>
+            </table>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-top: 12px;">
+                <strong>Every material factor matches. All twelve preceding audits are validated on measurement grounds &mdash; none needs re-running.</strong> That is an unusually clean outcome, and it deserves stating plainly: the measurement risk carried as an open block through this entire review is real in its effect, but it was already quantified accurately. The account&rsquo;s numbers are inflated &mdash; and everyone already knew by exactly how much.
+            </p>
+            <div class="table-scroll">
+            <table>
+                <thead><tr><th>Module</th><th style="width: 90px;">Score</th><th>Finding</th></tr></thead>
+                <tbody>
+                    <tr><td>Tag health</td><td><span class="status-pill pass">100%</span></td><td>Tags installed correctly, both containers loading, linker cookie present, no conversion has gone quiet, volume up 7% across the window. Nothing broken here.</td></tr>
+                    <tr><td>Attribution</td><td><span class="status-pill pass">84%</span></td><td>The primary purchase action is ideally configured &mdash; data-driven, 30-day click, 1-day view. Across the wider estate the settings are mixed: 24 actions data-driven, 9 last-click, 14 unknown, and lookback windows split between 30 and 90 days with no documented reason.</td></tr>
+                    <tr><td>Consent mode</td><td><span class="status-pill warn">73%</span></td><td>Consent Mode v2 is fully implemented &mdash; all four required signals present, which is more than most accounts manage. <strong>But all four default to &ldquo;granted&rdquo;</strong>, which for a Berlin-registered company serving Germany is a compliance exposure. Needs one check in a clean private browser window to confirm it is not just a stored decision from an earlier visit.</td></tr>
+                    <tr><td>Completeness</td><td><span class="status-pill fail">44%</span></td><td><strong>14 of 15 campaigns override the account default</strong> with a goal containing a non-primary action &mdash; the entire source of the 1.51 inflation. The account default itself is clean, so <strong>the fix is removing the overrides, not changing the default.</strong></td></tr>
+                    <tr><td>Data hygiene</td><td><span class="status-pill fail">31%</span></td><td><strong>47 conversion actions to bid on one.</strong> Purchase is tracked six ways across three parallel systems; five actions still carry &ldquo;(OLD)&rdquo; in their names and remain enabled. One legacy import reports 1,155,388 conversions &mdash; twenty times the real purchase action &mdash; almost certainly counting line items. It feeds nothing today, but it makes the platform&rsquo;s own reporting unreadable.</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="callout" style="margin-top: 16px;">
+                <h3 style="margin-bottom: 8px;">A near-miss worth recording</h3>
+                <p style="margin: 0;">
+                    An intermediate run of this measurement, executed without an explicit date filter, silently returned the account&rsquo;s entire history instead of 30 days. It showed six conversion actions feeding the value series and put Search TOF&rsquo;s inflation at <strong>2.62</strong> &mdash; a figure that would have invalidated eleven audits and reversed two headline conclusions in this report. It was caught by one sanity check: the implied conversion value exceeded what the campaign had actually spent, by twenty times. Re-run correctly, the true figure is 1.00. The discarded result was not worthless either &mdash; it independently rediscovered a documented historical period when two analytics systems counted the same purchases in parallel, confirming that record too.
+                </p>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-top: 12px;">
+                <strong>Not tested:</strong> the live conversion test was declined. Verifying tag firing, transaction de-duplication and dynamic value on the real purchase path requires creating an actual add-to-cart event on the live store, which needs a person&rsquo;s explicit go-ahead. Four diagnostics remain unverified as a result.
+            </p>
+        </div>
+
+        <div class="module-detail">
+            <div class="module-header">
+                <h3>Quality Score — one cause, isolated cleanly</h3>
+                <span class="score-badge warn">61%</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 12px;">
+                61% understates how clear this result is. The account has one Quality Score problem, it has exactly one cause, and the data separates it perfectly.
+            </p>
+            <div class="table-scroll">
+            <table>
+                <thead><tr><th>Component</th><th style="width: 150px;">Brand (19 keywords)</th><th style="width: 170px;">Non-brand (9 keywords)</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Weighted Quality Score</strong></td><td><strong>10.00</strong></td><td><strong>4.90</strong></td></tr>
+                    <tr><td>Ad relevance</td><td>19 above average</td><td>8 above, 1 average, <strong>0 below</strong></td></tr>
+                    <tr><td>Expected click-through rate</td><td>19 above average</td><td>4 above, 5 average, <strong>0 below</strong></td></tr>
+                    <tr><td><strong>Landing page experience</strong></td><td><strong>19 above average</strong></td><td><strong>9 below average</strong></td></tr>
+                    <tr><td>Spend (90 days)</td><td>€10,534</td><td>€4,244</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--color-text-light); margin-top: 12px;">
+                <strong>All seven ads in the account point at the same homepage</strong> &mdash; four brand, three non-brand. Google rates that page above average for brand queries and below average for non-brand queries, with no exception in either direction. A slow, broken or badly built page would drag both groups down equally. Only a <em>relevance</em> problem produces a split this clean: the page is exactly what someone searching &ldquo;stay cold apparel&rdquo; wanted, and not what someone searching &ldquo;punk hoodie&rdquo; wanted.
+            </p>
+            <div class="callout" style="margin-top: 16px;">
+                <h3 style="margin-bottom: 8px;">The ad copy is not the problem &mdash; and one keyword proves it</h3>
+                <p style="margin: 0;">
+                    Ad relevance and expected click-through rate are below average on <strong>zero</strong> keywords in this account. Ad relevance is <em>above</em> average on 27 of 28. This rules out the most commonly recommended Quality Score fix: rewriting ads would achieve nothing here. Better still, the account already ran the test &mdash; the keyword <em>t shirt metal</em> climbed from Quality Score <strong>1 to 5</strong> over 27 weeks, driven entirely by ad relevance improving from average to above average. Its landing page score stayed pinned at below average the whole time and capped the result there. The copy lever has been pulled. The page lever has not.
+                </p>
+            </div>
+            <div class="table-scroll" style="margin-top: 16px;">
+            <table>
+                <thead><tr><th>Finding</th><th>Detail</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Visibility is being lost to Quality Score, not to competitors</strong></td><td>The non-brand campaign holds <strong>10% impression share and loses 69% to ad rank</strong> on a weighted Quality Score of 3.09. The brand campaigns, at Quality Score 10, hold 84&ndash;95%. The audit engine correctly did <em>not</em> flag the USA brand campaign&rsquo;s 16% rank loss &mdash; at Quality Score 8.96 that one is genuinely competitive.</td></tr>
+                    <tr><td><strong>Never once above average, in 27 weeks</strong></td><td>Landing page experience has read below average on every non-brand keyword for the entire measurable history. It has not declined &mdash; it has never been good. That is a permanent ceiling, not a recent regression.</td></tr>
+                    <tr><td><strong>One ad group is doing the work of five</strong></td><td>17 non-brand keywords sit in a single ad group spanning punk, goth, metal, tattoo, generic apparel and one product name &mdash; all pointing at the homepage. No single ad headline can address that range without collapsing into &ldquo;alternative clothing&rdquo;, which is exactly the undifferentiated message the page already delivers. A restructure brief with five proposed splits is in the full report, but <strong>the pages come first</strong>: splitting without new destinations relabels the problem rather than fixing it.</td></tr>
+                    <tr><td><strong>A modest, honest cost figure</strong></td><td>Within non-brand traffic, Quality Score 4&ndash;5 keywords pay <strong>€1.25 per click against €1.14</strong> at Quality Score 6&ndash;7 &mdash; about 10% more. Worth stating what this is <em>not</em>: brand clicks cost €0.19 and non-brand €1.25, but that 6.6&times; gap is two different auctions, not a Quality Score effect. Attributing it to Quality Score would overstate the prize considerably.</td></tr>
+                    <tr><td><strong>The worst single keyword</strong></td><td><em>punk hoodie</em> &mdash; Quality Score 4, €1,173 spent, the only high-spend low-score flag in the account, the only keyword whose score is <em>declining</em>, and the only one whose ad relevance is not above average. Fix this one first inside the landing page work.</td></tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <div class="callout">
+            <h3 style="margin-bottom: 8px;">Where the audits disagree — and which one is right</h3>
+            <p style="margin: 0;">
+                The bidding audit flagged rising cost-per-click on the two largest campaigns as a possible competitive-pressure signal. The competitive audit checked and found <strong>the opposite</strong>: the campaign whose cost rose 47% simultaneously gained 11.7 points of impression share. Competitors are not bidding harder — this account is. The cost increase is real and it damages profitability, but the cause is the budget and bid changes of 17–24 July, not the market. Treating it as a competitive event would point at entirely the wrong response.
+            </p>
+        </div>
+
+        <div class="callout">
+            <h3 style="margin-bottom: 8px;">Five automated verdicts were overridden by hand</h3>
+            <p style="margin: 0;">
+                All five for the same reason: the scoring engines compare a <em>clean</em> break-even threshold of 1.9 against the platform's <em>inflated</em> value series. Left uncorrected, they rated the account's largest money-loser as profitable and would have recommended increasing its budget. Two bidding verdicts and three budget verdicts were adjusted, each documented in the underlying reports with its reasoning. This is the practical cost of the measurement fault: it does not merely obscure performance, it inverts automated recommendations. <strong>The twelfth audit has since verified every factor those overrides relied on</strong> — measured 1.82 against a documented 1.81 on FOKUSPRODUKTE, 1.79 against 1.88 on PROSPECTING, 1.90 against 1.93 on DSA. The manual corrections were right.
+            </p>
+        </div>
+
+        <h2>Priority recommendations</h2>
+        <div class="recommendations">
+            <p style="color: var(--color-text-light); margin-bottom: 16px;">
+                Sequenced by dependency. Items 1–3 unblock everything below them. None of this requires additional budget — items 1 and 4 reduce it.
+            </p>
+            <ol>
+                <li>
+                    <strong>Confirm whether the August spend ramp is authorised. Today.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">€78–93k projected against a €32,500 target, no promo window on file, ramp began six days ago. This single answer determines whether everything below is a scaling programme to be measured or an incident to be reversed. (Source: budget audit)</span>
+                </li>
+                <li>
+                    <strong>Clarify who holds budget-change authority.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">All budget and target changes this period came from one external address; 266 further changes are unattributed. Raise it as a question — multiple legitimate operators are common in agency-managed accounts — but resolve it before submitting proposals that may never reach the decision-maker. (Source: change log)</span>
+                </li>
+                <li>
+                    <strong>Repair the conversion goal configuration.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">Remove the campaign-level goal override on all 14 campaigns that carry it, or repoint them at a goal containing only the real purchase action. The account default is already clean &mdash; the single campaign using it carries zero inflation &mdash; so this is a removal, not a redesign. It is the one change that makes every target in the account mean what it says, and five other recommendations are waiting on it. <strong>Account-level conversion changes are humans-only under the account&rsquo;s own governance rules, so this routes to Jonas, never to an automated process.</strong> (Source: tracking, account and bidding audits)</span>
+                </li>
+                <li>
+                    <strong>Check the cookie consent defaults in a private browser window. Five minutes.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">All four consent signals currently read as &ldquo;granted&rdquo; by default. For a Berlin-registered company whose primary market is Germany, non-essential storage should default to denied until the visitor accepts. The browser used for testing already held consent cookies from an earlier visit, so this may be a stored decision rather than the real default &mdash; but it is the only finding in this entire review with legal weight, and one private-window check settles it. (Source: tracking audit)</span>
+                </li>
+                </li>
+                <li>
+                    <strong>Reduce FOKUSPRODUKTE — after 7 August.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">40% of spend at a clean 1.72 against a 1.9 break-even, roughly −€0.10 per euro. It is the largest single euro lever in the account and it points down. Held until 7 August only because the campaign is 13 days into a 14-day learning window. (Source: budget audit)</span>
+                </li>
+                <li>
+                    <strong>Put the words you buy on the page you send people to.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">Punk, goth, metal and rocker appear <em>zero</em> times on the landing page the non-brand campaign uses. Add that language to the hoodies and t-shirts category pages, then point the matching keywords there instead of the homepage — or build dedicated subculture pages, since none exists today. This is the only lever in the entire report that recovers visibility <strong>without spending anything</strong>, and it lifts every non-brand keyword at once. (Source: landing page audit)</span>
+                </li>
+                <li>
+                    <strong>Three small landing-page fixes worth doing alongside it.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">The non-brand campaign points at the domain without "www", costing an avoidable redirect on every click — the brand campaigns already do this correctly. Product pages carry no size guide, while sizing accounts for 54% of all returns. And mobile visitors cannot pinch-zoom because scaling is disabled, with 30% of tap targets below the recommended size — on a site where mobile is 78% of clicks. (Source: landing page audit)</span>
+                </li>
+                <li>
+                    <strong>Enable one asset group, or pause the campaign — for each of the five dead Performance Max campaigns.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">All 52 of their asset groups are paused; that is the entire reason they do not serve. Two minutes per campaign in the interface. Before re-enabling any of them, clear the 24 disapproved assets they contain — those go live with the campaign. Budget and bidding are not involved and changing either would do nothing. (Source: Performance Max audit)</span>
+                </li>
+                <li>
+                    <strong>Add colour, age group and gender to the product feed.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">Missing on 1,009, 674 and 674 products. All three are required attributes for apparel in this market, and their absence is why no product in the feed is fully eligible. This is source-feed work rather than an advertising change — though the shop's product metadata already carries the relevant fields, so it may be a mapping exercise rather than a data project. (Source: feed evidence)</span>
+                </li>
+                <li>
+                    <strong>Disable the stray YouTube conversion before the Demand Gen relaunch goes live.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">A YouTube view-through action is flagged as a primary conversion on a pure clothing account. The tracking audit confirms it is <strong>currently inert</strong> &mdash; no campaign has that goal category active, so it corrupts nothing today. The risk switches on the moment a Video or Demand Gen campaign launches carrying default goals, and 151 change-log entries over the last two days say that rebuild is underway right now. Cheap to fix before it matters; expensive to unpick after. (Source: tracking and Performance Max audits)</span>
+                </li>
+                </li>
+                <li>
+                    <strong>Restore exact and phrase match on brand — SKANDI first, one market at a time.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">Reverses a documented +278% result and brings the account back in line with its own guardrails. SKANDI is both the weakest performer and the market where the precedent was measured. Stagger one to two weeks per market. (Source: account audit)</span>
+                </li>
+                <li>
+                    <strong>Roll out the search-partners setting that already won.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">Disabling search partners on FOKUSPRODUKTE measured +17%. It remains on for five other campaigns with no rationale recorded. One campaign at a time. (Source: account audit)</span>
+                </li>
+                <li>
+                    <strong>Consolidate the two sub-scale index campaigns.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">Both sit far below the volume floor for their bid strategy and duplicate segmentation already covered elsewhere. Structural consolidation has a positive precedent here (+29%). (Source: account and bidding audits)</span>
+                </li>
+                <li>
+                    <strong>Close the USA brand visibility gap — the one place a bid increase is correct.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">84.3% visibility against a 95% goal, and unlike everywhere else this gap is genuinely bid-driven: those keywords score a perfect 10 with all three quality components above average, and nothing is lost to budget. Cheapest traffic in the account, with a measured +261% precedent, and "bids upward only" is explicitly permitted on brand. (Source: competitive and bidding audits)</span>
+                </li>
+                <li>
+                    <strong>Remove eleven misdirected location bid adjustments, and exclude two dead markets.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">The adjustments boost the account's worst markets by 15% and are currently ignored by automated bidding — removing them is free and eliminates a landmine. Separately, two markets have produced 415 clicks and zero conversions; unlike bid adjustments, outright exclusions do take effect under automated bidding. (Source: targeting audit)</span>
+                </li>
+                <li>
+                    <strong>Clear out the dead conversion actions.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">Five actions still carry &ldquo;(OLD)&rdquo; in their names and remain enabled at zero conversions, alongside a lead-generation action on an account that generates no leads. Separately, one legacy analytics import reports 1,155,388 conversions &mdash; twenty times the real purchase action &mdash; which is almost certainly counting line items rather than orders. None of it reaches bidding, so nothing is at risk; the cost is that nobody can read the platform&rsquo;s own reporting without a forensic exercise. Safe, quick, and overdue. (Source: tracking audit)</span>
+                </li>
+                <li>
+                    <strong>Do not fund the scaling candidate on budget alone.</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--color-text-light);">The non-brand Search campaign loses 28% of impressions to budget but 64% to rank — most of its missing traffic is not buyable. The dynamic search campaign, best non-brand efficiency in the account, loses 90% to rank and <em>nothing</em> to budget; money would change nothing there. Fix the pages first, then reassess what budget can actually buy. (Source: competitive and budget audits)</span>
+                </li>
+            </ol>
+        </div>
+
+        <h2>What was not checked</h2>
+        <p style="color: var(--color-text-light);">Stated so the green scores are not read as broader assurance than they are.</p>
+        <div class="table-scroll">
+        <table>
+            <thead><tr><th>Area</th><th>Why it matters here</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Conversion tracking</strong> <span class="status-pill pass">Now done</span></td><td>Was the largest gap in this review and owned root cause one. <strong>Audited 7 August, scored 66%.</strong> Outcome: the documented inflation factors are verified correct, so every profitability figure in this report stands. Four on-page diagnostics remain unverified because they need a live conversion test.</td></tr>
+                <tr><td><strong>Landing pages</strong></td><td><strong>Now the top priority.</strong> The competitive audit produced hard evidence that landing page experience is capping Quality Score on every scored non-brand keyword, but the pages themselves have not been examined.</td></tr>
+                <tr><td><strong>Quality Score (full audit)</strong> <span class="status-pill pass">Now done</span></td><td><strong>Audited 7 August, scored 61%</strong>, across all 37 keywords with 180 days of history. It confirmed the landing page hypothesis outright and ruled out ad copy as a cause.</td></tr>
+                <tr><td><strong>Live conversion test</strong></td><td>Tag firing, transaction ID de-duplication, dynamic value and currency on the real purchase path. Requires creating a genuine add-to-cart on the live store, so it needs explicit sign-off before anyone runs it.</td></tr>
+                <tr><td><strong>Shopify reconciliation</strong></td><td>The one check that would settle whether the platform receives gross or net order values. It moves break-even between 1.6 and 1.9 &mdash; the single most consequential unverified number in the whole review, and it cannot be answered from the advertising platform alone.</td></tr>
+                <tr><td><strong>Offer positioning</strong></td><td>A documented "price-versus-quality perception" blocker sits on exactly the traffic now absorbing the extra spend.</td></tr>
+                <tr><td><strong>Merchant feed (full audit)</strong></td><td>Partly covered above from advertising-side data. A full audit needs Merchant Center credentials — a two-minute browser sign-in. It would add image quality, title and description structure, full attribute coverage and account-health detail. <strong>Images are the priority once unblocked</strong>, since the documented "product page truth gap" is an imagery problem and the competitive audit tied landing page experience to every scored non-brand keyword.</td></tr>
+                <tr><td><strong>Competitor-level detail</strong></td><td>Partly covered — the account's own competitive position is now measured, but Auction Insights (who is winning those auctions) is not exposed by the API and needs manual review. The seven competitor domains also remain unverified.</td></tr>
+            </tbody>
+        </table>
+        </div>
+
+        <h2>Data freshness</h2>
+        <div class="table-scroll">
+        <table>
+            <thead><tr><th>Source</th><th style="width: 110px;">Date</th><th style="width: 100px;">Status</th></tr></thead>
+            <tbody>
+                <tr><td>Account structure audit</td><td>2026-08-06</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Bidding audit</td><td>2026-08-06</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Budget audit</td><td>2026-08-06</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Competitive position audit</td><td>2026-08-06</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Performance Max audit</td><td>2026-08-06</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Geo, schedule &amp; audience audit</td><td>2026-08-06</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Keyword audit</td><td>2026-08-06</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Landing page audit</td><td>2026-08-06</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Placement audit</td><td>2026-08-06</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Offer quality audit</td><td>2026-08-06</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Search term audit</td><td>2026-08-06</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Business strategy audit</td><td>2026-08-07</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Conversion tracking audit</td><td>2026-08-07</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Quality Score audit</td><td>2026-08-07</td><td><span class="status-pill pass">Fresh</span></td></tr>
+                <tr><td>Account change history</td><td>2026-08-06</td><td><span class="status-pill pass">Pulled today</span></td></tr>
+                <tr><td>Product feed audit</td><td>—</td><td><span class="status-pill warn">Blocked</span></td></tr>
+            </tbody>
+        </table>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--color-text-light); margin-top: 8px;">
+            All campaign, keyword, bidding, budget and impression-share data pulled fresh on 6 August. Two window caveats worth holding: the 30-day performance windows largely <em>predate</em> the July budget increases, so window aggregates understate the current run rate — the daily series is the current picture. And the competitive audit's 90-day window ends 28 July, <em>before</em> the August ramp, so competitive conditions during the current high-spend period are not yet measured.
+        </p>
+
+        <div class="callout">
+            <h3 style="margin-bottom: 8px;">One number to hold onto</h3>
+            <p style="margin: 0;">
+                Break-even is a <strong>clean return of 1.9</strong> — and that figure itself carries an open question. If the platform receives net rather than gross order values, break-even is 1.6 instead. That is a factor of 1.19 on the most important threshold in the account, and it can only be settled by reconciling tracked purchase value against actual shop revenue for the same period. Until then, 1.9 is the conservative number used throughout all three audits.
+            </p>
+        </div>
+
+    </main>
+
+    <footer class="report-footer">
+        <div class="container">
+            <div>
+                <span class="company-name">Google Ads audit — Stay Cold Apparel</span><br>
+                Eleven audits · 2026-08-06 / 07
+            </div>
+            <div style="text-align: right;">
+                Generated by PPCOS<br>
+                <span style="opacity: 0.7;">Unbranded draft — add agency branding to restyle</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

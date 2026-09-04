@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "engine": "analyze-budget-health",
+    "generatedAt": "2026-08-06T14:42:29.686Z",
+    "primaryKPI": "roas",
+    "breakEven": 1.9
+  },
+  "opportunities": [
+    {
+      "type": "profitable_limited_recovery",
+      "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+      "campaignId": "17820068572",
+      "channel": "SEARCH",
+      "isLostBudget": 31.7,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.3170583847600104,
+        "incrementalClicks": 1810,
+        "incrementalConv": 43.9,
+        "incrementalCost": 2181,
+        "incrementalValue": 8165,
+        "projected": 3.74,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise",
+      "rationale": "Profitable + budget-limited — raising budget recovers lost IS at a profitable projected unit cost."
+    },
+    {
+      "type": "profitable_limited_recovery",
+      "campaign": "EX I SHOPPING I FOKUSPRODUKTE",
+      "campaignId": "18399515515",
+      "channel": "SHOPPING",
+      "isLostBudget": 25.6,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.2561601101973018,
+        "incrementalClicks": 3405,
+        "incrementalConv": 103.3,
+        "incrementalCost": 4241,
+        "incrementalValue": 13220,
+        "projected": 3.12,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise",
+      "rationale": "Profitable + budget-limited — raising budget recovers lost IS at a profitable projected unit cost."
+    },
+    {
+      "type": "winner_underfunded",
+      "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+      "channel": "SEARCH",
+      "sharePct": 14.3,
+      "isLostBudget": 31.7,
+      "projection": {
+        "type": "is_lost_budget_recovery",
+        "isLostBudget": 0.3170583847600104,
+        "incrementalClicks": 1810,
+        "incrementalConv": 43.9,
+        "incrementalCost": 2181,
+        "incrementalValue": 8165,
+        "projected": 3.74,
+        "profitable": true
+      },
+      "action": "/budget-optimizer raise"
+    }
+  ]
+}

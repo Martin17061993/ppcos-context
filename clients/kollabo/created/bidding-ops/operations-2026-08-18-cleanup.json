@@ -1,0 +1,123 @@
+{
+  "description": "Bidding-Hygiene 2026-08-18 — 5 verwaiste Portfolio-Strategien entfernen + 7 beendete Experiment-Kampagnen auf PAUSED. Quelle: /bidding-auditor (2026-08-18, BID-D15 + BID-D27).",
+  "generated_from": "context/analysis/bidding/bidding-audit.md",
+  "generated_at": "2026-08-18T00:00:00Z",
+  "total_operations": 12,
+  "operations": [
+    {
+      "type": "remove",
+      "resource": "bidding_strategy",
+      "resource_name": "customers/1487707588/biddingStrategies/8396143362",
+      "meta": {
+        "action_id": "BID-E-CLEANUP",
+        "name": "Gebäudetechnik1",
+        "strategy_type": "TARGET_ROAS",
+        "cpc_cap": "1.80 CHF",
+        "rationale": "ENABLED, non_removed_campaign_count = 0. Traegt einen aktiven CPC-Cap. Altlast des 2025er-Portfolio-Experiments."
+      }
+    },
+    {
+      "type": "remove",
+      "resource": "bidding_strategy",
+      "resource_name": "customers/1487707588/biddingStrategies/8401083620",
+      "meta": {
+        "action_id": "BID-E-CLEANUP",
+        "name": "Gebäudetechnik2",
+        "strategy_type": "TARGET_ROAS",
+        "cpc_cap": "0.50 CHF",
+        "rationale": "ENABLED, 0 Kampagnen. CPC-Cap 0,50 CHF liegt weit unter dem Konto-CPC von ~1,30-1,56 — wuerde jede angebundene Kampagne sofort ersticken."
+      }
+    },
+    {
+      "type": "remove",
+      "resource": "bidding_strategy",
+      "resource_name": "customers/1487707588/biddingStrategies/8821268811",
+      "meta": {
+        "action_id": "BID-E-CLEANUP",
+        "name": "DE Gebäudetechnik1 (old)",
+        "strategy_type": "TARGET_ROAS",
+        "cpc_cap": "keiner",
+        "rationale": "ENABLED, 0 Kampagnen. Namenszusatz '(old)' weist sie selbst als abgeloest aus."
+      }
+    },
+    {
+      "type": "remove",
+      "resource": "bidding_strategy",
+      "resource_name": "customers/1487707588/biddingStrategies/9252789111",
+      "meta": {
+        "action_id": "BID-E-CLEANUP",
+        "name": "DE Push",
+        "strategy_type": "MAXIMIZE_CONVERSION_VALUE",
+        "cpc_cap": "1.50 CHF",
+        "rationale": "ENABLED, 0 Kampagnen. MAXIMIZE_CONVERSION_VALUE ist fuer dieses Konto ohnehin unbrauchbar — alle conversionActionValues stehen auf 0 (GAP-1)."
+      }
+    },
+    {
+      "type": "remove",
+      "resource": "bidding_strategy",
+      "resource_name": "customers/1487707588/biddingStrategies/9255935026",
+      "meta": {
+        "action_id": "BID-E-CLEANUP",
+        "name": "CH Push",
+        "strategy_type": "MAXIMIZE_CONVERSION_VALUE",
+        "cpc_cap": "2.00 CHF",
+        "rationale": "ENABLED, 0 Kampagnen. Gleiche Begruendung wie DE Push."
+      }
+    },
+    {
+      "type": "update",
+      "resource": "campaign",
+      "resource_name": "customers/1487707588/campaigns/6496855124",
+      "fields": { "status": "PAUSED" },
+      "meta": {
+        "action_id": "BID-E-CLEANUP",
+        "name": "CH - Dachdecker - Maximale Conversions (Leads)",
+        "serving_status": "ENDED",
+        "ghost_budget": "3.00 CHF/Tag",
+        "rationale": "status ENABLED, serving_status ENDED — beendeter Experiment-Arm, kann nicht ausliefern. Auf PAUSED setzen macht den Ist-Zustand sichtbar."
+      }
+    },
+    {
+      "type": "update",
+      "resource": "campaign",
+      "resource_name": "customers/1487707588/campaigns/6496862561",
+      "fields": { "status": "PAUSED" },
+      "meta": { "action_id": "BID-E-CLEANUP", "name": "Dynamisch - Maximale Conversions", "serving_status": "ENDED", "ghost_budget": "30.00 CHF/Tag" }
+    },
+    {
+      "type": "update",
+      "resource": "campaign",
+      "resource_name": "customers/1487707588/campaigns/6500174147",
+      "fields": { "status": "PAUSED" },
+      "meta": { "action_id": "BID-E-CLEANUP", "name": "CH - Elektroinstallateur - Maximale Conversions (Leads)", "serving_status": "ENDED", "ghost_budget": "30.00 CHF/Tag" }
+    },
+    {
+      "type": "update",
+      "resource": "campaign",
+      "resource_name": "customers/1487707588/campaigns/20387611832",
+      "fields": { "status": "PAUSED" },
+      "meta": { "action_id": "BID-E-CLEANUP", "name": "CH_GSN_DE_Zürich_Handwerk EX I KEYWORD-OPTIONS", "serving_status": "ENDED", "ghost_budget": "100.00 CHF/Tag" }
+    },
+    {
+      "type": "update",
+      "resource": "campaign",
+      "resource_name": "customers/1487707588/campaigns/20781019406",
+      "fields": { "status": "PAUSED" },
+      "meta": { "action_id": "BID-E-CLEANUP", "name": "CH_GSN_DE_Brand Brand Biding Test", "serving_status": "ENDED", "ghost_budget": "25.00 CHF/Tag" }
+    },
+    {
+      "type": "update",
+      "resource": "campaign",
+      "resource_name": "customers/1487707588/campaigns/21301158443",
+      "fields": { "status": "PAUSED" },
+      "meta": { "action_id": "BID-E-CLEANUP", "name": "EX | DE | DACH | SEARCH | LEAD | UMLAND TEST Keyword Test", "serving_status": "ENDED", "ghost_budget": "65.99 CHF/Tag" }
+    },
+    {
+      "type": "update",
+      "resource": "campaign",
+      "resource_name": "customers/1487707588/campaigns/21818309179",
+      "fields": { "status": "PAUSED" },
+      "meta": { "action_id": "BID-E-CLEANUP", "name": "EX | DE | DACH | SEARCH | LEAD | UMLAND TEST  Testzeitraum 263", "serving_status": "ENDED", "ghost_budget": "65.99 CHF/Tag" }
+    }
+  ]
+}

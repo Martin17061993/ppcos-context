@@ -1,0 +1,695 @@
+{
+  "campaign_id": "21127105111",
+  "campaign_name": "EX I WW I PMAX I PROSPECTING I BROAD",
+  "vertical": "ecom",
+  "setup": "full",
+  "modules": [
+    {
+      "token": "feed-integration",
+      "weight": 20,
+      "score": 100,
+      "band": "strong",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-6-feed-integration",
+      "confidence": "high",
+      "metrics": {
+        "setup": "full",
+        "asset_groups": 13,
+        "campaign_feed_connected": true,
+        "not_connected_groups": 0,
+        "no_products_served_groups": 0,
+        "catchall_excluded_groups": 5,
+        "serving_products_groups": 13,
+        "feed_quality_check": "delegated-to-feed-auditor"
+      },
+      "findings": [
+        {
+          "type": "feed-connection",
+          "campaign_feed_connected": true,
+          "asset_groups": 13,
+          "connected_groups": 13,
+          "not_connected_groups": 0,
+          "not_connected": [],
+          "detail": "All 13 asset group(s) are connected to the product feed (carry listing-group filters).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "listing-group-coverage",
+          "asset_groups": 13,
+          "serving_products_groups": 13,
+          "no_products_served_groups": 0,
+          "no_products_served": [],
+          "catchall_excluded_groups": 5,
+          "catchall_excluded": [
+            "BFCM II (342H)",
+            "Intra Day 342",
+            "RoB Drop -PURPLE- CP - MIXED",
+            "BFCM '25 - RoB BEige PDP",
+            "grey dye"
+          ],
+          "detail": "All connected asset group(s) include at least one product subset. 5/13 exclude the root \"Everything else\" catch-all — only explicitly-included products serve, so newly-added SKUs are not advertised until included. Advisory: legitimate for a tightly-themed group; confirm intent.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "feed-quality-routing",
+          "status": "delegated",
+          "owner": "/feed-auditor",
+          "freshness_window_days": 14,
+          "detail": "Feed QUALITY (disapprovals, missing/short titles, image/attribute errors, GTIN/identifier issues) is OUT OF SCOPE for pmax-auditor and routes to /feed-auditor. Quote a fresh feed-audit (≤ 14 days, context/analysis/feed/feed-audit.md) per the Phase 2.5 peer-lookup; do NOT re-derive feed quality here. feed-integration scores connection + coverage only.",
+          "handoff": "/feed-auditor"
+        }
+      ],
+      "notes": "13 asset group(s): 13 feed-connected, 0 not connected; 0 serve no products (all excluded), 5 exclude the root catch-all (advisory). Feed QUALITY routed to /feed-auditor — not re-derived here."
+    },
+    {
+      "token": "conversion-signal",
+      "weight": 18,
+      "score": null,
+      "band": "not-applicable",
+      "applicable": false,
+      "stub": true,
+      "scorer": "phase-4-6-pending",
+      "note": "not applicable for this campaign (vertical/setup) — excluded from combined denominator"
+    },
+    {
+      "token": "asset-groups",
+      "weight": 18,
+      "score": 100,
+      "band": "strong",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-5-asset-groups",
+      "confidence": "medium",
+      "metrics": {
+        "branch": "ecom",
+        "asset_group_count": 13,
+        "eligible_groups": 13,
+        "below_minimum_count": 0,
+        "brand_assets_resolved": true,
+        "brand_guidelines_enabled": true,
+        "groups_missing_recommended": 0,
+        "generic_named_count": 0,
+        "zero_impression_groups": 0,
+        "auto_created_creative": 0,
+        "live_creative": 503,
+        "auto_created_share": 0,
+        "campaign_serving": true
+      },
+      "findings": [
+        {
+          "type": "minimum-composition",
+          "branch": "ecom",
+          "eligible_groups": 13,
+          "below_minimum_count": 0,
+          "minimums": {
+            "HEADLINE": 3,
+            "LONG_HEADLINE": 1,
+            "DESCRIPTION": 2,
+            "MARKETING_IMAGE": 1,
+            "SQUARE_MARKETING_IMAGE": 1
+          },
+          "below_minimum": [],
+          "detail": "All 13 asset group(s) meet the ecom minimum composition.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "brand-assets",
+          "brand_guidelines_enabled": true,
+          "missing": [],
+          "detail": "Brand assets (logo + business name) are managed at the campaign level via brand guidelines — present by design; per-group composition is not faulted for lacking them.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "recommended-assets",
+          "branch": "ecom",
+          "recommended": [
+            "PORTRAIT_MARKETING_IMAGE",
+            "YOUTUBE_VIDEO"
+          ],
+          "groups_missing_recommended": [],
+          "detail": "All groups include the ecom recommended assets (PORTRAIT_MARKETING_IMAGE, YOUTUBE_VIDEO).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "thematic-coherence",
+          "generic_named_groups": [],
+          "single_group": false,
+          "detail": "13 themed asset group(s), none generically named — thematic split looks intentional. Claude confirms deeper coherence from asset content.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "zero-impression-groups",
+          "count": 0,
+          "detail": "No ENABLED asset group with zero asset-level impressions in this serving campaign.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "auto-generated-assets",
+          "auto_created_creative": 0,
+          "live_creative": 503,
+          "auto_created_share": 0,
+          "watch_threshold": 0.6,
+          "detail": "0% of live creative is auto-generated (0/503) — within the ecom norm.",
+          "handoff": "pmax-local"
+        }
+      ],
+      "notes": "13 eligible asset group(s) (ecom). 0 below minimum composition; 0 zero-impression (serving); auto-gen creative share 0%. Ad Strength deliberately ignored."
+    },
+    {
+      "token": "brand-defense",
+      "weight": 15,
+      "score": 96,
+      "band": "strong",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-4-brand-defense",
+      "confidence": "high",
+      "metrics": {
+        "live_assets": 510,
+        "restricted_assets_total": 20,
+        "restricted_assets_live": 18,
+        "disapproved_assets": 17,
+        "disapproved_assets_live": 17,
+        "approved_limited_assets": 3,
+        "brand_exclusion_setting": "on",
+        "brand_exclusion_lists": 1,
+        "brand_targeting_lists": 0,
+        "brand_guidelines_enabled": true,
+        "brand_category_clusters": 0,
+        "brand_negative_coverage": "n/a",
+        "brand_negative_matches": 0,
+        "brand_terms_source": "derived"
+      },
+      "findings": [
+        {
+          "type": "brand-exclusion-setting",
+          "status": "on",
+          "detail": "Brand exclusion is ON — 1 negative ENABLED BRAND_LIST criterion (shared set 10982324974).",
+          "value": "10982324974",
+          "negative_brand_lists": 1,
+          "brand_targeting_lists": 0,
+          "brand_guidelines_enabled": true,
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "disapproved-assets",
+          "count": 20,
+          "live_count": 18,
+          "disapproved": 17,
+          "live_disapproved": 17,
+          "approved_limited": 3,
+          "detail": "20 policy-restricted asset(s) total (17 DISAPPROVED, 3 APPROVED_LIMITED); 18 are still LIVE (17 live disapproved) and drive the score — removed ones are flagged for audit history only. Flagged locally; compliance-guardian routing is FUTURE.",
+          "handoff": "/compliance-guardian (future — flag locally for now)",
+          "assets": [
+            {
+              "asset_id": "73772469187",
+              "asset_name": "",
+              "asset_group": "6494427678",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73772469190",
+              "asset_name": "",
+              "asset_group": "6494427678",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73772469193",
+              "asset_name": "",
+              "asset_group": "6494427678",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73772469196",
+              "asset_name": "",
+              "asset_group": "6494427342",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73772469196",
+              "asset_name": "",
+              "asset_group": "6494427678",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73772469196",
+              "asset_name": "",
+              "asset_group": "6494437073",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73772469196",
+              "asset_name": "",
+              "asset_group": "6494437145",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73772469199",
+              "asset_name": "",
+              "asset_group": "6494427678",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73777728767",
+              "asset_name": "",
+              "asset_group": "6494427705",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73777728767",
+              "asset_name": "",
+              "asset_group": "6494437073",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73777728770",
+              "asset_name": "",
+              "asset_group": "6494427705",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73777728770",
+              "asset_name": "",
+              "asset_group": "6494437073",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73777728776",
+              "asset_name": "",
+              "asset_group": "6494427705",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "73777728779",
+              "asset_name": "",
+              "asset_group": "6494427705",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "93975934515",
+              "asset_name": "",
+              "asset_group": "6494437145",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "126712140740",
+              "asset_name": "Websitebild - 2024-02-18 19:33:30 (1).jpg",
+              "asset_group": "6494427342",
+              "field_type": "SQUARE_MARKETING_IMAGE",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "185836725869",
+              "asset_name": "",
+              "asset_group": "6533257137",
+              "field_type": "HEADLINE",
+              "approval_status": "APPROVED_LIMITED",
+              "primary_status": "REMOVED",
+              "status": "REMOVED",
+              "live": false,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "185836725893",
+              "asset_name": "",
+              "asset_group": "6533257137",
+              "field_type": "LONG_HEADLINE",
+              "approval_status": "APPROVED_LIMITED",
+              "primary_status": "REMOVED",
+              "status": "REMOVED",
+              "live": false,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "186604658001",
+              "asset_name": "",
+              "asset_group": "6534787581",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "APPROVED_LIMITED",
+              "primary_status": "LIMITED",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            },
+            {
+              "asset_id": "221686265333",
+              "asset_name": "",
+              "asset_group": "6565392412",
+              "field_type": "YOUTUBE_VIDEO",
+              "approval_status": "DISAPPROVED",
+              "primary_status": "NOT_ELIGIBLE",
+              "status": "ENABLED",
+              "live": true,
+              "source": "ADVERTISER",
+              "handoff": "/compliance-guardian (future — flag locally for now)"
+            }
+          ]
+        }
+      ],
+      "notes": "Brand-exclusion setting: on. 20 policy-restricted asset(s) (17 disapproved; 18 live). Cannibalization evidence delegated to /search-term-auditor. Brand exclusion is ON — 1 negative ENABLED BRAND_LIST criterion (shared set 10982324974)."
+    },
+    {
+      "token": "nca-lifecycle",
+      "weight": 12,
+      "score": 80,
+      "band": "watch",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-4-nca-lifecycle",
+      "confidence": "low",
+      "metrics": {
+        "nca_mode": "TARGET_NEW_CUSTOMER",
+        "premium_value": null,
+        "high_lifetime_value_present": false,
+        "value_premium_check": "not-configured"
+      },
+      "findings": [
+        {
+          "type": "nca-intent",
+          "mode": "TARGET_NEW_CUSTOMER",
+          "detail": "Mode TARGET_NEW_CUSTOMER — this campaign bids ONLY for new customers (existing customers excluded). High-impact; CONFIRM this matches the intended role. Unresolved acquisition strategy routes to /strategy-specialist.",
+          "handoff": "/strategy-specialist"
+        }
+      ],
+      "notes": "NCA mode: TARGET_NEW_CUSTOMER. Value-premium: not-configured. Intent is runtime-resolved (business.md → ask → writeback → SKIP); score is provisional. Unresolved strategy → /strategy-specialist."
+    },
+    {
+      "token": "asset-performance",
+      "weight": 12,
+      "score": null,
+      "band": "not-applicable",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-5-asset-performance",
+      "confidence": "high",
+      "metrics": {
+        "branch": "ecom",
+        "live_assets": 510,
+        "served_assets": 0,
+        "impression_floor": 100
+      },
+      "findings": [
+        {
+          "type": "no-served-assets",
+          "detail": "No live asset cleared the ecom impressions floor (100) in the window — there is no per-asset performance to judge (campaign not serving, or serving routed through the feed/Shopping where individual creative assets don't accrue impressions). SKIPPED with explanation — null, excluded from the combined denominator (not scored 0).",
+          "handoff": "pmax-local"
+        }
+      ],
+      "notes": "No served assets above the 100-impression floor — asset-performance SKIPPED (null). Judged by real metrics, never Ad Strength."
+    },
+    {
+      "token": "audience-signals",
+      "weight": 10,
+      "score": 92,
+      "band": "strong",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-5-audience-signals",
+      "confidence": "medium",
+      "metrics": {
+        "branch": "ecom",
+        "eligible_groups": 13,
+        "no_signal_groups": 1,
+        "broad_only_groups": 0,
+        "first_party_groups": 11,
+        "custom_segment_groups": 1,
+        "weak_groups": 1,
+        "list_size_check": "scored",
+        "first_party_lists_sized": 7,
+        "lists_serving": 7,
+        "lists_below_min": 0,
+        "lists_no_queryable_size": 0,
+        "size_discounted_groups": 0,
+        "customer_match_freshness_check": "skipped-no-recency-field-in-v24.1"
+      },
+      "findings": [
+        {
+          "type": "signal-presence",
+          "eligible_groups": 13,
+          "no_signal_count": 1,
+          "no_signal_groups": [
+            "EX I BROAD ASSETS I ALL PRODUCTS"
+          ],
+          "detail": "1/13 asset group(s) have NO audience signal and NO search theme — PMax has no steer for them. Add a relevant 1st-party or custom signal (/pmax-optimizer signals).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "signal-relevance",
+          "branch": "ecom",
+          "hierarchy": "1st-party purchaser/cart/visitor lists > custom segments > broad in-market/affinity",
+          "strong_first_party_groups": 11,
+          "medium_custom_groups": 1,
+          "broad_only_groups": 0,
+          "broad_only": [],
+          "strong_examples": [
+            {
+              "asset_group": "BROAD I ALL P I AI CREATIVES TESTING",
+              "audiences": [
+                "Suchthemen + Topic Targeting MIX NEU"
+              ]
+            },
+            {
+              "asset_group": "EX I NEW VID + STATIC ROTATION",
+              "audiences": [
+                "RE BASIS"
+              ]
+            },
+            {
+              "asset_group": "Black Week",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "EX Video Rotation II",
+              "audiences": [
+                "RE BASIS"
+              ]
+            },
+            {
+              "asset_group": "Asset-Gruppe 1",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "Best performing + Vid Testing",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            }
+          ],
+          "detail": "11 group(s) use 1st-party data signals, 1 use custom/intent segments — none rely solely on broad Google audiences.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "list-size",
+          "status": "scored",
+          "floors": {
+            "search": 1000,
+            "display": 100
+          },
+          "first_party_lists": 7,
+          "serving_lists": 7,
+          "below_min_lists": 0,
+          "no_queryable_size_lists": 0,
+          "below_min": [],
+          "no_queryable_size": [],
+          "discounted_groups": [],
+          "detail": "Size SCORED from real list sizes (Search floor 1000, Display floor 100 active members). 7 first-party list(s) clear a serving floor, 0 are below minimum (too small to steer PMax), 0 report no queryable size (system-defined / customer-match / combined lists return 0/0 — SKIPPED, never penalised). No asset group's first-party steer was discounted on size.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "customer-match-freshness",
+          "status": "skipped",
+          "detail": "Customer-match upload freshness SKIPPED — probed live in Google Ads API v24.1 and confirmed there is NO selectable upload-recency / last-upload timestamp on user_list, crm_based_user_list, or offline_user_data_job (the offline-data-job resource exposes id/status/type/user-list/match-rate but no creation, completion, or modified date_time). membership_life_span is a configured duration, not recency. Not fabricated, not scored — confirm CRM list freshness manually.",
+          "handoff": "pmax-local"
+        }
+      ],
+      "notes": "13 asset group(s): 11 1st-party, 1 custom, 0 broad-only, 1 no-signal. Size SCORED from real list sizes (7 serving / 0 below-min / 0 no-queryable-size; 0 group(s) discounted). Customer-match freshness SKIPPED — no upload-recency field exists in v24.1 (probed live). Resolved audience names used, never IDs."
+    },
+    {
+      "token": "channel-allocation",
+      "weight": 8,
+      "score": null,
+      "band": "not-applicable",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-6-channel-allocation",
+      "confidence": "medium",
+      "metrics": {
+        "reason": "no-channel-rows-in-window"
+      },
+      "findings": [
+        {
+          "type": "channel-serving",
+          "status": "no-serving",
+          "detail": "No channel rows for this campaign in the audit window — it had no spend/serving (e.g. PAUSED). Channel-allocation not scored (null, not penalized).",
+          "handoff": "pmax-local"
+        }
+      ],
+      "notes": "No channel serving evidence — channel-allocation SKIPPED (null, excluded from denominator)."
+    },
+    {
+      "token": "url-expansion",
+      "weight": 5,
+      "score": 100,
+      "band": "strong",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-4-url-expansion",
+      "confidence": "medium",
+      "metrics": {
+        "expansion_on": false,
+        "expanded_lp_count": 0,
+        "divergent_lp_count": 0,
+        "configured_url_count": 5,
+        "lp_performance_metrics_available": true,
+        "converting_lp_count": 0,
+        "non_converting_lp_count": 0,
+        "non_converting_lp_share": 0,
+        "divergent_non_converting_count": 0,
+        "total_expanded_conversions": 0,
+        "total_expanded_conversions_value": 0
+      },
+      "findings": [
+        {
+          "type": "expansion-state",
+          "state": "off-or-no-serving",
+          "detail": "No final_url_expansion_asset_view rows for this campaign in the audit window — URL expansion is OFF or did not serve. Confirm this matches intent (feed-driven campaigns often want it OFF; broad-reach campaigns may want it ON).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "lp-performance",
+          "available": true,
+          "metrics_basis": "conversions + conversions_value (clicks/cost incompatible with this resource; impressions does not co-report with conversions — v24.1, verified live)",
+          "expanded_lp_count": 0,
+          "converting_lp_count": 0,
+          "non_converting_lp_count": 0,
+          "non_converting_lp_share": 0,
+          "divergent_non_converting_count": 0,
+          "total_expanded_conversions": 0,
+          "total_expanded_conversions_value": 0,
+          "detail": "No expanded LPs in the window — no per-LP performance to judge (state/inventory only).",
+          "top_converting": [],
+          "sample_non_converting": [],
+          "handoff": "pmax-local"
+        }
+      ],
+      "notes": "URL expansion OFF / no serving in window. Confirm intent. No expanded-LP metrics to judge."
+    }
+  ],
+  "denominator": 80,
+  "numerator": 7620,
+  "applied_tokens": [
+    "feed-integration",
+    "asset-groups",
+    "brand-defense",
+    "nca-lifecycle",
+    "audience-signals",
+    "url-expansion"
+  ],
+  "combined_score": 95,
+  "combined_band": "strong",
+  "scoped_score": null,
+  "scoped_band": null
+}

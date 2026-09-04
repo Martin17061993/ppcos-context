@@ -1,0 +1,117 @@
+{
+  "generated_by": "analyze.js (Phase 4–6 real scorer)",
+  "module": "asset-performance",
+  "weight": 12,
+  "campaigns": [
+    {
+      "campaign_id": "18788654586",
+      "campaign_name": "EX I WW I PMAX I SCALING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": null,
+      "band": "not-applicable",
+      "confidence": "high",
+      "metrics": {
+        "branch": "ecom",
+        "live_assets": 592,
+        "served_assets": 0,
+        "impression_floor": 100
+      },
+      "findings": [
+        {
+          "type": "no-served-assets",
+          "detail": "No live asset cleared the ecom impressions floor (100) in the window — there is no per-asset performance to judge (campaign not serving, or serving routed through the feed/Shopping where individual creative assets don't accrue impressions). SKIPPED with explanation — null, excluded from the combined denominator (not scored 0).",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20289440565",
+      "campaign_name": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": null,
+      "band": "not-applicable",
+      "confidence": "high",
+      "metrics": {
+        "branch": "ecom",
+        "live_assets": 397,
+        "served_assets": 0,
+        "impression_floor": 100
+      },
+      "findings": [
+        {
+          "type": "no-served-assets",
+          "detail": "No live asset cleared the ecom impressions floor (100) in the window — there is no per-asset performance to judge (campaign not serving, or serving routed through the feed/Shopping where individual creative assets don't accrue impressions). SKIPPED with explanation — null, excluded from the combined denominator (not scored 0).",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20311845501",
+      "campaign_name": "EX I FRA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": null,
+      "band": "not-applicable",
+      "confidence": "high",
+      "metrics": {
+        "branch": "ecom",
+        "live_assets": 290,
+        "served_assets": 0,
+        "impression_floor": 100
+      },
+      "findings": [
+        {
+          "type": "no-served-assets",
+          "detail": "No live asset cleared the ecom impressions floor (100) in the window — there is no per-asset performance to judge (campaign not serving, or serving routed through the feed/Shopping where individual creative assets don't accrue impressions). SKIPPED with explanation — null, excluded from the combined denominator (not scored 0).",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20521524704",
+      "campaign_name": "EX I USA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": null,
+      "band": "not-applicable",
+      "confidence": "high",
+      "metrics": {
+        "branch": "ecom",
+        "live_assets": 378,
+        "served_assets": 0,
+        "impression_floor": 100
+      },
+      "findings": [
+        {
+          "type": "no-served-assets",
+          "detail": "No live asset cleared the ecom impressions floor (100) in the window — there is no per-asset performance to judge (campaign not serving, or serving routed through the feed/Shopping where individual creative assets don't accrue impressions). SKIPPED with explanation — null, excluded from the combined denominator (not scored 0).",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "21127105111",
+      "campaign_name": "EX I WW I PMAX I PROSPECTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": null,
+      "band": "not-applicable",
+      "confidence": "high",
+      "metrics": {
+        "branch": "ecom",
+        "live_assets": 510,
+        "served_assets": 0,
+        "impression_floor": 100
+      },
+      "findings": [
+        {
+          "type": "no-served-assets",
+          "detail": "No live asset cleared the ecom impressions floor (100) in the window — there is no per-asset performance to judge (campaign not serving, or serving routed through the feed/Shopping where individual creative assets don't accrue impressions). SKIPPED with explanation — null, excluded from the combined denominator (not scored 0).",
+          "handoff": "pmax-local"
+        }
+      ]
+    }
+  ]
+}

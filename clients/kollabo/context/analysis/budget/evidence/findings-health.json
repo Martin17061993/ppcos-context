@@ -1,0 +1,888 @@
+{
+  "meta": {
+    "engine": "analyze-budget-health",
+    "generatedAt": "2026-08-18T14:46:30.467Z",
+    "period": 30,
+    "primaryKPI": "cpa",
+    "breakEven": 75,
+    "targetSource": "configured",
+    "accountCurrency": "CHF",
+    "campaignsAnalyzed": 30,
+    "consumersAfterExperimentGrouping": 30,
+    "sharedBudgetsFound": 12
+  },
+  "findings": [
+    {
+      "id": "BUD-D01",
+      "verdict": "WARN",
+      "severity": "medium",
+      "message": "29 campaign(s) showing budget-limited signal (IS Lost (Budget) >= 10%).",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+          "campaignId": "1509955426",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 26.8,
+          "cost": 385
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Dachdecker",
+          "campaignId": "6496821254",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 26.7,
+          "cost": 89
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Maler",
+          "campaignId": "6503042592",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 30.3,
+          "cost": 337
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+          "campaignId": "15145890855",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 35.5,
+          "cost": 242
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+          "campaignId": "15210620317",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 28.9,
+          "cost": 265
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Sanitärinstallateur",
+          "campaignId": "15210620323",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 32.9,
+          "cost": 299
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Metallbauer",
+          "campaignId": "15347327648",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 28.2,
+          "cost": 263
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+          "campaignId": "20691357994",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 20.2,
+          "cost": 237
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Polymechaniker",
+          "campaignId": "20702215351",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 23.9,
+          "cost": 181
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Produktionsmechaniker",
+          "campaignId": "20707086616",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 26.5,
+          "cost": 150
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatikmonteur",
+          "campaignId": "20768068758",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 33.9,
+          "cost": 123
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+          "campaignId": "23369525700",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 36,
+          "cost": 629
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gärtner",
+          "campaignId": "23468547546",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 26.5,
+          "cost": 207
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+          "campaignId": "23468556621",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 23.9,
+          "cost": 488
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Kranführer",
+          "campaignId": "23468568174",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 35.4,
+          "cost": 120
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Montage-Schreiner",
+          "campaignId": "23468574954",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 30.8,
+          "cost": 124
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Zimmermann",
+          "campaignId": "23468591016",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 32,
+          "cost": 148
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Abdichter",
+          "campaignId": "23473547006",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.6,
+          "cost": 152
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Baumaschinenführer",
+          "campaignId": "23473551299",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 24.5,
+          "cost": 91
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+          "campaignId": "23473587776",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 21.3,
+          "cost": 545
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+          "campaignId": "23473608146",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.3,
+          "cost": 368
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+          "campaignId": "23473611323",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 26.1,
+          "cost": 517
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Trockenbauer",
+          "campaignId": "23473633574",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 32.9,
+          "cost": 85
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur",
+          "campaignId": "23478160315",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 28.5,
+          "cost": 92
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gerüstbauer",
+          "campaignId": "23478231493",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 28.2,
+          "cost": 93
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+          "campaignId": "23478250789",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.8,
+          "cost": 145
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Strassenbauer",
+          "campaignId": "23478262294",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.8,
+          "cost": 362
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | DYN Catchall",
+          "campaignId": "23612966133",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 25.2,
+          "cost": 303
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+          "campaignId": "23619183073",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 33,
+          "cost": 605
+        }
+      ]
+    },
+    {
+      "id": "BUD-D02",
+      "verdict": "FAIL",
+      "severity": "high",
+      "message": "24 campaign(s) with IS Lost (Budget) >= 25%.",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+          "campaignId": "1509955426",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 26.8,
+          "cost": 385
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Dachdecker",
+          "campaignId": "6496821254",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 26.7,
+          "cost": 89
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Maler",
+          "campaignId": "6503042592",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 30.3,
+          "cost": 337
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+          "campaignId": "15145890855",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 35.5,
+          "cost": 242
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+          "campaignId": "15210620317",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 28.9,
+          "cost": 265
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Sanitärinstallateur",
+          "campaignId": "15210620323",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 32.9,
+          "cost": 299
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Metallbauer",
+          "campaignId": "15347327648",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 28.2,
+          "cost": 263
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Produktionsmechaniker",
+          "campaignId": "20707086616",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 26.5,
+          "cost": 150
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatikmonteur",
+          "campaignId": "20768068758",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 33.9,
+          "cost": 123
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+          "campaignId": "23369525700",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 36,
+          "cost": 629
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gärtner",
+          "campaignId": "23468547546",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 26.5,
+          "cost": 207
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Kranführer",
+          "campaignId": "23468568174",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 35.4,
+          "cost": 120
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Montage-Schreiner",
+          "campaignId": "23468574954",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 30.8,
+          "cost": 124
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Zimmermann",
+          "campaignId": "23468591016",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 32,
+          "cost": 148
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Abdichter",
+          "campaignId": "23473547006",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.6,
+          "cost": 152
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+          "campaignId": "23473608146",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.3,
+          "cost": 368
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+          "campaignId": "23473611323",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 26.1,
+          "cost": 517
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Trockenbauer",
+          "campaignId": "23473633574",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 32.9,
+          "cost": 85
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur",
+          "campaignId": "23478160315",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 28.5,
+          "cost": 92
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gerüstbauer",
+          "campaignId": "23478231493",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 28.2,
+          "cost": 93
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+          "campaignId": "23478250789",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.8,
+          "cost": 145
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Strassenbauer",
+          "campaignId": "23478262294",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.8,
+          "cost": 362
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | DYN Catchall",
+          "campaignId": "23612966133",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 25.2,
+          "cost": 303
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+          "campaignId": "23619183073",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 33,
+          "cost": 605
+        }
+      ]
+    },
+    {
+      "id": "BUD-D03",
+      "verdict": "WARN",
+      "severity": "high",
+      "message": "8 profitable campaign(s) constrained by budget.",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+          "campaignId": "1509955426",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 26.8,
+          "cost": 385,
+          "margin": 0.776724895004448
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+          "campaignId": "15210620317",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 28.9,
+          "cost": 265,
+          "margin": 0.5599051919351304
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+          "campaignId": "20691357994",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 20.2,
+          "cost": 237,
+          "margin": 0.4728255683943989
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+          "campaignId": "23369525700",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 36,
+          "cost": 629,
+          "margin": 0.37481899292986354
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+          "campaignId": "23473587776",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 21.3,
+          "cost": 545,
+          "margin": 0.029510820681760114
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+          "campaignId": "23473608146",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.3,
+          "cost": 368,
+          "margin": 0.24494046456733837
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+          "campaignId": "23478250789",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.8,
+          "cost": 145,
+          "margin": 0.722139935247197
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+          "campaignId": "23619183073",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 33,
+          "cost": 605,
+          "margin": 0.4422964099645123
+        }
+      ],
+      "targetSource": "configured"
+    },
+    {
+      "id": "BUD-D04",
+      "verdict": "FAIL",
+      "severity": "critical",
+      "message": "2 unprofitable campaign(s) still budget-limited — reduce or pause before any raise.",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+          "campaignId": "23468556621",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 23.9,
+          "cost": 488,
+          "margin": -0.0015589743589742965
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+          "campaignId": "23473611323",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 26.1,
+          "cost": 517,
+          "margin": -0.1553259801415777
+        }
+      ]
+    },
+    {
+      "id": "BUD-D05",
+      "verdict": "PASS",
+      "severity": "info",
+      "message": "All Search/Shopping campaigns have daily budget >= 2x tCPA.",
+      "blocking": [],
+      "campaigns": []
+    },
+    {
+      "id": "BUD-D06",
+      "verdict": "INFO",
+      "severity": "info",
+      "message": "Exhaustion timing analyzed in pacing engine (analyze-pacing.js).",
+      "blocking": [],
+      "deferTo": "analyze-pacing"
+    },
+    {
+      "id": "BUD-D07",
+      "verdict": "INFO",
+      "severity": "info",
+      "message": "Reminder: Google may spend up to 2x daily budget on STANDARD delivery (314 of 314 budgets).",
+      "blocking": [],
+      "standardCount": 314,
+      "totalBudgets": 314
+    },
+    {
+      "id": "BUD-D08",
+      "verdict": "WARN",
+      "severity": "medium",
+      "message": "30 smart-bidding campaign(s) below required monthly conversion floor.",
+      "blocking": [
+        "bidding"
+      ],
+      "campaigns": [
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+          "campaignId": "1509955426",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 23,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Dachdecker",
+          "campaignId": "6496821254",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 2.5,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Maler",
+          "campaignId": "6503042592",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 4.5,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+          "campaignId": "15145890855",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 1.9,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+          "campaignId": "15210620317",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 8,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Sanitärinstallateur",
+          "campaignId": "15210620323",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 3,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Metallbauer",
+          "campaignId": "15347327648",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 5,
+          "required": 30
+        },
+        {
+          "campaign": "EX | DE | DACH | SEARCH | LEAD | UMLAND TEST",
+          "campaignId": "20685916051",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 16,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+          "campaignId": "20691357994",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 6,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Polymechaniker",
+          "campaignId": "20702215351",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 2.5,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Produktionsmechaniker",
+          "campaignId": "20707086616",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 3,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatikmonteur",
+          "campaignId": "20768068758",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 4,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+          "campaignId": "23369525700",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 13.4,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gärtner",
+          "campaignId": "23468547546",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 3,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+          "campaignId": "23468556621",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 6.5,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Kranführer",
+          "campaignId": "23468568174",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 0,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Montage-Schreiner",
+          "campaignId": "23468574954",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 0.5,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Zimmermann",
+          "campaignId": "23468591016",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 3.5,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Abdichter",
+          "campaignId": "23473547006",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 1,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Baumaschinenführer",
+          "campaignId": "23473551299",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 1,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+          "campaignId": "23473587776",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 7.5,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+          "campaignId": "23473608146",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 6.5,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+          "campaignId": "23473611323",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 6,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Trockenbauer",
+          "campaignId": "23473633574",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 1,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur",
+          "campaignId": "23478160315",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 2,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gerüstbauer",
+          "campaignId": "23478231493",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 0,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+          "campaignId": "23478250789",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 7,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Strassenbauer",
+          "campaignId": "23478262294",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 4.1,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | DYN Catchall",
+          "campaignId": "23612966133",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 4.6,
+          "required": 30
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+          "campaignId": "23619183073",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSIONS",
+          "monthlyConv": 14.5,
+          "required": 30
+        }
+      ]
+    },
+    {
+      "id": "BUD-D13",
+      "verdict": "WARN",
+      "severity": "high",
+      "message": "5 profitable campaign(s) running below 5% share of total spend.",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+          "channel": "SEARCH",
+          "cost": 385,
+          "sharePct": 4.7,
+          "margin": 0.776724895004448
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+          "channel": "SEARCH",
+          "cost": 265,
+          "sharePct": 3.2,
+          "margin": 0.5599051919351304
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+          "channel": "SEARCH",
+          "cost": 237,
+          "sharePct": 2.9,
+          "margin": 0.4728255683943989
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+          "channel": "SEARCH",
+          "cost": 368,
+          "sharePct": 4.5,
+          "margin": 0.24494046456733837
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+          "channel": "SEARCH",
+          "cost": 145,
+          "sharePct": 1.8,
+          "margin": 0.722139935247197
+        }
+      ]
+    },
+    {
+      "id": "BUD-D14",
+      "verdict": "FAIL",
+      "severity": "high",
+      "message": "2 unprofitable campaign(s) consuming >= 5% of spend.",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+          "channel": "SEARCH",
+          "cost": 488,
+          "sharePct": 5.9,
+          "margin": -0.0015589743589742965
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+          "channel": "SEARCH",
+          "cost": 517,
+          "sharePct": 6.3,
+          "margin": -0.1553259801415777
+        }
+      ]
+    },
+    {
+      "id": "BUD-D15",
+      "verdict": "PASS",
+      "severity": "medium",
+      "message": "Profitable share of classified spend = 79%.",
+      "blocking": []
+    },
+    {
+      "id": "BUD-D16",
+      "verdict": "PASS",
+      "severity": "info",
+      "message": "No active campaigns are running zero-spend.",
+      "blocking": [],
+      "campaigns": [],
+      "windowDays": 30,
+      "suspectedZeroSpendDaysThreshold": 7
+    },
+    {
+      "id": "BUD-D17",
+      "verdict": "PASS",
+      "severity": "info",
+      "message": "Shared budgets are reasonably balanced across members.",
+      "blocking": [],
+      "sharedBudgets": []
+    },
+    {
+      "id": "BUD-D18",
+      "verdict": "PASS",
+      "severity": "info",
+      "message": "Shared budgets group campaigns with consistent objectives.",
+      "blocking": [],
+      "sharedBudgets": []
+    },
+    {
+      "id": "BUD-D19",
+      "verdict": "PASS",
+      "severity": "info",
+      "message": "No shared budgets conflicting with portfolio bid strategies.",
+      "blocking": [],
+      "sharedBudgets": []
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "engine": "analyze-budget-health",
+    "generatedAt": "2026-08-06T14:42:29.685Z",
+    "period": 30,
+    "primaryKPI": "roas",
+    "breakEven": 1.9,
+    "targetSource": "configured",
+    "accountCurrency": "EUR",
+    "campaignsAnalyzed": 15,
+    "consumersAfterExperimentGrouping": 15,
+    "sharedBudgetsFound": 0
+  },
+  "findings": [
+    {
+      "id": "BUD-D01",
+      "verdict": "WARN",
+      "severity": "medium",
+      "message": "2 campaign(s) showing budget-limited signal (IS Lost (Budget) >= 10%).",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+          "campaignId": "17820068572",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.7,
+          "cost": 4697
+        },
+        {
+          "campaign": "EX I SHOPPING I FOKUSPRODUKTE",
+          "campaignId": "18399515515",
+          "channel": "SHOPPING",
+          "isLostBudgetPct": 25.6,
+          "cost": 12316
+        }
+      ]
+    },
+    {
+      "id": "BUD-D02",
+      "verdict": "WARN",
+      "severity": "high",
+      "message": "2 campaign(s) with IS Lost (Budget) >= 25%.",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+          "campaignId": "17820068572",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.7,
+          "cost": 4697
+        },
+        {
+          "campaign": "EX I SHOPPING I FOKUSPRODUKTE",
+          "campaignId": "18399515515",
+          "channel": "SHOPPING",
+          "isLostBudgetPct": 25.6,
+          "cost": 12316
+        }
+      ]
+    },
+    {
+      "id": "BUD-D03",
+      "verdict": "WARN",
+      "severity": "high",
+      "message": "2 profitable campaign(s) constrained by budget.",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+          "campaignId": "17820068572",
+          "channel": "SEARCH",
+          "isLostBudgetPct": 31.7,
+          "cost": 4697,
+          "margin": 0.9707127877855315
+        },
+        {
+          "campaign": "EX I SHOPPING I FOKUSPRODUKTE",
+          "campaignId": "18399515515",
+          "channel": "SHOPPING",
+          "isLostBudgetPct": 25.6,
+          "cost": 12316,
+          "margin": 0.6404656201991892
+        }
+      ],
+      "targetSource": "configured"
+    },
+    {
+      "id": "BUD-D04",
+      "verdict": "PASS",
+      "severity": "info",
+      "message": "No unprofitable campaigns are budget-limited.",
+      "blocking": [],
+      "campaigns": []
+    },
+    {
+      "id": "BUD-D05",
+      "verdict": "PASS",
+      "severity": "info",
+      "message": "All Search/Shopping campaigns have daily budget >= 2x tCPA.",
+      "blocking": [],
+      "campaigns": []
+    },
+    {
+      "id": "BUD-D06",
+      "verdict": "INFO",
+      "severity": "info",
+      "message": "Exhaustion timing analyzed in pacing engine (analyze-pacing.js).",
+      "blocking": [],
+      "deferTo": "analyze-pacing"
+    },
+    {
+      "id": "BUD-D07",
+      "verdict": "INFO",
+      "severity": "info",
+      "message": "Reminder: Google may spend up to 2x daily budget on STANDARD delivery (50 of 50 budgets).",
+      "blocking": [],
+      "standardCount": 50,
+      "totalBudgets": 50
+    },
+    {
+      "id": "BUD-D08",
+      "verdict": "WARN",
+      "severity": "medium",
+      "message": "8 smart-bidding campaign(s) below required monthly conversion floor.",
+      "blocking": [
+        "bidding"
+      ],
+      "campaigns": [
+        {
+          "campaign": "JM I DSA I FC'S I CAT'S",
+          "campaignId": "17655205884",
+          "channel": "SEARCH",
+          "strategyType": "MAXIMIZE_CONVERSION_VALUE",
+          "monthlyConv": 42,
+          "required": 50
+        },
+        {
+          "campaign": "EX I WW I PMAX I SCALING I BROAD",
+          "campaignId": "18788654586",
+          "channel": "PERFORMANCE_MAX",
+          "strategyType": "MAXIMIZE_CONVERSION_VALUE",
+          "monthlyConv": 0,
+          "required": 50
+        },
+        {
+          "campaign": "EX I SHOPPING I PUR I T-ROAS I NEAR INDEX",
+          "campaignId": "19764299214",
+          "channel": "SHOPPING",
+          "strategyType": "TARGET_ROAS",
+          "monthlyConv": 5,
+          "required": 50
+        },
+        {
+          "campaign": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+          "campaignId": "20289440565",
+          "channel": "PERFORMANCE_MAX",
+          "strategyType": "MAXIMIZE_CONVERSION_VALUE",
+          "monthlyConv": 0,
+          "required": 50
+        },
+        {
+          "campaign": "EX I FRA I PMAX I TESTING I BROAD",
+          "campaignId": "20311845501",
+          "channel": "PERFORMANCE_MAX",
+          "strategyType": "MAXIMIZE_CONVERSION_VALUE",
+          "monthlyConv": 0,
+          "required": 50
+        },
+        {
+          "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+          "campaignId": "20369175508",
+          "channel": "PERFORMANCE_MAX",
+          "strategyType": "MAXIMIZE_CONVERSION_VALUE",
+          "monthlyConv": 18.2,
+          "required": 50
+        },
+        {
+          "campaign": "EX I USA I PMAX I TESTING I BROAD",
+          "campaignId": "20521524704",
+          "channel": "PERFORMANCE_MAX",
+          "strategyType": "MAXIMIZE_CONVERSION_VALUE",
+          "monthlyConv": 0,
+          "required": 50
+        },
+        {
+          "campaign": "EX I WW I PMAX I PROSPECTING I BROAD",
+          "campaignId": "21127105111",
+          "channel": "PERFORMANCE_MAX",
+          "strategyType": "MAXIMIZE_CONVERSION_VALUE",
+          "monthlyConv": 0,
+          "required": 50
+        }
+      ]
+    },
+    {
+      "id": "BUD-D13",
+      "verdict": "WARN",
+      "severity": "high",
+      "message": "6 profitable campaign(s) running below 5% share of total spend.",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "JM I DSA I FC'S I CAT'S",
+          "channel": "SEARCH",
+          "cost": 515,
+          "sharePct": 1.6,
+          "margin": 4.997998438792889
+        },
+        {
+          "campaign": "EX I SHOPPING I PUR I T-ROAS I NEAR INDEX",
+          "channel": "SHOPPING",
+          "cost": 31,
+          "sharePct": 0.1,
+          "margin": 11.310756363930995
+        },
+        {
+          "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+          "channel": "PERFORMANCE_MAX",
+          "cost": 545,
+          "sharePct": 1.7,
+          "margin": 1.5236101911306477
+        },
+        {
+          "campaign": "EX | USA | SEARCH | BRAND",
+          "channel": "SEARCH",
+          "cost": 819,
+          "sharePct": 2.5,
+          "margin": 51.666242806852146
+        },
+        {
+          "campaign": "EX | SKANDI | SEARCH | BRAND",
+          "channel": "SEARCH",
+          "cost": 668,
+          "sharePct": 2,
+          "margin": 22.400990347442498
+        },
+        {
+          "campaign": "EX | FRA | SEARCH | BRAND",
+          "channel": "SEARCH",
+          "cost": 433,
+          "sharePct": 1.3,
+          "margin": 66.52674006828828
+        }
+      ]
+    },
+    {
+      "id": "BUD-D14",
+      "verdict": "PASS",
+      "severity": "info",
+      "message": "No underperforming campaigns are over-allocated.",
+      "blocking": [],
+      "campaigns": []
+    },
+    {
+      "id": "BUD-D15",
+      "verdict": "PASS",
+      "severity": "medium",
+      "message": "Profitable share of classified spend = 100%.",
+      "blocking": []
+    },
+    {
+      "id": "BUD-D16",
+      "verdict": "WARN",
+      "severity": "medium",
+      "message": "5 active campaign(s) with zero spend over the audit window — likely policy/approval/targeting block.",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "EX I WW I PMAX I SCALING I BROAD",
+          "channel": "PERFORMANCE_MAX"
+        },
+        {
+          "campaign": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+          "channel": "PERFORMANCE_MAX"
+        },
+        {
+          "campaign": "EX I FRA I PMAX I TESTING I BROAD",
+          "channel": "PERFORMANCE_MAX"
+        },
+        {
+          "campaign": "EX I USA I PMAX I TESTING I BROAD",
+          "channel": "PERFORMANCE_MAX"
+        },
+        {
+          "campaign": "EX I WW I PMAX I PROSPECTING I BROAD",
+          "channel": "PERFORMANCE_MAX"
+        }
+      ],
+      "windowDays": 30,
+      "suspectedZeroSpendDaysThreshold": 7
+    },
+    {
+      "id": "BUD-D17",
+      "verdict": "SKIP",
+      "severity": "info",
+      "message": "No shared budgets in account — module N/A; weight redistributes.",
+      "blocking": [],
+      "module": "shared"
+    },
+    {
+      "id": "BUD-D18",
+      "verdict": "SKIP",
+      "severity": "info",
+      "message": "No shared budgets in account.",
+      "blocking": [],
+      "module": "shared"
+    },
+    {
+      "id": "BUD-D19",
+      "verdict": "SKIP",
+      "severity": "info",
+      "message": "No shared budgets in account.",
+      "blocking": [],
+      "module": "shared"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "description": "Budget-Umschichtung 2026-08-27 — Phase 2 des Budgetplans 8.500 + UMLAND-Uplift, erweitert um zwei datengetriebene Korrekturen. Budget-neutral, Netto 0, Tagesbudget-Summe bleibt 280,00 CHF ueber 30 Live-Kampagnen.",
+  "generated_from": "Eigener Frischpull 2026-08-27 (campaign daily 04.-26.08., Conversion-Action-Segment, live-campaign-budgets-fresh.csv). Der letzte /budget-auditor-Report ist vom 18.08. (9 T alt) und wurde NICHT als Zahlenquelle verwendet.",
+  "generated_at": "2026-08-27T00:00:00Z",
+  "evidence_window": "2026-08-12 bis 2026-08-25 (14 T), Konto-CPA 44,13 CHF (3.932,37 / 89,11 Qualified), CPC 1,23",
+  "guardrail_check": {
+    "g1_umland_saturation_cap": "31,00 CHF/Tag << 85 CHF/Tag Deckel — eingehalten",
+    "g3_no_batch_pushes": "3 Erhoehungen gleichzeitig. Der belegte Schadensfall (15.08.2024) waren 4. Bewusst unter dieser Grenze; Sanitaer- und Heizungsinstallateur auf Welle 2 (>=7 T) verschoben.",
+    "g5_reduction_threshold": "1,5x Konto-CPA = 66,19. Compeditor 273,75 und Maler 154,79 liegen darueber.",
+    "g8_step_cap_20pct": "Compeditor -20,0% | Maler -14,5% | UMLAND +8,4% | DYN Catchall +20,0% | Montage-Elektriker +18,8% — alle <= 20%",
+    "g10_no_profession_pause": "Kein Gewerk unter 3-4 CHF/Tag. Maler bleibt bei 9,40. Compeditor ist kein Gewerk.",
+    "rest_period_7d": "Letzte Budgetaenderung 18.08. = 9 Tage her — Ruhefrist erfuellt."
+  },
+  "total_operations": 5,
+  "operations": [
+    {
+      "type": "update",
+      "resource": "campaign_budget",
+      "resource_name": "customers/1487707588/campaignBudgets/15399153047",
+      "fields": {
+        "amount_micros": 16000000
+      },
+      "meta": {
+        "action_id": "BUD-E-REALLOCATE",
+        "mutation_type": "reduce",
+        "target": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+        "campaign_id": "23619183073",
+        "channel_type": "SEARCH",
+        "from": "20.00 CHF/Tag",
+        "to": "16.00 CHF/Tag",
+        "delta": "-4.00 (-20,0%)",
+        "step_cap": { "from_micros": 20000000, "to_micros": 16000000, "multiplier": 0.8, "max_allowed": 1.3 },
+        "rationale": "Groesste Fehlallokation im Konto: 20,00 CHF/Tag = 7,1% des Kontobudgets, 273,75 CHF in 14 T bei 1,00 Qualified. CPA 273,75 = 6,20x Konto-Oe (44,13). Guardrail-#5-Schwelle 66,19 um Faktor 4,1 gerissen. Budget-Lost-IS nur 21,0% bei 98% Ausnutzung — die Kampagne ist nicht ausgehungert, sie ist unrentabel. Schritt exakt -20% (Guardrail #8), kein Gewerk betroffen (Guardrail #10 nicht anwendbar).",
+        "cascade_clear": { "measurement": "blocking", "business": "blocking", "efficiency": "clear", "conversion": "clear", "bidding": "clear" },
+        "confirmed": true
+      }
+    },
+    {
+      "type": "update",
+      "resource": "campaign_budget",
+      "resource_name": "customers/1487707588/campaignBudgets/6502892780",
+      "fields": {
+        "amount_micros": 9400000
+      },
+      "meta": {
+        "action_id": "BUD-E-REALLOCATE",
+        "mutation_type": "reduce",
+        "target": "EX | 26 | CH | SEARCH | LEAD | Maler",
+        "campaign_id": "6503042592",
+        "channel_type": "SEARCH",
+        "from": "11.00 CHF/Tag",
+        "to": "9.40 CHF/Tag",
+        "delta": "-1.60 (-14,5%)",
+        "step_cap": { "from_micros": 11000000, "to_micros": 9400000, "multiplier": 0.854, "max_allowed": 1.3 },
+        "rationale": "148,74 CHF in 14 T bei 0,96 Qualified = CPA 154,79 = 3,51x Konto-Oe. Guardrail-#5-Schwelle 66,19 klar gerissen. Reduktion bewusst nur -14,5% statt -20%, damit die Summe exakt die drei Erhoehungen deckt (Netto 0). Bleibt mit 9,40 weit ueber dem 3-4-CHF-Minimum aus Guardrail #10 (keine Profession pausieren).",
+        "cascade_clear": { "measurement": "blocking", "business": "blocking", "efficiency": "clear", "conversion": "clear", "bidding": "clear" },
+        "confirmed": true
+      }
+    },
+    {
+      "type": "update",
+      "resource": "campaign_budget",
+      "resource_name": "customers/1487707588/campaignBudgets/14820960147",
+      "fields": {
+        "amount_micros": 31000000
+      },
+      "meta": {
+        "action_id": "BUD-E-REALLOCATE",
+        "mutation_type": "raise",
+        "target": "EX | DE | DACH | SEARCH | LEAD | UMLAND TEST",
+        "campaign_id": "20685916051",
+        "channel_type": "SEARCH",
+        "tcpa": null,
+        "from": "28.60 CHF/Tag",
+        "to": "31.00 CHF/Tag",
+        "delta": "+2.40 (+8,4%)",
+        "step_cap": { "from_micros": 28600000, "to_micros": 31000000, "multiplier": 1.0839, "max_allowed": 1.3 },
+        "rationale": "PHASE 2 des Budgetplans vom 11.08. — ausgeloest, weil am Messpunkt alle drei Gates aus follow-ups-UMLAND-2026-08-11.md gruen sind (Fenster 19.-25.08.): Ausnutzung 111,2% (Gate >=95%), Budget-Lost-IS 14,0% (Gate >10%), Qualified-CPA 44,54 (Gate <=55). 14-Tage-Wert 12.-25.08.: 413,75 CHF / 11,00 Qualified / CPA 37,61 — unter Konto-Oe 44,13. Der geplante Zielwert 31,00 CHF/Tag wird damit unveraendert erreicht. Saettigungsdeckel Guardrail #1 (~85 CHF/Tag) weit entfernt. Budget-Objekt 14820960147 traegt reference_count=2; die zweite Kampagne (23994999502, UMLAND tCPA vs. MaxConv) ist ENDED/PAUSED — keine Live-Nebenwirkung, verifiziert.",
+        "cascade_clear": { "measurement": "blocking", "business": "blocking", "efficiency": "recommended", "conversion": "recommended", "bidding": "clear" },
+        "confirmed": true,
+        "override_reason": "Eff-Layer: /search-term-auditor 18.08. haelt den temporaerbuero-Cluster offen (1.020 CHF / CPA 22,09 ueber 26 Kampagnen) — das ist eine Struktur-, keine Verschwendungsfeststellung und trifft praktisch jede Kampagne. Conv-Layer: /lp-auditor 18.08. (55%) und /offer-auditor 11.08. (78%) sind site-weit offen, betreffen also alle 30 Kampagnen gleichermassen und koennen einen kampagnenscharfen Budgetschritt nicht differenzieren. Beide bewusst uebersteuert — die Erhoehung folgt einer vorab definierten, jetzt erfuellten Entscheidungsregel.",
+        "peer_confirmations": [
+          {
+            "warn": "Bid-Strategy-Wechsel 11.08. (tCPA 11 entfernt) — Matrix-Fenster 14 Tage",
+            "status": "ausserhalb des Fensters (16 Tage her)"
+          },
+          {
+            "warn": "Budgetaenderung durch /budget-optimizer am 18.08. auf demselben campaign_budget — SOFT-WARN-Fenster 7 Tage",
+            "status": "ausserhalb des Fensters (9 Tage her)"
+          }
+        ]
+      }
+    },
+    {
+      "type": "update",
+      "resource": "campaign_budget",
+      "resource_name": "customers/1487707588/campaignBudgets/15401735492",
+      "fields": {
+        "amount_micros": 12000000
+      },
+      "meta": {
+        "action_id": "BUD-E-REALLOCATE",
+        "mutation_type": "raise",
+        "target": "EX | 26 | CH | SEARCH | LEAD | DYN Catchall",
+        "campaign_id": "23612966133",
+        "channel_type": "SEARCH",
+        "tcpa": null,
+        "from": "10.00 CHF/Tag",
+        "to": "12.00 CHF/Tag",
+        "delta": "+2.00 (+20,0%)",
+        "step_cap": { "from_micros": 10000000, "to_micros": 12000000, "multiplier": 1.2, "max_allowed": 1.3 },
+        "rationale": "Hoechster Budget-Lost-IS im gesamten Konto: 36,8% (impressionsgewichtet, 14 T) bei 98% Ausnutzung — und das bei CPA 39,12, also UNTER dem Konto-Oe von 44,13. Damit die eindeutigste Unterfinanzierung im Konto: rentabler Traffic, der am Budget scheitert. Guardrail #2 (Budget- vs. Rank-Lost-IS pruefen) erfuellt, CPC 1,23 im Konto-Rahmen. Schritt exakt +20% (Guardrail #8).",
+        "cascade_clear": { "measurement": "blocking", "business": "blocking", "efficiency": "recommended", "conversion": "recommended", "bidding": "clear" },
+        "confirmed": true,
+        "override_reason": "Eff/Conv-Layer wie bei UMLAND: beide offenen Feststellungen (temporaerbuero-Cluster, LP/Offer 55%/78%) sind site- bzw. kontoweit und differenzieren nicht zwischen Kampagnen. Bei einer Kampagne mit CPA unter Konto-Oe und dem hoechsten Budget-Verlust des Kontos ueberwiegt der entgangene Deckungsbeitrag. Nachkontrolle 10.09. terminiert.",
+        "peer_confirmations": []
+      }
+    },
+    {
+      "type": "update",
+      "resource": "campaign_budget",
+      "resource_name": "customers/1487707588/campaignBudgets/14815203560",
+      "fields": {
+        "amount_micros": 7600000
+      },
+      "meta": {
+        "action_id": "BUD-E-REALLOCATE",
+        "mutation_type": "raise",
+        "target": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+        "campaign_id": "15145890855",
+        "channel_type": "SEARCH",
+        "tcpa": null,
+        "from": "6.40 CHF/Tag",
+        "to": "7.60 CHF/Tag",
+        "delta": "+1.20 (+18,8%)",
+        "step_cap": { "from_micros": 6400000, "to_micros": 7600000, "multiplier": 1.1875, "max_allowed": 1.3 },
+        "rationale": "TEILRUECKBAU DES SCHNITTS VOM 18.08. — dieser war gegen die Datenlage. Aktuell 107,18 CHF / 4,96 Qualified in 14 T = CPA 21,60 = 0,49x Konto-Oe. Damit nach Brand (12,19) die zweitbeste Nicht-Brand-Kampagne im Konto und klar innerhalb des Top-Performer-Schutzes (<= 0,8x Oe = 35,30). Gleichzeitig Budget-Lost-IS 22,0% und Ausnutzung 120% des reduzierten Budgets — die Kampagne ist ausgehungert. Der 18.08.-Schnitt beruhte auf CPA 130,31 aus einem 30-Tage-Fenster, das den Juli-Signalabsturz (business.md 3.2) mitschleppte. Rueckbau auf 7,60 statt der alten 8,00, weil +25% den 20%-Cap aus Guardrail #8 rissen.",
+        "cascade_clear": { "measurement": "blocking", "business": "blocking", "efficiency": "recommended", "conversion": "recommended", "bidding": "recommended" },
+        "confirmed": true,
+        "override_reason": "Bid-Layer: /bidding-auditor 18.08. fuehrt fuer diese Kampagne QS-Trend 7->5 (DECLINING_SHARP) und CPC-Anstieg 1,84->2,30->2,54 — beides war die Begruendung fuer den damaligen Schnitt. Beide Signale sind jetzt vom Ergebnis widerlegt: 4,96 Qualified in 14 T bei CPA 21,60. Ein QS-Trend ist ein Fruehindikator, ein realisierter CPA von 0,49x Konto-Oe ist ein Ergebnis — das Ergebnis gewinnt. Eff/Conv-Layer wie bei UMLAND kontoweit und nicht differenzierend.",
+        "peer_confirmations": [
+          {
+            "warn": "Budgetaenderung durch /budget-optimizer am 18.08. auf demselben campaign_budget — SOFT-WARN-Fenster 7 Tage",
+            "status": "ausserhalb des Fensters (9 Tage her)"
+          }
+        ]
+      }
+    }
+  ],
+  "net_impact": {
+    "reduce_total_chf_per_day": -5.6,
+    "raise_total_chf_per_day": 5.6,
+    "net_chf_per_day": 0.0,
+    "account_daily_total_before": 280.0,
+    "account_daily_total_after": 280.0,
+    "monthly_equivalent_chf": 8512
+  },
+  "deferred_to_wave_2": [
+    { "campaign": "EX | 25 | CH | SEARCH | LEAD | Sanitaerinstallateur", "from": "10.00", "proposed": "8.00", "cpa_14d": 145.58, "reason": "Guardrail #3 — nicht mehr als 3 Erhoehungen pro Welle. Fruehestens 2026-09-03." },
+    { "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur", "from": "18.00", "proposed": "14.40", "cpa_14d": 97.76, "reason": "wie oben; Budget-Lost-IS nur 10,9%, also am wenigsten dringlich." }
+  ],
+  "user_approval": {
+    "granted": true,
+    "at": "2026-08-27",
+    "scope": "Nutzerauftrag 2026-08-27: 'umschichtung vorbereiten und umsetzen'. Live apply, 5 ops, budget-neutral."
+  }
+}

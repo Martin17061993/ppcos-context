@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "engine": "analyze-pacing",
+    "generatedAt": "2026-08-18T14:46:32.459Z",
+    "accountCurrency": "CHF",
+    "monthlyTarget": 8500,
+    "seasonalityState": {
+      "mode": "none",
+      "currentMonth": "august",
+      "nextMonth": "september",
+      "isHighlight": false,
+      "approachingHighlight": false
+    },
+    "projection": {
+      "mtdSpend": 4877,
+      "projectedMonth": 8893,
+      "daysElapsed": 18,
+      "daysInMonth": 31,
+      "avgDaily": 286.86
+    }
+  },
+  "findings": [
+    {
+      "id": "BUD-D09",
+      "verdict": "PASS",
+      "severity": "info",
+      "message": "MTD spend 4877 CHF vs proportional target 4935 (-0.7pp).",
+      "blocking": [],
+      "mtdSpend": 4877,
+      "proportionalTarget": 4935,
+      "monthlyTarget": 8500,
+      "daysElapsed": 18,
+      "daysInMonth": 31,
+      "deviationPp": -0.7
+    },
+    {
+      "id": "BUD-D10",
+      "verdict": "PASS",
+      "severity": "info",
+      "message": "Projected month-end 8893 CHF vs target 8500 (+4.6%).",
+      "blocking": [],
+      "projectedMonth": 8893,
+      "target": 8500,
+      "deviationPct": 4.6
+    },
+    {
+      "id": "BUD-D11",
+      "verdict": "PASS",
+      "severity": "info",
+      "message": "Pacing within 10% under-target band.",
+      "blocking": [],
+      "projectedMonth": 8893,
+      "target": 8500,
+      "deviationPct": 4.6,
+      "isHighlightMonth": false
+    },
+    {
+      "id": "BUD-D12",
+      "verdict": "INFO",
+      "severity": "info",
+      "message": "Seasonality mode: none. Current month: august.",
+      "blocking": [],
+      "seasonalityState": {
+        "mode": "none",
+        "currentMonth": "august",
+        "nextMonth": "september",
+        "isHighlight": false,
+        "approachingHighlight": false
+      }
+    },
+    {
+      "id": "BUD-D06",
+      "verdict": "WARN",
+      "severity": "medium",
+      "message": "28 campaign(s) hit daily budget on >=50% of recent days — possible mid-day exhaustion.",
+      "blocking": [],
+      "campaigns": [
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Brand",
+          "campaignId": "1509955426",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 13
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Dachdecker",
+          "campaignId": "6496821254",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 3
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Maler",
+          "campaignId": "6503042592",
+          "exhaustedDays": 7,
+          "observedDays": 14,
+          "ratio": 0.5,
+          "dailyBudget": 11
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker",
+          "campaignId": "15145890855",
+          "exhaustedDays": 9,
+          "observedDays": 14,
+          "ratio": 0.64,
+          "dailyBudget": 8
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatiker",
+          "campaignId": "15210620317",
+          "exhaustedDays": 9,
+          "observedDays": 14,
+          "ratio": 0.64,
+          "dailyBudget": 9
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Sanitärinstallateur",
+          "campaignId": "15210620323",
+          "exhaustedDays": 9,
+          "observedDays": 14,
+          "ratio": 0.64,
+          "dailyBudget": 10
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Metallbauer",
+          "campaignId": "15347327648",
+          "exhaustedDays": 9,
+          "observedDays": 14,
+          "ratio": 0.64,
+          "dailyBudget": 9
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Schweisser",
+          "campaignId": "20691357994",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 8
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Polymechaniker",
+          "campaignId": "20702215351",
+          "exhaustedDays": 9,
+          "observedDays": 14,
+          "ratio": 0.64,
+          "dailyBudget": 6
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Produktionsmechaniker",
+          "campaignId": "20707086616",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 5
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Automatikmonteur",
+          "campaignId": "20768068758",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 4
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur",
+          "campaignId": "23369525700",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 20
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gärtner",
+          "campaignId": "23468547546",
+          "exhaustedDays": 7,
+          "observedDays": 14,
+          "ratio": 0.5,
+          "dailyBudget": 7
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gipser",
+          "campaignId": "23468556621",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 16
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Kranführer",
+          "campaignId": "23468568174",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 4
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Montage-Schreiner",
+          "campaignId": "23468574954",
+          "exhaustedDays": 9,
+          "observedDays": 14,
+          "ratio": 0.64,
+          "dailyBudget": 4
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Zimmermann",
+          "campaignId": "23468591016",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 5
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Abdichter",
+          "campaignId": "23473547006",
+          "exhaustedDays": 9,
+          "observedDays": 14,
+          "ratio": 0.64,
+          "dailyBudget": 5
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Baumaschinenführer",
+          "campaignId": "23473551299",
+          "exhaustedDays": 7,
+          "observedDays": 14,
+          "ratio": 0.5,
+          "dailyBudget": 3
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Bauarbeiter",
+          "campaignId": "23473587776",
+          "exhaustedDays": 10,
+          "observedDays": 14,
+          "ratio": 0.71,
+          "dailyBudget": 18
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Grundbauer",
+          "campaignId": "23473608146",
+          "exhaustedDays": 10,
+          "observedDays": 14,
+          "ratio": 0.71,
+          "dailyBudget": 12
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur",
+          "campaignId": "23473611323",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 18
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Trockenbauer",
+          "campaignId": "23473633574",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 3
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur",
+          "campaignId": "23478160315",
+          "exhaustedDays": 10,
+          "observedDays": 14,
+          "ratio": 0.71,
+          "dailyBudget": 3
+        },
+        {
+          "campaign": "EX | 25 | CH | SEARCH | LEAD | Gerüstbauer",
+          "campaignId": "23478231493",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 3
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Maurer",
+          "campaignId": "23478250789",
+          "exhaustedDays": 9,
+          "observedDays": 14,
+          "ratio": 0.64,
+          "dailyBudget": 5
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Strassenbauer",
+          "campaignId": "23478262294",
+          "exhaustedDays": 10,
+          "observedDays": 14,
+          "ratio": 0.71,
+          "dailyBudget": 12
+        },
+        {
+          "campaign": "EX | 26 | CH | SEARCH | LEAD | Compeditor",
+          "campaignId": "23619183073",
+          "exhaustedDays": 8,
+          "observedDays": 14,
+          "ratio": 0.57,
+          "dailyBudget": 20
+        }
+      ],
+      "note": "Hourly segmentation deferred to v1.1; daily 95% threshold used as v1 heuristic."
+    }
+  ]
+}

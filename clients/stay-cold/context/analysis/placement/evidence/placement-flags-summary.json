@@ -1,0 +1,263 @@
+{
+  "vtc_source": "raw_all_actions",
+  "total_placements_analyzed": 260516,
+  "total_flagged": 1793,
+  "flags_by_type": {
+    "ZERO_CLICK": 3,
+    "HIGH_CTR_ACCIDENTAL": 199,
+    "VIDEO_CTR_ANOMALY": 448,
+    "PMAX_BAD_DOMAIN": 996,
+    "SPAM_CONTENT": 60,
+    "KIDS_CONTENT": 47,
+    "MUSIC_PASSIVE": 40
+  },
+  "google_owned_skipped": [],
+  "placements_sent_to_content_reviewer": 300,
+  "total_flagged_spend": "117.73",
+  "campaigns_analyzed": 1,
+  "placement_type_breakdown": {
+    "YOUTUBE_CHANNEL": {
+      "placements": 63904,
+      "spend": 2918.66,
+      "conversions": 0,
+      "conversions_value": 0,
+      "clicks": 625,
+      "impressions": 406730,
+      "cpa": 0,
+      "roas": 0,
+      "ctr": 0.0015
+    }
+  },
+  "top_wasters": [
+    {
+      "placement": "UCRXeotOurT4O18UecCmyvRw",
+      "display_name": "Viraltek",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 79.21,
+      "clicks": 0,
+      "impressions": 9825,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UCYXIviXPAaaaU_AOotpXTAw",
+      "display_name": "Revive Music",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 23.13,
+      "clicks": 7,
+      "impressions": 2847,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UC-4Tzd5lIRU7lcv7_5OO01Q",
+      "display_name": "unsympathischTV",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 14.86,
+      "clicks": 2,
+      "impressions": 2208,
+      "view_through_conversions": 3,
+      "primary_vtc": 3
+    },
+    {
+      "placement": "UC7Tmdxj18fdu4tTtxVUhoCA",
+      "display_name": "Jocuri Horror",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 13.73,
+      "clicks": 4,
+      "impressions": 2201,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UCoMdktPbSTixAyNGwb-UYkQ",
+      "display_name": "Sky News",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 11.44,
+      "clicks": 1,
+      "impressions": 1684,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UCg3gzldyhCHJjY7AWWTNPPA",
+      "display_name": "Sam and Colby",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 7.29,
+      "clicks": 2,
+      "impressions": 1186,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UC0L1suV8pVgO4pCAIBNGx5w",
+      "display_name": "60 Minutes Australia",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 6.61,
+      "clicks": 1,
+      "impressions": 1045,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UCwWhs_6x42TyRM4Wstoq8HA",
+      "display_name": "The Daily Show",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 5.81,
+      "clicks": 0,
+      "impressions": 1125,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UCpXBGqwsBkpvcYjsJBQ7LEQ",
+      "display_name": "Critical Role",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 5.74,
+      "clicks": 1,
+      "impressions": 808,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UCMtFAi84ehTSYSE9XoHefig",
+      "display_name": "The Late Show with Stephen Colbert",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 5.63,
+      "clicks": 1,
+      "impressions": 908,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UC9r9HYFxEQOBXSopFS61ZWg",
+      "display_name": "MeidasTouch",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 5.38,
+      "clicks": 0,
+      "impressions": 1091,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UC02gw9sHi8uD7NskbUaFZwA",
+      "display_name": "Zwischen Tüll & Tränen",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 5.22,
+      "clicks": 2,
+      "impressions": 733,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UCwYQXYfPHTZKANHzBHdYo2w",
+      "display_name": "ANATOLY",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 5.06,
+      "clicks": 0,
+      "impressions": 733,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UCVTyTA7-g9nopHeHbeuvpRA",
+      "display_name": "Late Night with Seth Meyers",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 4.75,
+      "clicks": 1,
+      "impressions": 757,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UCnSWkrRWNQWNhDusoWr_HXQ",
+      "display_name": "SML",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 4.49,
+      "clicks": 2,
+      "impressions": 748,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UC3RYNOKIpKE_2P-5ZapWIYg",
+      "display_name": "KingWoolz Games",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 4.16,
+      "clicks": 2,
+      "impressions": 618,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UCjiXtODGCCulmhwypZAWSag",
+      "display_name": "Jynxzi",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 4.15,
+      "clicks": 3,
+      "impressions": 615,
+      "view_through_conversions": 75,
+      "primary_vtc": 75
+    },
+    {
+      "placement": "UCaXkIU1QidjPwiAYu6GcHjg",
+      "display_name": "MS NOW",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 4.03,
+      "clicks": 1,
+      "impressions": 741,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UCHE7rAi1Fw1CBmQXFtvJmrw",
+      "display_name": "LIVELOVEASAPVEVO",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 3.94,
+      "clicks": 0,
+      "impressions": 605,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    },
+    {
+      "placement": "UC4eYXhJI4-7wSWc8UNRwD4A",
+      "display_name": "NPR Music",
+      "placement_type": "YOUTUBE_CHANNEL",
+      "campaign_name": "Video View DRAFT",
+      "spend": 3.76,
+      "clicks": 0,
+      "impressions": 476,
+      "view_through_conversions": 0,
+      "primary_vtc": 0
+    }
+  ],
+  "campaign_benchmarks": {
+    "Video View DRAFT": {
+      "mode": "unknown",
+      "target_cpa": null,
+      "target_roas": null,
+      "avg_cpa": "0.00",
+      "avg_ctr": "0.0015",
+      "benchmark_source": "average"
+    }
+  }
+}

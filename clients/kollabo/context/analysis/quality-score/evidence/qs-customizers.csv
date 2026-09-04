@@ -1,0 +1,37 @@
+campaign_id,campaign_name,ad_group_id,ad_group_name,has_kw_level_bindings,kw_level_keyword_count,kw_level_attributes,has_ag_level_bindings,ag_level_attributes,rsa_references_customizers,referenced_attribute_names,missing_attribute_names,static_attribute_names,effective_resolution,integrity_status,headline_test_mode
+1509955426,EX | 25 | CH | SEARCH | LEAD | Brand,57909492917,Kollabo Name,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+20781019406,CH_GSN_DE_Brand Brand Biding Test,153560494217,Kollabo Name,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+20768068758,EX | 25 | CH | SEARCH | LEAD | Automatikmonteur,154000335045,AG | RSA | Automatikmonteur,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+20685916051,EX | DE | DACH | SEARCH | LEAD | UMLAND TEST,154386686829,STAN | HOME | BROAD,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+20702215351,EX | 25 | CH | SEARCH | LEAD | Polymechaniker,154917284156,AG | RSA | Polymechaniker,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+20691357994,EX | 25 | CH | SEARCH | LEAD | Schweisser,155384660552,AG | RSA | Schweisser,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+20707086616,EX | 25 | CH | SEARCH | LEAD | Produktionsmechaniker,156511338642,AG | RSA | Produktionsmechaniker,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+21301158443,EX | DE | DACH | SEARCH | LEAD | UMLAND TEST Keyword Test,164179782644,STAN | HOME | BROAD,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+21818309179,EX | DE | DACH | SEARCH | LEAD | UMLAND TEST  Testzeitraum 263,168863401893,STAN | HOME | BROAD,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23478250789,EX | 26 | CH | SEARCH | LEAD | Maurer,189117549302,AG | RSA | Maurer,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+15210620323,EX | 25 | CH | SEARCH | LEAD | Sanitärinstallateur,190557736766,AG | RSA | Sanitärinstallateur,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23369525700,EX | 26 | CH | SEARCH | LEAD | Elektroinstallateur,190690911095,AG | RSA | Elektroinstallateur,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23473547006,EX | 26 | CH | SEARCH | LEAD | Abdichter,191108771999,AG | RSA | Abdichter,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+6496821254,EX | 26 | CH | SEARCH | LEAD | Dachdecker,191152991225,AG | RSA | Dachdecker,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+15347327648,EX | 25 | CH | SEARCH | LEAD | Metallbauer,191429218741,AG | RSA | Metallbauer KW Testing,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23468591016,EX | 25 | CH | SEARCH | LEAD | Zimmermann,191553934309,AG | RSA | Zimmermann,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+20702215351,EX | 25 | CH | SEARCH | LEAD | Polymechaniker,191651580382,AG | RSA | Polymechaniker | KW Testing,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23473551299,EX | 26 | CH | SEARCH | LEAD | Baumaschinenführer,191930702636,AG | RSA | Baumaschinenführer,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23468574954,EX | 26 | CH | SEARCH | LEAD | Montage-Schreiner,192099072219,AG | RSA | Montage-Schreiner,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23473633574,EX | 26 | CH | SEARCH | LEAD | Trockenbauer,192620715275,AG | RSA | Trockenbauer,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+15347327648,EX | 25 | CH | SEARCH | LEAD | Metallbauer,193279372073,AG | RSA | Metallbauer,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23468568174,EX | 26 | CH | SEARCH | LEAD | Kranführer,193352510633,AG | RSA | Kranführer,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+6503042592,EX | 26 | CH | SEARCH | LEAD | Maler,193358511562,AG | RSA | Maler,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+15210620317,EX | 25 | CH | SEARCH | LEAD | Automatiker,193394861642,AG | RSA | Automatiker,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23478262294,EX | 26 | CH | SEARCH | LEAD | Strassenbauer,193437338762,AG | RSA | Strassenbauer,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23619183073,EX | 26 | CH | SEARCH | LEAD | Compeditor,193899557756,AG | RSA | Compeditor,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23473611323,EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur,194378322893,AG | RSA | Heizungsinstallateur KW Testing,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23468556621,EX | 25 | CH | SEARCH | LEAD | Gipser,194724430511,AG | RSA | Gipser,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23478160315,EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur,194846353335,AG | RSA | Metallbaukonstukteur KW Testing,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23473587776,EX | 26 | CH | SEARCH | LEAD | Bauarbeiter,194925305514,AG | RSA | Bauarbeiter,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23473611323,EX | 25 | CH | SEARCH | LEAD | Heizungsinstallateur,194933381034,AG | RSA | Heizungsinstallateur,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+15145890855,EX | 25 | CH | SEARCH | LEAD | Montage-Elektriker,195559356887,AG | RSA | Montage-Elektriker,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23478231493,EX | 25 | CH | SEARCH | LEAD | Gerüstbauer,195707765470,AG | RSA | Gerüstbauer,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23468547546,EX | 25 | CH | SEARCH | LEAD | Gärtner,197528102051,AG | RSA | Gärtner,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23478160315,EX | 26 | CH | SEARCH | LEAD | Metallbaukonstrukteur,198596624624,AG | RSA | Metallbaukonstukteur,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD
+23473608146,EX | 26 | CH | SEARCH | LEAD | Grundbauer,200330564308,AG | RSA | Grundbauer,false,0,,false,,false,,,,,NO_CUSTOMIZERS,STANDARD

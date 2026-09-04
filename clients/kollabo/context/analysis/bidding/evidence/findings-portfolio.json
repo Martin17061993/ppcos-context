@@ -1,0 +1,80 @@
+[
+  {
+    "id": "BID-D14",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "No portfolio strategies in account."
+  },
+  {
+    "id": "BID-D27",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Portfolio \"Gebäudetechnik1\" is ENABLED but attached to 0 non-removed campaigns — unused. Remove it, or confirm it is intentionally parked.",
+    "portfolio": "Gebäudetechnik1",
+    "type": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D27",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Portfolio \"Gebäudetechnik2\" is ENABLED but attached to 0 non-removed campaigns — unused. Remove it, or confirm it is intentionally parked.",
+    "portfolio": "Gebäudetechnik2",
+    "type": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D27",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Portfolio \"DE Gebäudetechnik1 (old)\" is ENABLED but attached to 0 non-removed campaigns — unused. Remove it, or confirm it is intentionally parked.",
+    "portfolio": "DE Gebäudetechnik1 (old)",
+    "type": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D27",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Portfolio \"DE Push\" is ENABLED but attached to 0 non-removed campaigns — unused. Remove it, or confirm it is intentionally parked.",
+    "portfolio": "DE Push",
+    "type": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D27",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Portfolio \"CH Push\" is ENABLED but attached to 0 non-removed campaigns — unused. Remove it, or confirm it is intentionally parked.",
+    "portfolio": "CH Push",
+    "type": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D15",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "0 campaigns + 3 portfolios have a CPC cap active. Caps can constrain smart bidding.",
+    "capped_campaigns": 0,
+    "capped_portfolios": 3
+  },
+  {
+    "id": "BID-D16",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "CPC cap vs. top-keyword CPCs comparison: rerun /keyword-auditor performance and compare top-quartile CPCs against any active caps."
+  },
+  {
+    "id": "BID-D17",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No shared-budget + portfolio conflicts detected."
+  },
+  {
+    "id": "BID-D25",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "No conversion value rules present."
+  },
+  {
+    "id": "BID-D26",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "No conversion value rules present."
+  }
+]

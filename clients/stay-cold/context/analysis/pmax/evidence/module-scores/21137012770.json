@@ -1,0 +1,358 @@
+{
+  "campaign_id": "21137012770",
+  "campaign_name": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+  "vertical": "ecom",
+  "setup": "feed-only",
+  "modules": [
+    {
+      "token": "feed-integration",
+      "weight": 20,
+      "score": 100,
+      "band": "strong",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-6-feed-integration",
+      "confidence": "high",
+      "metrics": {
+        "setup": "feed-only",
+        "asset_groups": 5,
+        "campaign_feed_connected": true,
+        "not_connected_groups": 0,
+        "no_products_served_groups": 0,
+        "catchall_excluded_groups": 5,
+        "serving_products_groups": 5,
+        "feed_quality_check": "delegated-to-feed-auditor"
+      },
+      "findings": [
+        {
+          "type": "feed-connection",
+          "campaign_feed_connected": true,
+          "asset_groups": 5,
+          "connected_groups": 5,
+          "not_connected_groups": 0,
+          "not_connected": [],
+          "detail": "All 5 asset group(s) are connected to the product feed (carry listing-group filters).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "listing-group-coverage",
+          "asset_groups": 5,
+          "serving_products_groups": 5,
+          "no_products_served_groups": 0,
+          "no_products_served": [],
+          "catchall_excluded_groups": 5,
+          "catchall_excluded": [
+            "FEED ONLY",
+            "RoB Purple",
+            "RoB Beige",
+            "RoB Mentol",
+            "RoB Grey Dye"
+          ],
+          "detail": "All connected asset group(s) include at least one product subset. 5/5 exclude the root \"Everything else\" catch-all — only explicitly-included products serve, so newly-added SKUs are not advertised until included. Advisory: legitimate for a tightly-themed group; confirm intent.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "feed-quality-routing",
+          "status": "delegated",
+          "owner": "/feed-auditor",
+          "freshness_window_days": 14,
+          "detail": "Feed QUALITY (disapprovals, missing/short titles, image/attribute errors, GTIN/identifier issues) is OUT OF SCOPE for pmax-auditor and routes to /feed-auditor. Quote a fresh feed-audit (≤ 14 days, context/analysis/feed/feed-audit.md) per the Phase 2.5 peer-lookup; do NOT re-derive feed quality here. feed-integration scores connection + coverage only.",
+          "handoff": "/feed-auditor"
+        }
+      ],
+      "notes": "5 asset group(s): 5 feed-connected, 0 not connected; 0 serve no products (all excluded), 5 exclude the root catch-all (advisory). Feed QUALITY routed to /feed-auditor — not re-derived here."
+    },
+    {
+      "token": "conversion-signal",
+      "weight": 18,
+      "score": null,
+      "band": "not-applicable",
+      "applicable": false,
+      "stub": true,
+      "scorer": "phase-4-6-pending",
+      "note": "not applicable for this campaign (vertical/setup) — excluded from combined denominator"
+    },
+    {
+      "token": "asset-groups",
+      "weight": 18,
+      "score": null,
+      "band": "not-applicable",
+      "applicable": false,
+      "stub": true,
+      "scorer": "phase-4-6-pending",
+      "note": "not applicable for this campaign (vertical/setup) — excluded from combined denominator"
+    },
+    {
+      "token": "brand-defense",
+      "weight": 15,
+      "score": 100,
+      "band": "strong",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-4-brand-defense",
+      "confidence": "high",
+      "metrics": {
+        "live_assets": 0,
+        "restricted_assets_total": 0,
+        "restricted_assets_live": 0,
+        "disapproved_assets": 0,
+        "disapproved_assets_live": 0,
+        "approved_limited_assets": 0,
+        "brand_exclusion_setting": "on",
+        "brand_exclusion_lists": 1,
+        "brand_targeting_lists": 0,
+        "brand_guidelines_enabled": true,
+        "brand_category_clusters": 0,
+        "brand_negative_coverage": "n/a",
+        "brand_negative_matches": 0,
+        "brand_terms_source": "derived"
+      },
+      "findings": [
+        {
+          "type": "brand-exclusion-setting",
+          "status": "on",
+          "detail": "Brand exclusion is ON — 1 negative ENABLED BRAND_LIST criterion (shared set 10982324974).",
+          "value": "10982324974",
+          "negative_brand_lists": 1,
+          "brand_targeting_lists": 0,
+          "brand_guidelines_enabled": true,
+          "handoff": "pmax-local"
+        }
+      ],
+      "notes": "Brand-exclusion setting: on. 0 policy-restricted asset(s) (0 disapproved; 0 live). Cannibalization evidence delegated to /search-term-auditor. Brand exclusion is ON — 1 negative ENABLED BRAND_LIST criterion (shared set 10982324974)."
+    },
+    {
+      "token": "nca-lifecycle",
+      "weight": 12,
+      "score": 80,
+      "band": "watch",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-4-nca-lifecycle",
+      "confidence": "low",
+      "metrics": {
+        "nca_mode": "TARGET_NEW_CUSTOMER",
+        "premium_value": null,
+        "high_lifetime_value_present": false,
+        "value_premium_check": "not-configured"
+      },
+      "findings": [
+        {
+          "type": "nca-intent",
+          "mode": "TARGET_NEW_CUSTOMER",
+          "detail": "Mode TARGET_NEW_CUSTOMER — this campaign bids ONLY for new customers (existing customers excluded). High-impact; CONFIRM this matches the intended role. Unresolved acquisition strategy routes to /strategy-specialist.",
+          "handoff": "/strategy-specialist"
+        }
+      ],
+      "notes": "NCA mode: TARGET_NEW_CUSTOMER. Value-premium: not-configured. Intent is runtime-resolved (business.md → ask → writeback → SKIP); score is provisional. Unresolved strategy → /strategy-specialist."
+    },
+    {
+      "token": "asset-performance",
+      "weight": 12,
+      "score": null,
+      "band": "not-applicable",
+      "applicable": false,
+      "stub": true,
+      "scorer": "phase-4-6-pending",
+      "note": "not applicable for this campaign (vertical/setup) — excluded from combined denominator"
+    },
+    {
+      "token": "audience-signals",
+      "weight": 10,
+      "score": null,
+      "band": "not-applicable",
+      "applicable": false,
+      "stub": true,
+      "scorer": "phase-4-6-pending",
+      "note": "not applicable for this campaign (vertical/setup) — excluded from combined denominator"
+    },
+    {
+      "token": "channel-allocation",
+      "weight": 8,
+      "score": 100,
+      "band": "strong",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-6-channel-allocation",
+      "confidence": "low",
+      "metrics": {
+        "branch": "ecom",
+        "feed_only": true,
+        "total_cost": 30762.53,
+        "shopping_spend_share": 0.992,
+        "reach_spend_share": 0.116,
+        "reach_conversions": 109.37,
+        "network_lines": 6,
+        "deduction": 0,
+        "symptom_count": 0
+      },
+      "findings": [
+        {
+          "type": "channel-overview",
+          "split_basis": "segments.ad_network_type × segments.ad_using_product_data (Search never collapsed)",
+          "total_cost": 30762.53,
+          "top_channel": "SEARCH (feed/Shopping) — 88.4% of spend",
+          "networks": [
+            {
+              "network": "SEARCH",
+              "serving": "feed/Shopping",
+              "ad_using_product_data": true,
+              "cost": 27198.87,
+              "conversions": 622.52,
+              "conversions_value": 93561.88,
+              "impressions": 4363212,
+              "clicks": 31510,
+              "cost_share": 0.884
+            },
+            {
+              "network": "CONTENT",
+              "serving": "feed/Shopping",
+              "ad_using_product_data": true,
+              "cost": 3220.14,
+              "conversions": 94.6,
+              "conversions_value": 15643.98,
+              "impressions": 1073680,
+              "clicks": 3524,
+              "cost_share": 0.105
+            },
+            {
+              "network": "GMAIL",
+              "serving": "text/non-feed",
+              "ad_using_product_data": false,
+              "cost": 204.31,
+              "conversions": 11,
+              "conversions_value": 1669.92,
+              "impressions": 75611,
+              "clicks": 1369,
+              "cost_share": 0.007
+            },
+            {
+              "network": "GMAIL",
+              "serving": "feed/Shopping",
+              "ad_using_product_data": true,
+              "cost": 99.43,
+              "conversions": 3,
+              "conversions_value": 512.67,
+              "impressions": 25482,
+              "clicks": 268,
+              "cost_share": 0.003
+            },
+            {
+              "network": "CONTENT",
+              "serving": "text/non-feed",
+              "ad_using_product_data": false,
+              "cost": 36.06,
+              "conversions": 0.77,
+              "conversions_value": 118.31,
+              "impressions": 19995,
+              "clicks": 37,
+              "cost_share": 0.001
+            },
+            {
+              "network": "YOUTUBE",
+              "serving": "feed/Shopping",
+              "ad_using_product_data": true,
+              "cost": 3.72,
+              "conversions": 0,
+              "conversions_value": 0,
+              "impressions": 38546,
+              "clicks": 25,
+              "cost_share": 0
+            }
+          ],
+          "detail": "Spend split across 6 network×product-data line(s); feed-based (Shopping) and text Search are reported as distinct lines so feed performance is never hidden inside \"Search\".",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "shopping-share",
+          "basis": "ad_using_product_data = true across all networks",
+          "shopping_spend_share": 0.992,
+          "shopping_conversions_value": 109718.53,
+          "total_conversions_value": 111506.76,
+          "branch": "ecom",
+          "feed_only": true,
+          "detail": "Feed-Only campaign: 99.2% of spend is feed-based (Shopping) — concentration on the feed is BY DESIGN and is not penalized. Reported advisory only.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "network-mix",
+          "branch": "ecom",
+          "feed_only": true,
+          "ranges": {
+            "shopping_floor": 0.3,
+            "shopping_healthy": 0.45,
+            "reach_ceiling": 0.3
+          },
+          "shopping_spend_share": 0.992,
+          "reach_spend_share": 0.116,
+          "reach_conversions": 109.37,
+          "symptoms": [],
+          "detail": "Network mix sits within the ecom healthy ranges — no skew symptom.",
+          "handoff": "pmax-local"
+        }
+      ],
+      "notes": "ecom/feed-only: Shopping-share 99.2% (feed-based, via ad_using_product_data), reach-share 11.6%. 0 skew symptom(s) — routed upstream per cascade (channel mix is not a direct lever). Split preserved: Search never collapsed across product-data."
+    },
+    {
+      "token": "url-expansion",
+      "weight": 5,
+      "score": 100,
+      "band": "strong",
+      "applicable": true,
+      "stub": false,
+      "scorer": "phase-4-url-expansion",
+      "confidence": "medium",
+      "metrics": {
+        "expansion_on": false,
+        "expanded_lp_count": 0,
+        "divergent_lp_count": 0,
+        "configured_url_count": 3,
+        "lp_performance_metrics_available": true,
+        "converting_lp_count": 0,
+        "non_converting_lp_count": 0,
+        "non_converting_lp_share": 0,
+        "divergent_non_converting_count": 0,
+        "total_expanded_conversions": 0,
+        "total_expanded_conversions_value": 0
+      },
+      "findings": [
+        {
+          "type": "expansion-state",
+          "state": "off-or-no-serving",
+          "detail": "No final_url_expansion_asset_view rows for this campaign in the audit window — URL expansion is OFF or did not serve. Confirm this matches intent (feed-driven campaigns often want it OFF; broad-reach campaigns may want it ON).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "lp-performance",
+          "available": true,
+          "metrics_basis": "conversions + conversions_value (clicks/cost incompatible with this resource; impressions does not co-report with conversions — v24.1, verified live)",
+          "expanded_lp_count": 0,
+          "converting_lp_count": 0,
+          "non_converting_lp_count": 0,
+          "non_converting_lp_share": 0,
+          "divergent_non_converting_count": 0,
+          "total_expanded_conversions": 0,
+          "total_expanded_conversions_value": 0,
+          "detail": "No expanded LPs in the window — no per-LP performance to judge (state/inventory only).",
+          "top_converting": [],
+          "sample_non_converting": [],
+          "handoff": "pmax-local"
+        }
+      ],
+      "notes": "URL expansion OFF / no serving in window. Confirm intent. No expanded-LP metrics to judge."
+    }
+  ],
+  "denominator": 60,
+  "numerator": 5760,
+  "applied_tokens": [
+    "feed-integration",
+    "brand-defense",
+    "nca-lifecycle",
+    "channel-allocation",
+    "url-expansion"
+  ],
+  "combined_score": 96,
+  "combined_band": "strong",
+  "scoped_score": null,
+  "scoped_band": null
+}

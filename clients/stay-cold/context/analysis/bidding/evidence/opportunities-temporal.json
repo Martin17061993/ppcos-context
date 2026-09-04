@@ -1,0 +1,24 @@
+[
+  {
+    "type": "budget_lost_recovery",
+    "campaign_id": "17820068572",
+    "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE",
+    "incrementalClicks": 1810,
+    "incrementalConv": 43.9,
+    "incrementalCost": 2180.66,
+    "projectedCpa": 49.71,
+    "profitable": null
+  },
+  {
+    "type": "budget_lost_recovery",
+    "campaign_id": "18399515515",
+    "campaign": "EX I SHOPPING I FOKUSPRODUKTE",
+    "strategy": "TARGET_ROAS",
+    "incrementalClicks": 3405,
+    "incrementalConv": 103.3,
+    "incrementalCost": 4241.39,
+    "projectedCpa": 41.04,
+    "profitable": null
+  }
+]

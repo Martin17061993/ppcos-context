@@ -1,0 +1,978 @@
+[
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "17655205884",
+    "campaign": "JM I DSA I FC'S I CAT'S",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "17655205884",
+    "campaign": "JM I DSA I FC'S I CAT'S",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "17655205884",
+    "campaign": "JM I DSA I FC'S I CAT'S",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "17655205884",
+    "campaign": "JM I DSA I FC'S I CAT'S",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 15% vs prior 14d.",
+    "campaign_id": "17655205884",
+    "campaign": "JM I DSA I FC'S I CAT'S",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "17655205884",
+    "campaign": "JM I DSA I FC'S I CAT'S",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "17655205884",
+    "campaign": "JM I DSA I FC'S I CAT'S",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "17820068572",
+    "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "17820068572",
+    "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "17820068572",
+    "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "17820068572",
+    "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 6% vs prior 14d.",
+    "campaign_id": "17820068572",
+    "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC rising for 3 consecutive periods: $1.16 → $1.21 → $1.25.",
+    "campaign_id": "17820068572",
+    "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE",
+    "buckets": [
+      1.1574355670103094,
+      1.2113482056256062,
+      1.246227642276423
+    ]
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 43.9 incremental conv at projected CPA $49.71 if budget loosens.",
+    "campaign_id": "17820068572",
+    "campaign": "EX I EN I WW I TOF I BROAD I PUR I T-CPA II BROAD I NO PROMO I Kollektionen + Types",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 1810,
+    "incrementalConv": 43.9,
+    "incrementalCost": 2180.66,
+    "projectedCpa": 49.71,
+    "profitable": null
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "18399515515",
+    "campaign": "EX I SHOPPING I FOKUSPRODUKTE",
+    "strategy": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "18399515515",
+    "campaign": "EX I SHOPPING I FOKUSPRODUKTE",
+    "strategy": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "18399515515",
+    "campaign": "EX I SHOPPING I FOKUSPRODUKTE",
+    "strategy": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "18399515515",
+    "campaign": "EX I SHOPPING I FOKUSPRODUKTE",
+    "strategy": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC spike: $1.53 vs $1.17 prior 14d (+30%).",
+    "campaign_id": "18399515515",
+    "campaign": "EX I SHOPPING I FOKUSPRODUKTE",
+    "strategy": "TARGET_ROAS",
+    "recent": 1.525128205128205,
+    "prior": 1.1707875158773364,
+    "pctChange": 30.265157805798882,
+    "isSpike": true
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC rising for 3 consecutive periods: $1.31 → $1.32 → $1.78.",
+    "campaign_id": "18399515515",
+    "campaign": "EX I SHOPPING I FOKUSPRODUKTE",
+    "strategy": "TARGET_ROAS",
+    "buckets": [
+      1.3079135872654917,
+      1.317514506769826,
+      1.7813007159904535
+    ]
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Heuristic projects 103.3 incremental conv at projected CPA $41.04 if budget loosens.",
+    "campaign_id": "18399515515",
+    "campaign": "EX I SHOPPING I FOKUSPRODUKTE",
+    "strategy": "TARGET_ROAS",
+    "type": "budget_lost_recovery",
+    "incrementalClicks": 3405,
+    "incrementalConv": 103.3,
+    "incrementalCost": 4241.39,
+    "projectedCpa": 41.04,
+    "profitable": null
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "18788654586",
+    "campaign": "EX I WW I PMAX I SCALING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "18788654586",
+    "campaign": "EX I WW I PMAX I SCALING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "18788654586",
+    "campaign": "EX I WW I PMAX I SCALING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "18788654586",
+    "campaign": "EX I WW I PMAX I SCALING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for CPC spike detection.",
+    "campaign_id": "18788654586",
+    "campaign": "EX I WW I PMAX I SCALING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for trend detection.",
+    "campaign_id": "18788654586",
+    "campaign": "EX I WW I PMAX I SCALING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "18788654586",
+    "campaign": "EX I WW I PMAX I SCALING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "19764299214",
+    "campaign": "EX I SHOPPING I PUR I T-ROAS I NEAR INDEX",
+    "strategy": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "19764299214",
+    "campaign": "EX I SHOPPING I PUR I T-ROAS I NEAR INDEX",
+    "strategy": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "19764299214",
+    "campaign": "EX I SHOPPING I PUR I T-ROAS I NEAR INDEX",
+    "strategy": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "19764299214",
+    "campaign": "EX I SHOPPING I PUR I T-ROAS I NEAR INDEX",
+    "strategy": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for CPC spike detection.",
+    "campaign_id": "19764299214",
+    "campaign": "EX I SHOPPING I PUR I T-ROAS I NEAR INDEX",
+    "strategy": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for trend detection.",
+    "campaign_id": "19764299214",
+    "campaign": "EX I SHOPPING I PUR I T-ROAS I NEAR INDEX",
+    "strategy": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "19764299214",
+    "campaign": "EX I SHOPPING I PUR I T-ROAS I NEAR INDEX",
+    "strategy": "TARGET_ROAS"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20289440565",
+    "campaign": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20289440565",
+    "campaign": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20289440565",
+    "campaign": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20289440565",
+    "campaign": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for CPC spike detection.",
+    "campaign_id": "20289440565",
+    "campaign": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for trend detection.",
+    "campaign_id": "20289440565",
+    "campaign": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "20289440565",
+    "campaign": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20311845501",
+    "campaign": "EX I FRA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20311845501",
+    "campaign": "EX I FRA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20311845501",
+    "campaign": "EX I FRA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20311845501",
+    "campaign": "EX I FRA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for CPC spike detection.",
+    "campaign_id": "20311845501",
+    "campaign": "EX I FRA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for trend detection.",
+    "campaign_id": "20311845501",
+    "campaign": "EX I FRA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "20311845501",
+    "campaign": "EX I FRA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20369175508",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20369175508",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20369175508",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20369175508",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for CPC spike detection.",
+    "campaign_id": "20369175508",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for trend detection.",
+    "campaign_id": "20369175508",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "20369175508",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20520258918",
+    "campaign": "EX | USA | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20520258918",
+    "campaign": "EX | USA | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20520258918",
+    "campaign": "EX | USA | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20520258918",
+    "campaign": "EX | USA | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -5% vs prior 14d.",
+    "campaign_id": "20520258918",
+    "campaign": "EX | USA | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "20520258918",
+    "campaign": "EX | USA | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "20520258918",
+    "campaign": "EX | USA | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20520282363",
+    "campaign": "EX | SKANDI | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20520282363",
+    "campaign": "EX | SKANDI | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20520282363",
+    "campaign": "EX | SKANDI | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20520282363",
+    "campaign": "EX | SKANDI | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -9% vs prior 14d.",
+    "campaign_id": "20520282363",
+    "campaign": "EX | SKANDI | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "20520282363",
+    "campaign": "EX | SKANDI | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "20520282363",
+    "campaign": "EX | SKANDI | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20520677694",
+    "campaign": "EX | DE | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20520677694",
+    "campaign": "EX | DE | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20520677694",
+    "campaign": "EX | DE | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20520677694",
+    "campaign": "EX | DE | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -19% vs prior 14d.",
+    "campaign_id": "20520677694",
+    "campaign": "EX | DE | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "20520677694",
+    "campaign": "EX | DE | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "20520677694",
+    "campaign": "EX | DE | SEARCH | BRAND",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20521524704",
+    "campaign": "EX I USA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20521524704",
+    "campaign": "EX I USA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20521524704",
+    "campaign": "EX I USA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20521524704",
+    "campaign": "EX I USA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for CPC spike detection.",
+    "campaign_id": "20521524704",
+    "campaign": "EX I USA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for trend detection.",
+    "campaign_id": "20521524704",
+    "campaign": "EX I USA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "20521524704",
+    "campaign": "EX I USA I PMAX I TESTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "20530080445",
+    "campaign": "EX | FRA | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "20530080445",
+    "campaign": "EX | FRA | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "20530080445",
+    "campaign": "EX | FRA | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "20530080445",
+    "campaign": "EX | FRA | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: -24% vs prior 14d.",
+    "campaign_id": "20530080445",
+    "campaign": "EX | FRA | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No rising CPC trend.",
+    "campaign_id": "20530080445",
+    "campaign": "EX | FRA | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "20530080445",
+    "campaign": "EX | FRA | SEARCH | BRAND",
+    "strategy": "TARGET_IMPRESSION_SHARE"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "21127105111",
+    "campaign": "EX I WW I PMAX I PROSPECTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "21127105111",
+    "campaign": "EX I WW I PMAX I PROSPECTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "21127105111",
+    "campaign": "EX I WW I PMAX I PROSPECTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "21127105111",
+    "campaign": "EX I WW I PMAX I PROSPECTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for CPC spike detection.",
+    "campaign_id": "21127105111",
+    "campaign": "EX I WW I PMAX I PROSPECTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "Insufficient daily data for trend detection.",
+    "campaign_id": "21127105111",
+    "campaign": "EX I WW I PMAX I PROSPECTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "21127105111",
+    "campaign": "EX I WW I PMAX I PROSPECTING I BROAD",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D10",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Extended-learning detection requires the bidding_strategy.learning_status field; surface manually if Google Ads UI flags this campaign as \"still learning\" >14 days.",
+    "campaign_id": "21137012770",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D11",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No overlapping changes during learning.",
+    "campaign_id": "21137012770",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D12",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "Account has 0 data exclusion record(s). Verify any tracking outage in the last 60 days has a matching exclusion.",
+    "campaign_id": "21137012770",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D13",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No strategy change recorded.",
+    "campaign_id": "21137012770",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D22",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "CPC stable: 23% vs prior 14d.",
+    "campaign_id": "21137012770",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  },
+  {
+    "id": "BID-D23",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "CPC rising for 3 consecutive periods: $0.96 → $1.06 → $1.22.",
+    "campaign_id": "21137012770",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE",
+    "buckets": [
+      0.9629080252479711,
+      1.0597450424929178,
+      1.2210452961672473
+    ]
+  },
+  {
+    "id": "BID-D24",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No incremental opportunity from heuristic.",
+    "campaign_id": "21137012770",
+    "campaign": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+    "strategy": "MAXIMIZE_CONVERSION_VALUE"
+  }
+]

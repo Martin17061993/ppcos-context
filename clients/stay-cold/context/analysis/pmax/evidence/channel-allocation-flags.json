@@ -1,0 +1,362 @@
+{
+  "generated_by": "analyze.js (Phase 4–6 real scorer)",
+  "module": "channel-allocation",
+  "weight": 8,
+  "campaigns": [
+    {
+      "campaign_id": "18788654586",
+      "campaign_name": "EX I WW I PMAX I SCALING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": null,
+      "band": "not-applicable",
+      "confidence": "medium",
+      "metrics": {
+        "reason": "no-channel-rows-in-window"
+      },
+      "findings": [
+        {
+          "type": "channel-serving",
+          "status": "no-serving",
+          "detail": "No channel rows for this campaign in the audit window — it had no spend/serving (e.g. PAUSED). Channel-allocation not scored (null, not penalized).",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20289440565",
+      "campaign_name": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": null,
+      "band": "not-applicable",
+      "confidence": "medium",
+      "metrics": {
+        "reason": "no-channel-rows-in-window"
+      },
+      "findings": [
+        {
+          "type": "channel-serving",
+          "status": "no-serving",
+          "detail": "No channel rows for this campaign in the audit window — it had no spend/serving (e.g. PAUSED). Channel-allocation not scored (null, not penalized).",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20311845501",
+      "campaign_name": "EX I FRA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": null,
+      "band": "not-applicable",
+      "confidence": "medium",
+      "metrics": {
+        "reason": "no-channel-rows-in-window"
+      },
+      "findings": [
+        {
+          "type": "channel-serving",
+          "status": "no-serving",
+          "detail": "No channel rows for this campaign in the audit window — it had no spend/serving (e.g. PAUSED). Channel-allocation not scored (null, not penalized).",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20369175508",
+      "campaign_name": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+      "vertical": "ecom",
+      "setup": "feed-only",
+      "score": 87,
+      "band": "watch",
+      "confidence": "low",
+      "metrics": {
+        "branch": "ecom",
+        "feed_only": true,
+        "total_cost": 1574.39,
+        "shopping_spend_share": 0.903,
+        "reach_spend_share": 0.559,
+        "reach_conversions": 38.38,
+        "network_lines": 6,
+        "deduction": 13,
+        "symptom_count": 1
+      },
+      "findings": [
+        {
+          "type": "channel-overview",
+          "split_basis": "segments.ad_network_type × segments.ad_using_product_data (Search never collapsed)",
+          "total_cost": 1574.39,
+          "top_channel": "CONTENT (feed/Shopping) — 45.6% of spend",
+          "networks": [
+            {
+              "network": "CONTENT",
+              "serving": "feed/Shopping",
+              "ad_using_product_data": true,
+              "cost": 718.27,
+              "conversions": 32.38,
+              "conversions_value": 5098.9,
+              "impressions": 528134,
+              "clicks": 2718,
+              "cost_share": 0.456
+            },
+            {
+              "network": "SEARCH",
+              "serving": "feed/Shopping",
+              "ad_using_product_data": true,
+              "cost": 693.99,
+              "conversions": 3.51,
+              "conversions_value": 853.11,
+              "impressions": 88557,
+              "clicks": 730,
+              "cost_share": 0.441
+            },
+            {
+              "network": "GMAIL",
+              "serving": "text/non-feed",
+              "ad_using_product_data": false,
+              "cost": 141.12,
+              "conversions": 4,
+              "conversions_value": 475.9,
+              "impressions": 24397,
+              "clicks": 306,
+              "cost_share": 0.09
+            },
+            {
+              "network": "CONTENT",
+              "serving": "text/non-feed",
+              "ad_using_product_data": false,
+              "cost": 12.07,
+              "conversions": 0,
+              "conversions_value": 0,
+              "impressions": 7681,
+              "clicks": 20,
+              "cost_share": 0.008
+            },
+            {
+              "network": "GMAIL",
+              "serving": "feed/Shopping",
+              "ad_using_product_data": true,
+              "cost": 8.94,
+              "conversions": 2,
+              "conversions_value": 191.6,
+              "impressions": 2403,
+              "clicks": 19,
+              "cost_share": 0.006
+            },
+            {
+              "network": "YOUTUBE",
+              "serving": "feed/Shopping",
+              "ad_using_product_data": true,
+              "cost": 0,
+              "conversions": 0,
+              "conversions_value": 0,
+              "impressions": 492,
+              "clicks": 0,
+              "cost_share": 0
+            }
+          ],
+          "detail": "Spend split across 6 network×product-data line(s); feed-based (Shopping) and text Search are reported as distinct lines so feed performance is never hidden inside \"Search\".",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "shopping-share",
+          "basis": "ad_using_product_data = true across all networks",
+          "shopping_spend_share": 0.903,
+          "shopping_conversions_value": 6143.61,
+          "total_conversions_value": 6619.5,
+          "branch": "ecom",
+          "feed_only": true,
+          "detail": "Feed-Only campaign: 90.3% of spend is feed-based (Shopping) — concentration on the feed is BY DESIGN and is not penalized. Reported advisory only.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "network-mix",
+          "branch": "ecom",
+          "feed_only": true,
+          "ranges": {
+            "shopping_floor": 0.3,
+            "shopping_healthy": 0.45,
+            "reach_ceiling": 0.3
+          },
+          "shopping_spend_share": 0.903,
+          "reach_spend_share": 0.559,
+          "reach_conversions": 38.38,
+          "symptoms": [
+            {
+              "symptom": "reach-spend-elevated",
+              "detail": "55.9% of spend is on reach networks (above the 30% ceiling) but it IS converting. Watch only — confirm the reach return meets the campaign goal; treat as a symptom, not a direct lever."
+            }
+          ],
+          "detail": "1 mix symptom(s) detected. Channel skew is a SYMPTOM, not a root cause — PMax gives no channel-level controls, so these route UPSTREAM (feed coverage, asset strength, audience signals, bidding) per the cascade rather than to a channel lever.",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20521524704",
+      "campaign_name": "EX I USA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": null,
+      "band": "not-applicable",
+      "confidence": "medium",
+      "metrics": {
+        "reason": "no-channel-rows-in-window"
+      },
+      "findings": [
+        {
+          "type": "channel-serving",
+          "status": "no-serving",
+          "detail": "No channel rows for this campaign in the audit window — it had no spend/serving (e.g. PAUSED). Channel-allocation not scored (null, not penalized).",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "21127105111",
+      "campaign_name": "EX I WW I PMAX I PROSPECTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": null,
+      "band": "not-applicable",
+      "confidence": "medium",
+      "metrics": {
+        "reason": "no-channel-rows-in-window"
+      },
+      "findings": [
+        {
+          "type": "channel-serving",
+          "status": "no-serving",
+          "detail": "No channel rows for this campaign in the audit window — it had no spend/serving (e.g. PAUSED). Channel-allocation not scored (null, not penalized).",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "21137012770",
+      "campaign_name": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+      "vertical": "ecom",
+      "setup": "feed-only",
+      "score": 100,
+      "band": "strong",
+      "confidence": "low",
+      "metrics": {
+        "branch": "ecom",
+        "feed_only": true,
+        "total_cost": 30762.53,
+        "shopping_spend_share": 0.992,
+        "reach_spend_share": 0.116,
+        "reach_conversions": 109.37,
+        "network_lines": 6,
+        "deduction": 0,
+        "symptom_count": 0
+      },
+      "findings": [
+        {
+          "type": "channel-overview",
+          "split_basis": "segments.ad_network_type × segments.ad_using_product_data (Search never collapsed)",
+          "total_cost": 30762.53,
+          "top_channel": "SEARCH (feed/Shopping) — 88.4% of spend",
+          "networks": [
+            {
+              "network": "SEARCH",
+              "serving": "feed/Shopping",
+              "ad_using_product_data": true,
+              "cost": 27198.87,
+              "conversions": 622.52,
+              "conversions_value": 93561.88,
+              "impressions": 4363212,
+              "clicks": 31510,
+              "cost_share": 0.884
+            },
+            {
+              "network": "CONTENT",
+              "serving": "feed/Shopping",
+              "ad_using_product_data": true,
+              "cost": 3220.14,
+              "conversions": 94.6,
+              "conversions_value": 15643.98,
+              "impressions": 1073680,
+              "clicks": 3524,
+              "cost_share": 0.105
+            },
+            {
+              "network": "GMAIL",
+              "serving": "text/non-feed",
+              "ad_using_product_data": false,
+              "cost": 204.31,
+              "conversions": 11,
+              "conversions_value": 1669.92,
+              "impressions": 75611,
+              "clicks": 1369,
+              "cost_share": 0.007
+            },
+            {
+              "network": "GMAIL",
+              "serving": "feed/Shopping",
+              "ad_using_product_data": true,
+              "cost": 99.43,
+              "conversions": 3,
+              "conversions_value": 512.67,
+              "impressions": 25482,
+              "clicks": 268,
+              "cost_share": 0.003
+            },
+            {
+              "network": "CONTENT",
+              "serving": "text/non-feed",
+              "ad_using_product_data": false,
+              "cost": 36.06,
+              "conversions": 0.77,
+              "conversions_value": 118.31,
+              "impressions": 19995,
+              "clicks": 37,
+              "cost_share": 0.001
+            },
+            {
+              "network": "YOUTUBE",
+              "serving": "feed/Shopping",
+              "ad_using_product_data": true,
+              "cost": 3.72,
+              "conversions": 0,
+              "conversions_value": 0,
+              "impressions": 38546,
+              "clicks": 25,
+              "cost_share": 0
+            }
+          ],
+          "detail": "Spend split across 6 network×product-data line(s); feed-based (Shopping) and text Search are reported as distinct lines so feed performance is never hidden inside \"Search\".",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "shopping-share",
+          "basis": "ad_using_product_data = true across all networks",
+          "shopping_spend_share": 0.992,
+          "shopping_conversions_value": 109718.53,
+          "total_conversions_value": 111506.76,
+          "branch": "ecom",
+          "feed_only": true,
+          "detail": "Feed-Only campaign: 99.2% of spend is feed-based (Shopping) — concentration on the feed is BY DESIGN and is not penalized. Reported advisory only.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "network-mix",
+          "branch": "ecom",
+          "feed_only": true,
+          "ranges": {
+            "shopping_floor": 0.3,
+            "shopping_healthy": 0.45,
+            "reach_ceiling": 0.3
+          },
+          "shopping_spend_share": 0.992,
+          "reach_spend_share": 0.116,
+          "reach_conversions": 109.37,
+          "symptoms": [],
+          "detail": "Network mix sits within the ecom healthy ranges — no skew symptom.",
+          "handoff": "pmax-local"
+        }
+      ]
+    }
+  ]
+}

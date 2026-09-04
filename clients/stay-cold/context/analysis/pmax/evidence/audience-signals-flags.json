@@ -1,0 +1,552 @@
+{
+  "generated_by": "analyze.js (Phase 4–6 real scorer)",
+  "module": "audience-signals",
+  "weight": 10,
+  "campaigns": [
+    {
+      "campaign_id": "18788654586",
+      "campaign_name": "EX I WW I PMAX I SCALING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 93,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "branch": "ecom",
+        "eligible_groups": 14,
+        "no_signal_groups": 1,
+        "broad_only_groups": 0,
+        "first_party_groups": 12,
+        "custom_segment_groups": 1,
+        "weak_groups": 1,
+        "list_size_check": "scored",
+        "first_party_lists_sized": 7,
+        "lists_serving": 7,
+        "lists_below_min": 0,
+        "lists_no_queryable_size": 0,
+        "size_discounted_groups": 0,
+        "customer_match_freshness_check": "skipped-no-recency-field-in-v24.1"
+      },
+      "findings": [
+        {
+          "type": "signal-presence",
+          "eligible_groups": 14,
+          "no_signal_count": 1,
+          "no_signal_groups": [
+            "EX I BROAD ASSETS I ALL PRODUCTS"
+          ],
+          "detail": "1/14 asset group(s) have NO audience signal and NO search theme — PMax has no steer for them. Add a relevant 1st-party or custom signal (/pmax-optimizer signals).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "signal-relevance",
+          "branch": "ecom",
+          "hierarchy": "1st-party purchaser/cart/visitor lists > custom segments > broad in-market/affinity",
+          "strong_first_party_groups": 12,
+          "medium_custom_groups": 1,
+          "broad_only_groups": 0,
+          "broad_only": [],
+          "strong_examples": [
+            {
+              "asset_group": "Asset-Gruppe 1",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "EX Video Rotation II",
+              "audiences": [
+                "RE BASIS"
+              ]
+            },
+            {
+              "asset_group": "EX I NEW VID + STATIC ROTATION",
+              "audiences": [
+                "RE BASIS"
+              ]
+            },
+            {
+              "asset_group": "Black Week",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "BROAD I ALL P I AI CREATIVES TESTING",
+              "audiences": [
+                "Suchthemen + Topic Targeting MIX NEU"
+              ]
+            },
+            {
+              "asset_group": "Best performing + Vid Testing",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            }
+          ],
+          "detail": "12 group(s) use 1st-party data signals, 1 use custom/intent segments — none rely solely on broad Google audiences.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "list-size",
+          "status": "scored",
+          "floors": {
+            "search": 1000,
+            "display": 100
+          },
+          "first_party_lists": 7,
+          "serving_lists": 7,
+          "below_min_lists": 0,
+          "no_queryable_size_lists": 0,
+          "below_min": [],
+          "no_queryable_size": [],
+          "discounted_groups": [],
+          "detail": "Size SCORED from real list sizes (Search floor 1000, Display floor 100 active members). 7 first-party list(s) clear a serving floor, 0 are below minimum (too small to steer PMax), 0 report no queryable size (system-defined / customer-match / combined lists return 0/0 — SKIPPED, never penalised). No asset group's first-party steer was discounted on size.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "customer-match-freshness",
+          "status": "skipped",
+          "detail": "Customer-match upload freshness SKIPPED — probed live in Google Ads API v24.1 and confirmed there is NO selectable upload-recency / last-upload timestamp on user_list, crm_based_user_list, or offline_user_data_job (the offline-data-job resource exposes id/status/type/user-list/match-rate but no creation, completion, or modified date_time). membership_life_span is a configured duration, not recency. Not fabricated, not scored — confirm CRM list freshness manually.",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20289440565",
+      "campaign_name": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "branch": "ecom",
+        "eligible_groups": 9,
+        "no_signal_groups": 0,
+        "broad_only_groups": 0,
+        "first_party_groups": 9,
+        "custom_segment_groups": 0,
+        "weak_groups": 0,
+        "list_size_check": "scored",
+        "first_party_lists_sized": 9,
+        "lists_serving": 8,
+        "lists_below_min": 0,
+        "lists_no_queryable_size": 1,
+        "size_discounted_groups": 0,
+        "customer_match_freshness_check": "skipped-no-recency-field-in-v24.1"
+      },
+      "findings": [
+        {
+          "type": "signal-presence",
+          "eligible_groups": 9,
+          "no_signal_count": 0,
+          "no_signal_groups": [],
+          "detail": "All 9 asset group(s) carry at least one audience signal or search theme.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "signal-relevance",
+          "branch": "ecom",
+          "hierarchy": "1st-party purchaser/cart/visitor lists > custom segments > broad in-market/affinity",
+          "strong_first_party_groups": 9,
+          "medium_custom_groups": 0,
+          "broad_only_groups": 0,
+          "broad_only": [],
+          "strong_examples": [
+            {
+              "asset_group": "EX Video Rotation II",
+              "audiences": [
+                "Audience based on past performance"
+              ]
+            },
+            {
+              "asset_group": "EX I STAN I TESTING I NO HOODIES I 1st ROTATION",
+              "audiences": [
+                "Audience based on past performance"
+              ]
+            },
+            {
+              "asset_group": "blackeweek",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "BFCM I",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "BFCM II (243H)",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "BFCM'25 RoB Purple CP MIXED",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            }
+          ],
+          "detail": "9 group(s) use 1st-party data signals, 0 use custom/intent segments — none rely solely on broad Google audiences.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "list-size",
+          "status": "scored",
+          "floors": {
+            "search": 1000,
+            "display": 100
+          },
+          "first_party_lists": 9,
+          "serving_lists": 8,
+          "below_min_lists": 0,
+          "no_queryable_size_lists": 1,
+          "below_min": [],
+          "no_queryable_size": [
+            "Alle Nutzer"
+          ],
+          "discounted_groups": [],
+          "detail": "Size SCORED from real list sizes (Search floor 1000, Display floor 100 active members). 8 first-party list(s) clear a serving floor, 0 are below minimum (too small to steer PMax), 1 report no queryable size (system-defined / customer-match / combined lists return 0/0 — SKIPPED, never penalised). No asset group's first-party steer was discounted on size.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "customer-match-freshness",
+          "status": "skipped",
+          "detail": "Customer-match upload freshness SKIPPED — probed live in Google Ads API v24.1 and confirmed there is NO selectable upload-recency / last-upload timestamp on user_list, crm_based_user_list, or offline_user_data_job (the offline-data-job resource exposes id/status/type/user-list/match-rate but no creation, completion, or modified date_time). membership_life_span is a configured duration, not recency. Not fabricated, not scored — confirm CRM list freshness manually.",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20311845501",
+      "campaign_name": "EX I FRA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "branch": "ecom",
+        "eligible_groups": 7,
+        "no_signal_groups": 0,
+        "broad_only_groups": 0,
+        "first_party_groups": 7,
+        "custom_segment_groups": 0,
+        "weak_groups": 0,
+        "list_size_check": "scored",
+        "first_party_lists_sized": 9,
+        "lists_serving": 8,
+        "lists_below_min": 0,
+        "lists_no_queryable_size": 1,
+        "size_discounted_groups": 0,
+        "customer_match_freshness_check": "skipped-no-recency-field-in-v24.1"
+      },
+      "findings": [
+        {
+          "type": "signal-presence",
+          "eligible_groups": 7,
+          "no_signal_count": 0,
+          "no_signal_groups": [],
+          "detail": "All 7 asset group(s) carry at least one audience signal or search theme.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "signal-relevance",
+          "branch": "ecom",
+          "hierarchy": "1st-party purchaser/cart/visitor lists > custom segments > broad in-market/affinity",
+          "strong_first_party_groups": 7,
+          "medium_custom_groups": 0,
+          "broad_only_groups": 0,
+          "broad_only": [],
+          "strong_examples": [
+            {
+              "asset_group": "EX I SWE Kopie I NO SWEATERS",
+              "audiences": [
+                "Audience based on past performance"
+              ]
+            },
+            {
+              "asset_group": "Black Weekend",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "BFCM I",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "BFCM II (243H)",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "BFCM'25 RoB Purple CP MIXED",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "BFCM '25 - Rob Beige PDP",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            }
+          ],
+          "detail": "7 group(s) use 1st-party data signals, 0 use custom/intent segments — none rely solely on broad Google audiences.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "list-size",
+          "status": "scored",
+          "floors": {
+            "search": 1000,
+            "display": 100
+          },
+          "first_party_lists": 9,
+          "serving_lists": 8,
+          "below_min_lists": 0,
+          "no_queryable_size_lists": 1,
+          "below_min": [],
+          "no_queryable_size": [
+            "Alle Nutzer"
+          ],
+          "discounted_groups": [],
+          "detail": "Size SCORED from real list sizes (Search floor 1000, Display floor 100 active members). 8 first-party list(s) clear a serving floor, 0 are below minimum (too small to steer PMax), 1 report no queryable size (system-defined / customer-match / combined lists return 0/0 — SKIPPED, never penalised). No asset group's first-party steer was discounted on size.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "customer-match-freshness",
+          "status": "skipped",
+          "detail": "Customer-match upload freshness SKIPPED — probed live in Google Ads API v24.1 and confirmed there is NO selectable upload-recency / last-upload timestamp on user_list, crm_based_user_list, or offline_user_data_job (the offline-data-job resource exposes id/status/type/user-list/match-rate but no creation, completion, or modified date_time). membership_life_span is a configured duration, not recency. Not fabricated, not scored — confirm CRM list freshness manually.",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20521524704",
+      "campaign_name": "EX I USA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "branch": "ecom",
+        "eligible_groups": 9,
+        "no_signal_groups": 0,
+        "broad_only_groups": 0,
+        "first_party_groups": 9,
+        "custom_segment_groups": 0,
+        "weak_groups": 0,
+        "list_size_check": "scored",
+        "first_party_lists_sized": 9,
+        "lists_serving": 8,
+        "lists_below_min": 0,
+        "lists_no_queryable_size": 1,
+        "size_discounted_groups": 0,
+        "customer_match_freshness_check": "skipped-no-recency-field-in-v24.1"
+      },
+      "findings": [
+        {
+          "type": "signal-presence",
+          "eligible_groups": 9,
+          "no_signal_count": 0,
+          "no_signal_groups": [],
+          "detail": "All 9 asset group(s) carry at least one audience signal or search theme.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "signal-relevance",
+          "branch": "ecom",
+          "hierarchy": "1st-party purchaser/cart/visitor lists > custom segments > broad in-market/affinity",
+          "strong_first_party_groups": 9,
+          "medium_custom_groups": 0,
+          "broad_only_groups": 0,
+          "broad_only": [],
+          "strong_examples": [
+            {
+              "asset_group": "EX I SWE Kopie I NO SWEATERS",
+              "audiences": [
+                "Audience based on past performance"
+              ]
+            },
+            {
+              "asset_group": "NEW ASSETS BROAD",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "ORIGIN",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "Vid Rotation II",
+              "audiences": [
+                "Audience based on past performance"
+              ]
+            },
+            {
+              "asset_group": "Black Weekend",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "BFCM I",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            }
+          ],
+          "detail": "9 group(s) use 1st-party data signals, 0 use custom/intent segments — none rely solely on broad Google audiences.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "list-size",
+          "status": "scored",
+          "floors": {
+            "search": 1000,
+            "display": 100
+          },
+          "first_party_lists": 9,
+          "serving_lists": 8,
+          "below_min_lists": 0,
+          "no_queryable_size_lists": 1,
+          "below_min": [],
+          "no_queryable_size": [
+            "Alle Nutzer"
+          ],
+          "discounted_groups": [],
+          "detail": "Size SCORED from real list sizes (Search floor 1000, Display floor 100 active members). 8 first-party list(s) clear a serving floor, 0 are below minimum (too small to steer PMax), 1 report no queryable size (system-defined / customer-match / combined lists return 0/0 — SKIPPED, never penalised). No asset group's first-party steer was discounted on size.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "customer-match-freshness",
+          "status": "skipped",
+          "detail": "Customer-match upload freshness SKIPPED — probed live in Google Ads API v24.1 and confirmed there is NO selectable upload-recency / last-upload timestamp on user_list, crm_based_user_list, or offline_user_data_job (the offline-data-job resource exposes id/status/type/user-list/match-rate but no creation, completion, or modified date_time). membership_life_span is a configured duration, not recency. Not fabricated, not scored — confirm CRM list freshness manually.",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "21127105111",
+      "campaign_name": "EX I WW I PMAX I PROSPECTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 92,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "branch": "ecom",
+        "eligible_groups": 13,
+        "no_signal_groups": 1,
+        "broad_only_groups": 0,
+        "first_party_groups": 11,
+        "custom_segment_groups": 1,
+        "weak_groups": 1,
+        "list_size_check": "scored",
+        "first_party_lists_sized": 7,
+        "lists_serving": 7,
+        "lists_below_min": 0,
+        "lists_no_queryable_size": 0,
+        "size_discounted_groups": 0,
+        "customer_match_freshness_check": "skipped-no-recency-field-in-v24.1"
+      },
+      "findings": [
+        {
+          "type": "signal-presence",
+          "eligible_groups": 13,
+          "no_signal_count": 1,
+          "no_signal_groups": [
+            "EX I BROAD ASSETS I ALL PRODUCTS"
+          ],
+          "detail": "1/13 asset group(s) have NO audience signal and NO search theme — PMax has no steer for them. Add a relevant 1st-party or custom signal (/pmax-optimizer signals).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "signal-relevance",
+          "branch": "ecom",
+          "hierarchy": "1st-party purchaser/cart/visitor lists > custom segments > broad in-market/affinity",
+          "strong_first_party_groups": 11,
+          "medium_custom_groups": 1,
+          "broad_only_groups": 0,
+          "broad_only": [],
+          "strong_examples": [
+            {
+              "asset_group": "BROAD I ALL P I AI CREATIVES TESTING",
+              "audiences": [
+                "Suchthemen + Topic Targeting MIX NEU"
+              ]
+            },
+            {
+              "asset_group": "EX I NEW VID + STATIC ROTATION",
+              "audiences": [
+                "RE BASIS"
+              ]
+            },
+            {
+              "asset_group": "Black Week",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "EX Video Rotation II",
+              "audiences": [
+                "RE BASIS"
+              ]
+            },
+            {
+              "asset_group": "Asset-Gruppe 1",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            },
+            {
+              "asset_group": "Best performing + Vid Testing",
+              "audiences": [
+                "EX I HOT TARGETS"
+              ]
+            }
+          ],
+          "detail": "11 group(s) use 1st-party data signals, 1 use custom/intent segments — none rely solely on broad Google audiences.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "list-size",
+          "status": "scored",
+          "floors": {
+            "search": 1000,
+            "display": 100
+          },
+          "first_party_lists": 7,
+          "serving_lists": 7,
+          "below_min_lists": 0,
+          "no_queryable_size_lists": 0,
+          "below_min": [],
+          "no_queryable_size": [],
+          "discounted_groups": [],
+          "detail": "Size SCORED from real list sizes (Search floor 1000, Display floor 100 active members). 7 first-party list(s) clear a serving floor, 0 are below minimum (too small to steer PMax), 0 report no queryable size (system-defined / customer-match / combined lists return 0/0 — SKIPPED, never penalised). No asset group's first-party steer was discounted on size.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "customer-match-freshness",
+          "status": "skipped",
+          "detail": "Customer-match upload freshness SKIPPED — probed live in Google Ads API v24.1 and confirmed there is NO selectable upload-recency / last-upload timestamp on user_list, crm_based_user_list, or offline_user_data_job (the offline-data-job resource exposes id/status/type/user-list/match-rate but no creation, completion, or modified date_time). membership_life_span is a configured duration, not recency. Not fabricated, not scored — confirm CRM list freshness manually.",
+          "handoff": "pmax-local"
+        }
+      ]
+    }
+  ]
+}

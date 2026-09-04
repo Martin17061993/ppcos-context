@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://www.staycoldapparel.com/collections/tees",
+    "statusCode": 403,
+    "redirectChain": [],
+    "finalUrl": "https://www.staycoldapparel.com/collections/tees",
+    "responseTime": 57,
+    "error": null
+  },
+  {
+    "url": "https://www.staycoldapparel.com/collections/hoodies-342",
+    "statusCode": 403,
+    "redirectChain": [],
+    "finalUrl": "https://www.staycoldapparel.com/collections/hoodies-342",
+    "responseTime": 59,
+    "error": null
+  },
+  {
+    "url": "https://www.staycoldapparel.com/",
+    "statusCode": 403,
+    "redirectChain": [],
+    "finalUrl": "https://www.staycoldapparel.com/",
+    "responseTime": 64,
+    "error": null
+  },
+  {
+    "url": "https://www.staycoldapparel.com/collections/sweaters",
+    "statusCode": 403,
+    "redirectChain": [],
+    "finalUrl": "https://www.staycoldapparel.com/collections/sweaters",
+    "responseTime": 68,
+    "error": null
+  },
+  {
+    "url": "https://www.staycoldapparel.com/collections/black-week-hoodies",
+    "statusCode": 403,
+    "redirectChain": [],
+    "finalUrl": "https://www.staycoldapparel.com/collections/black-week-hoodies",
+    "responseTime": 72,
+    "error": null
+  },
+  {
+    "url": "https://staycoldapparel.com",
+    "statusCode": 403,
+    "redirectChain": [],
+    "finalUrl": "https://staycoldapparel.com",
+    "responseTime": 114,
+    "error": null
+  }
+]

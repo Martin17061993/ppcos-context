@@ -1,0 +1,48 @@
+[
+  {
+    "id": "BID-D14",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "No portfolio strategies in account."
+  },
+  {
+    "id": "BID-D27",
+    "verdict": "SKIP",
+    "severity": "low",
+    "message": "No portfolio strategies in account."
+  },
+  {
+    "id": "BID-D15",
+    "verdict": "WARN",
+    "severity": "medium",
+    "message": "2 campaigns + 0 portfolios have a CPC cap active. Caps can constrain smart bidding.",
+    "capped_campaigns": 2,
+    "capped_portfolios": 0
+  },
+  {
+    "id": "BID-D16",
+    "verdict": "INFO",
+    "severity": "low",
+    "message": "CPC cap vs. top-keyword CPCs comparison: rerun /keyword-auditor performance and compare top-quartile CPCs against any active caps."
+  },
+  {
+    "id": "BID-D17",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "No shared-budget + portfolio conflicts detected."
+  },
+  {
+    "id": "BID-D25",
+    "verdict": "PASS",
+    "severity": "low",
+    "message": "1 value rules on 13 value-based campaigns."
+  },
+  {
+    "id": "BID-D26",
+    "verdict": "INFO",
+    "severity": "medium",
+    "message": "Value rules detected. If these correct for missing per-channel/device/geo conversion data, route to /tracking-specialist — value rules should not be substituting for missing tracking.",
+    "rules": 1,
+    "handoff": "tracking-specialist"
+  }
+]

@@ -76,35 +76,39 @@ main-config.json                              Referenz-Eintrag beider Clients
 clients/<client>/
   config/ads-context.config.json              Schwellwerte, Break-even, Brand-Terms,
                                               Conversion-Actions — jede Abweichung vom
-                                              Skill-Default ist im JSON begründet (_note-Felder)
-  context/business.md                         Geschäftsmodell, Unit Economics, Ziele,
-                                              Constraints. Der Wertkern.
+                                              Skill-Default ist im JSON begruendet (_note-Felder)
+  context/business.md                         Geschaeftsmodell, Unit Economics, Ziele, Constraints
   context/brand.md                            Markenkontext (nur stay-cold)
   context/brand-colours/palette.md            Farbpalette (nur stay-cold)
-  context/account-changelog.md                Aufbereitete Änderungshistorie
+  context/account-changelog.md / .csv         Aenderungshistorie, aufbereitet und roh
+                                              (-invisible.csv = nur ueber change_status
+                                              sichtbare Aenderungen, i.d.R. Google Ads Editor)
   context/website/pages/*.md                  20 gescrapte Seitenanalysen (nur stay-cold)
-  context/pre-knowledgebase-nodes/            Vorbefüllung für /business-context-gatherer:
-                                              Notion-KB-Auszüge, Account-Guardrails,
+  context/pre-knowledgebase-nodes/            Vorbefuellung fuer /business-context-gatherer:
+                                              Notion-KB-Auszuege, Account-Guardrails,
                                               Copy-/Keyword-/Search-Term-Regeln, Historie
-  context/analysis/<domain>/*.md              Fertige Audit-Reports + Audit-Logs
+  context/analysis/<domain>/                  Fertige Audit-Reports, Audit-Logs und die
+                                              vollstaendigen evidence/-Artefakte der Auditoren
                                               (account, bidding, budget, competitive, feed,
                                               geo-schedule, keyword, lp, offer, placement,
                                               pmax, quality-score, search-term, strategy, tracking)
+  context/memory/*.md                         Session-Protokolle aller bisherigen Laeufe —
+                                              Befunde, Entscheidungen, verworfene Hypothesen
+  context/.logs/                              Logs des /ads-context-gatherer (nur stay-cold)
+  created/                                    Erzeugte Deliverables: Ops-Files, Budgetplaene,
+                                              Website-Fix-Listen, Executive-Summary-Report
 ```
 
-## Was bewusst NICHT drin ist
+## Was NICHT drin ist
 
 | Ausgeschlossen | Grund |
 |---|---|
-| `.claude/skills\|agents\|hooks\|rules/`, `CLAUDE.md` | lizenzierte PPC-OS-Software — kommt über deine Lizenz |
+| `.claude/skills\|agents\|hooks\|rules/`, `CLAUDE.md` | lizenzierte PPC-OS-Software — kommt ueber deine eigene Lizenz per `ppcos init` |
 | `.env`, `.managed*.json` | Credentials bzw. Checksummen einer fremden Installation |
 | `context/google-ads/` | ~940 MB Roh-CSVs. Ziehst du dir per `/gads-context` selbst und aktueller |
-| `context/analysis/**/evidence/` | Maschinen-Artefakte der Auditoren (~20 MB), werden bei jedem Lauf neu erzeugt |
-| `created/` | generierte Reports, Ops-Files, Wireframes |
-| `context/memory/` | interne Session-Notizen |
-| `account-changelog*.csv` | Rohdaten — die aufbereitete `.md` liegt bei |
+| `context/feed/cache/`, `node_modules/`, `tmp/` | Caches und Build-Artefakte |
 
----
+Sonst ist alles drin.
 
 ## Vor dem ersten Lauf lesen
 

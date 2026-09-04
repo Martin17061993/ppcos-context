@@ -1,0 +1,329 @@
+{
+  "generated_by": "analyze.js (Phase 4–6 real scorer)",
+  "module": "url-expansion",
+  "weight": 5,
+  "campaigns": [
+    {
+      "campaign_id": "18788654586",
+      "campaign_name": "EX I WW I PMAX I SCALING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "expansion_on": false,
+        "expanded_lp_count": 0,
+        "divergent_lp_count": 0,
+        "configured_url_count": 5,
+        "lp_performance_metrics_available": true,
+        "converting_lp_count": 0,
+        "non_converting_lp_count": 0,
+        "non_converting_lp_share": 0,
+        "divergent_non_converting_count": 0,
+        "total_expanded_conversions": 0,
+        "total_expanded_conversions_value": 0
+      },
+      "findings": [
+        {
+          "type": "expansion-state",
+          "state": "off-or-no-serving",
+          "detail": "No final_url_expansion_asset_view rows for this campaign in the audit window — URL expansion is OFF or did not serve. Confirm this matches intent (feed-driven campaigns often want it OFF; broad-reach campaigns may want it ON).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "lp-performance",
+          "available": true,
+          "metrics_basis": "conversions + conversions_value (clicks/cost incompatible with this resource; impressions does not co-report with conversions — v24.1, verified live)",
+          "expanded_lp_count": 0,
+          "converting_lp_count": 0,
+          "non_converting_lp_count": 0,
+          "non_converting_lp_share": 0,
+          "divergent_non_converting_count": 0,
+          "total_expanded_conversions": 0,
+          "total_expanded_conversions_value": 0,
+          "detail": "No expanded LPs in the window — no per-LP performance to judge (state/inventory only).",
+          "top_converting": [],
+          "sample_non_converting": [],
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20289440565",
+      "campaign_name": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "expansion_on": false,
+        "expanded_lp_count": 0,
+        "divergent_lp_count": 0,
+        "configured_url_count": 4,
+        "lp_performance_metrics_available": true,
+        "converting_lp_count": 0,
+        "non_converting_lp_count": 0,
+        "non_converting_lp_share": 0,
+        "divergent_non_converting_count": 0,
+        "total_expanded_conversions": 0,
+        "total_expanded_conversions_value": 0
+      },
+      "findings": [
+        {
+          "type": "expansion-state",
+          "state": "off-or-no-serving",
+          "detail": "No final_url_expansion_asset_view rows for this campaign in the audit window — URL expansion is OFF or did not serve. Confirm this matches intent (feed-driven campaigns often want it OFF; broad-reach campaigns may want it ON).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "lp-performance",
+          "available": true,
+          "metrics_basis": "conversions + conversions_value (clicks/cost incompatible with this resource; impressions does not co-report with conversions — v24.1, verified live)",
+          "expanded_lp_count": 0,
+          "converting_lp_count": 0,
+          "non_converting_lp_count": 0,
+          "non_converting_lp_share": 0,
+          "divergent_non_converting_count": 0,
+          "total_expanded_conversions": 0,
+          "total_expanded_conversions_value": 0,
+          "detail": "No expanded LPs in the window — no per-LP performance to judge (state/inventory only).",
+          "top_converting": [],
+          "sample_non_converting": [],
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20311845501",
+      "campaign_name": "EX I FRA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "expansion_on": false,
+        "expanded_lp_count": 0,
+        "divergent_lp_count": 0,
+        "configured_url_count": 4,
+        "lp_performance_metrics_available": true,
+        "converting_lp_count": 0,
+        "non_converting_lp_count": 0,
+        "non_converting_lp_share": 0,
+        "divergent_non_converting_count": 0,
+        "total_expanded_conversions": 0,
+        "total_expanded_conversions_value": 0
+      },
+      "findings": [
+        {
+          "type": "expansion-state",
+          "state": "off-or-no-serving",
+          "detail": "No final_url_expansion_asset_view rows for this campaign in the audit window — URL expansion is OFF or did not serve. Confirm this matches intent (feed-driven campaigns often want it OFF; broad-reach campaigns may want it ON).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "lp-performance",
+          "available": true,
+          "metrics_basis": "conversions + conversions_value (clicks/cost incompatible with this resource; impressions does not co-report with conversions — v24.1, verified live)",
+          "expanded_lp_count": 0,
+          "converting_lp_count": 0,
+          "non_converting_lp_count": 0,
+          "non_converting_lp_share": 0,
+          "divergent_non_converting_count": 0,
+          "total_expanded_conversions": 0,
+          "total_expanded_conversions_value": 0,
+          "detail": "No expanded LPs in the window — no per-LP performance to judge (state/inventory only).",
+          "top_converting": [],
+          "sample_non_converting": [],
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20369175508",
+      "campaign_name": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+      "vertical": "ecom",
+      "setup": "feed-only",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "expansion_on": false,
+        "expanded_lp_count": 0,
+        "divergent_lp_count": 0,
+        "configured_url_count": 0,
+        "lp_performance_metrics_available": true,
+        "converting_lp_count": 0,
+        "non_converting_lp_count": 0,
+        "non_converting_lp_share": 0,
+        "divergent_non_converting_count": 0,
+        "total_expanded_conversions": 0,
+        "total_expanded_conversions_value": 0
+      },
+      "findings": [
+        {
+          "type": "expansion-state",
+          "state": "off-or-no-serving",
+          "detail": "No final_url_expansion_asset_view rows for this campaign in the audit window — URL expansion is OFF or did not serve. Confirm this matches intent (feed-driven campaigns often want it OFF; broad-reach campaigns may want it ON).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "lp-performance",
+          "available": true,
+          "metrics_basis": "conversions + conversions_value (clicks/cost incompatible with this resource; impressions does not co-report with conversions — v24.1, verified live)",
+          "expanded_lp_count": 0,
+          "converting_lp_count": 0,
+          "non_converting_lp_count": 0,
+          "non_converting_lp_share": 0,
+          "divergent_non_converting_count": 0,
+          "total_expanded_conversions": 0,
+          "total_expanded_conversions_value": 0,
+          "detail": "No expanded LPs in the window — no per-LP performance to judge (state/inventory only).",
+          "top_converting": [],
+          "sample_non_converting": [],
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20521524704",
+      "campaign_name": "EX I USA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "expansion_on": false,
+        "expanded_lp_count": 0,
+        "divergent_lp_count": 0,
+        "configured_url_count": 3,
+        "lp_performance_metrics_available": true,
+        "converting_lp_count": 0,
+        "non_converting_lp_count": 0,
+        "non_converting_lp_share": 0,
+        "divergent_non_converting_count": 0,
+        "total_expanded_conversions": 0,
+        "total_expanded_conversions_value": 0
+      },
+      "findings": [
+        {
+          "type": "expansion-state",
+          "state": "off-or-no-serving",
+          "detail": "No final_url_expansion_asset_view rows for this campaign in the audit window — URL expansion is OFF or did not serve. Confirm this matches intent (feed-driven campaigns often want it OFF; broad-reach campaigns may want it ON).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "lp-performance",
+          "available": true,
+          "metrics_basis": "conversions + conversions_value (clicks/cost incompatible with this resource; impressions does not co-report with conversions — v24.1, verified live)",
+          "expanded_lp_count": 0,
+          "converting_lp_count": 0,
+          "non_converting_lp_count": 0,
+          "non_converting_lp_share": 0,
+          "divergent_non_converting_count": 0,
+          "total_expanded_conversions": 0,
+          "total_expanded_conversions_value": 0,
+          "detail": "No expanded LPs in the window — no per-LP performance to judge (state/inventory only).",
+          "top_converting": [],
+          "sample_non_converting": [],
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "21127105111",
+      "campaign_name": "EX I WW I PMAX I PROSPECTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "expansion_on": false,
+        "expanded_lp_count": 0,
+        "divergent_lp_count": 0,
+        "configured_url_count": 5,
+        "lp_performance_metrics_available": true,
+        "converting_lp_count": 0,
+        "non_converting_lp_count": 0,
+        "non_converting_lp_share": 0,
+        "divergent_non_converting_count": 0,
+        "total_expanded_conversions": 0,
+        "total_expanded_conversions_value": 0
+      },
+      "findings": [
+        {
+          "type": "expansion-state",
+          "state": "off-or-no-serving",
+          "detail": "No final_url_expansion_asset_view rows for this campaign in the audit window — URL expansion is OFF or did not serve. Confirm this matches intent (feed-driven campaigns often want it OFF; broad-reach campaigns may want it ON).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "lp-performance",
+          "available": true,
+          "metrics_basis": "conversions + conversions_value (clicks/cost incompatible with this resource; impressions does not co-report with conversions — v24.1, verified live)",
+          "expanded_lp_count": 0,
+          "converting_lp_count": 0,
+          "non_converting_lp_count": 0,
+          "non_converting_lp_share": 0,
+          "divergent_non_converting_count": 0,
+          "total_expanded_conversions": 0,
+          "total_expanded_conversions_value": 0,
+          "detail": "No expanded LPs in the window — no per-LP performance to judge (state/inventory only).",
+          "top_converting": [],
+          "sample_non_converting": [],
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "21137012770",
+      "campaign_name": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+      "vertical": "ecom",
+      "setup": "feed-only",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "expansion_on": false,
+        "expanded_lp_count": 0,
+        "divergent_lp_count": 0,
+        "configured_url_count": 3,
+        "lp_performance_metrics_available": true,
+        "converting_lp_count": 0,
+        "non_converting_lp_count": 0,
+        "non_converting_lp_share": 0,
+        "divergent_non_converting_count": 0,
+        "total_expanded_conversions": 0,
+        "total_expanded_conversions_value": 0
+      },
+      "findings": [
+        {
+          "type": "expansion-state",
+          "state": "off-or-no-serving",
+          "detail": "No final_url_expansion_asset_view rows for this campaign in the audit window — URL expansion is OFF or did not serve. Confirm this matches intent (feed-driven campaigns often want it OFF; broad-reach campaigns may want it ON).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "lp-performance",
+          "available": true,
+          "metrics_basis": "conversions + conversions_value (clicks/cost incompatible with this resource; impressions does not co-report with conversions — v24.1, verified live)",
+          "expanded_lp_count": 0,
+          "converting_lp_count": 0,
+          "non_converting_lp_count": 0,
+          "non_converting_lp_share": 0,
+          "divergent_non_converting_count": 0,
+          "total_expanded_conversions": 0,
+          "total_expanded_conversions_value": 0,
+          "detail": "No expanded LPs in the window — no per-LP performance to judge (state/inventory only).",
+          "top_converting": [],
+          "sample_non_converting": [],
+          "handoff": "pmax-local"
+        }
+      ]
+    }
+  ]
+}

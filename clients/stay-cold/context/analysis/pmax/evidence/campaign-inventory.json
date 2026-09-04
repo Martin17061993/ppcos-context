@@ -1,0 +1,1015 @@
+{
+  "generated_at": "2026-08-06",
+  "account": {
+    "customer_id": "customerLifecycleGoals"
+  },
+  "business_vertical": "ecommerce",
+  "account_conversion_actions": [
+    "purchase_gads_mable"
+  ],
+  "learning_window_days": 14,
+  "changelog_present": true,
+  "include_experiments": false,
+  "active_roster_empty": false,
+  "totals": {
+    "campaigns": 12,
+    "active": 7,
+    "excluded_dormant": 5,
+    "excluded_experiment": 0,
+    "ecom": 11,
+    "leadgen": 1,
+    "feed_only": 3,
+    "full_assets": 8,
+    "in_learning": 0,
+    "needs_question": 1
+  },
+  "campaigns": [
+    {
+      "id": "18788654586",
+      "name": "EX I WW I PMAX I SCALING I BROAD",
+      "resource": "customers/3599116618/campaigns/18788654586",
+      "status": "ENABLED",
+      "experiment_type": "BASE",
+      "is_experiment": false,
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "cost": 0,
+        "conversions": 0,
+        "conversions_value": 0
+      },
+      "report": {
+        "included": true,
+        "exclusion_reason": null
+      },
+      "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+      "target_roas": "3.5",
+      "target_cpa": null,
+      "vertical": "ecom",
+      "vertical_confidence": "high",
+      "setup": "full",
+      "setup_confidence": "high",
+      "evidence": {
+        "assetGroupCount": 14,
+        "creativeCount": 585,
+        "minimalCount": 7,
+        "listingCount": 122
+      },
+      "applicable_modules": [
+        "feed-integration",
+        "asset-groups",
+        "brand-defense",
+        "nca-lifecycle",
+        "asset-performance",
+        "audience-signals",
+        "channel-allocation",
+        "url-expansion"
+      ],
+      "not_applicable_modules": [
+        "conversion-signal"
+      ],
+      "module_map": {
+        "feed-integration": "applicable",
+        "conversion-signal": null,
+        "asset-groups": "applicable",
+        "brand-defense": "applicable",
+        "nca-lifecycle": "applicable",
+        "asset-performance": "applicable",
+        "audience-signals": "applicable",
+        "channel-allocation": "applicable",
+        "url-expansion": "applicable"
+      },
+      "nca": {
+        "mode_detected": "BID_HIGHER_FOR_NEW_CUSTOMER",
+        "value": null,
+        "high_lifetime_value": null,
+        "account_default_value": "42.2",
+        "source": "campaign_lifecycle_goal"
+      },
+      "classification_reasons": {
+        "vertical": [
+          "122 listing-group filter rows (product feed surface present)",
+          "account conversion actions look ecom (purchase_gads_mable)",
+          "business.md vertical = \"ecommerce\""
+        ],
+        "setup": [
+          "585 advertiser/auto creative assets across 14 asset group(s)"
+        ]
+      },
+      "_needsQuestion": false,
+      "learning": {
+        "in_learning": false,
+        "status": "stable",
+        "note": "no recent learning-resetting change in changelog window"
+      }
+    },
+    {
+      "id": "20280715138",
+      "name": "EX I WW I PMAX I SCALING I RE/HOT",
+      "resource": "customers/3599116618/campaigns/20280715138",
+      "status": "PAUSED",
+      "experiment_type": "BASE",
+      "is_experiment": false,
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "cost": 0,
+        "conversions": 0,
+        "conversions_value": 0
+      },
+      "report": {
+        "included": false,
+        "exclusion_reason": "dormant"
+      },
+      "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+      "target_roas": "5.2",
+      "target_cpa": null,
+      "vertical": "ecom",
+      "vertical_confidence": "high",
+      "setup": "full",
+      "setup_confidence": "high",
+      "evidence": {
+        "assetGroupCount": 5,
+        "creativeCount": 239,
+        "minimalCount": 4,
+        "listingCount": 13
+      },
+      "applicable_modules": [
+        "feed-integration",
+        "asset-groups",
+        "brand-defense",
+        "nca-lifecycle",
+        "asset-performance",
+        "audience-signals",
+        "channel-allocation",
+        "url-expansion"
+      ],
+      "not_applicable_modules": [
+        "conversion-signal"
+      ],
+      "module_map": {
+        "feed-integration": "applicable",
+        "conversion-signal": null,
+        "asset-groups": "applicable",
+        "brand-defense": "applicable",
+        "nca-lifecycle": "applicable",
+        "asset-performance": "applicable",
+        "audience-signals": "applicable",
+        "channel-allocation": "applicable",
+        "url-expansion": "applicable"
+      },
+      "nca": {
+        "mode_detected": "TARGET_ALL_EQUALLY",
+        "value": null,
+        "high_lifetime_value": null,
+        "account_default_value": "42.2",
+        "source": "campaign_lifecycle_goal"
+      },
+      "classification_reasons": {
+        "vertical": [
+          "13 listing-group filter rows (product feed surface present)",
+          "account conversion actions look ecom (purchase_gads_mable)",
+          "business.md vertical = \"ecommerce\""
+        ],
+        "setup": [
+          "239 advertiser/auto creative assets across 5 asset group(s)"
+        ]
+      },
+      "_needsQuestion": false,
+      "learning": {
+        "in_learning": false,
+        "status": "stable",
+        "note": "no recent learning-resetting change in changelog window"
+      }
+    },
+    {
+      "id": "20289440565",
+      "name": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+      "resource": "customers/3599116618/campaigns/20289440565",
+      "status": "ENABLED",
+      "experiment_type": "BASE",
+      "is_experiment": false,
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "cost": 0,
+        "conversions": 0,
+        "conversions_value": 0
+      },
+      "report": {
+        "included": true,
+        "exclusion_reason": null
+      },
+      "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+      "target_roas": "2.25",
+      "target_cpa": null,
+      "vertical": "ecom",
+      "vertical_confidence": "high",
+      "setup": "full",
+      "setup_confidence": "high",
+      "evidence": {
+        "assetGroupCount": 9,
+        "creativeCount": 372,
+        "minimalCount": 25,
+        "listingCount": 119
+      },
+      "applicable_modules": [
+        "feed-integration",
+        "asset-groups",
+        "brand-defense",
+        "nca-lifecycle",
+        "asset-performance",
+        "audience-signals",
+        "channel-allocation",
+        "url-expansion"
+      ],
+      "not_applicable_modules": [
+        "conversion-signal"
+      ],
+      "module_map": {
+        "feed-integration": "applicable",
+        "conversion-signal": null,
+        "asset-groups": "applicable",
+        "brand-defense": "applicable",
+        "nca-lifecycle": "applicable",
+        "asset-performance": "applicable",
+        "audience-signals": "applicable",
+        "channel-allocation": "applicable",
+        "url-expansion": "applicable"
+      },
+      "nca": {
+        "mode_detected": "BID_HIGHER_FOR_NEW_CUSTOMER",
+        "value": null,
+        "high_lifetime_value": null,
+        "account_default_value": "42.2",
+        "source": "campaign_lifecycle_goal"
+      },
+      "classification_reasons": {
+        "vertical": [
+          "119 listing-group filter rows (product feed surface present)",
+          "account conversion actions look ecom (purchase_gads_mable)",
+          "business.md vertical = \"ecommerce\""
+        ],
+        "setup": [
+          "372 advertiser/auto creative assets across 9 asset group(s)"
+        ]
+      },
+      "_needsQuestion": false,
+      "learning": {
+        "in_learning": false,
+        "status": "stable",
+        "note": "no recent learning-resetting change in changelog window"
+      }
+    },
+    {
+      "id": "20311845501",
+      "name": "EX I FRA I PMAX I TESTING I BROAD",
+      "resource": "customers/3599116618/campaigns/20311845501",
+      "status": "ENABLED",
+      "experiment_type": "BASE",
+      "is_experiment": false,
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "cost": 0,
+        "conversions": 0,
+        "conversions_value": 0
+      },
+      "report": {
+        "included": true,
+        "exclusion_reason": null
+      },
+      "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+      "target_roas": "2.8000000000000003",
+      "target_cpa": null,
+      "vertical": "ecom",
+      "vertical_confidence": "high",
+      "setup": "full",
+      "setup_confidence": "high",
+      "evidence": {
+        "assetGroupCount": 7,
+        "creativeCount": 289,
+        "minimalCount": 1,
+        "listingCount": 105
+      },
+      "applicable_modules": [
+        "feed-integration",
+        "asset-groups",
+        "brand-defense",
+        "nca-lifecycle",
+        "asset-performance",
+        "audience-signals",
+        "channel-allocation",
+        "url-expansion"
+      ],
+      "not_applicable_modules": [
+        "conversion-signal"
+      ],
+      "module_map": {
+        "feed-integration": "applicable",
+        "conversion-signal": null,
+        "asset-groups": "applicable",
+        "brand-defense": "applicable",
+        "nca-lifecycle": "applicable",
+        "asset-performance": "applicable",
+        "audience-signals": "applicable",
+        "channel-allocation": "applicable",
+        "url-expansion": "applicable"
+      },
+      "nca": {
+        "mode_detected": "TARGET_NEW_CUSTOMER",
+        "value": null,
+        "high_lifetime_value": null,
+        "account_default_value": "42.2",
+        "source": "campaign_lifecycle_goal"
+      },
+      "classification_reasons": {
+        "vertical": [
+          "105 listing-group filter rows (product feed surface present)",
+          "account conversion actions look ecom (purchase_gads_mable)",
+          "business.md vertical = \"ecommerce\""
+        ],
+        "setup": [
+          "289 advertiser/auto creative assets across 7 asset group(s)"
+        ]
+      },
+      "_needsQuestion": false,
+      "learning": {
+        "in_learning": false,
+        "status": "stable",
+        "note": "no recent learning-resetting change in changelog window"
+      }
+    },
+    {
+      "id": "20362632913",
+      "name": "EX I ESP I PMAX I TESTING I BROAD",
+      "resource": "customers/3599116618/campaigns/20362632913",
+      "status": "PAUSED",
+      "experiment_type": "BASE",
+      "is_experiment": false,
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "cost": 0,
+        "conversions": 0,
+        "conversions_value": 0
+      },
+      "report": {
+        "included": false,
+        "exclusion_reason": "dormant"
+      },
+      "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+      "target_roas": "3",
+      "target_cpa": null,
+      "vertical": "ecom",
+      "vertical_confidence": "high",
+      "setup": "full",
+      "setup_confidence": "high",
+      "evidence": {
+        "assetGroupCount": 3,
+        "creativeCount": 124,
+        "minimalCount": 2,
+        "listingCount": 10
+      },
+      "applicable_modules": [
+        "feed-integration",
+        "asset-groups",
+        "brand-defense",
+        "nca-lifecycle",
+        "asset-performance",
+        "audience-signals",
+        "channel-allocation",
+        "url-expansion"
+      ],
+      "not_applicable_modules": [
+        "conversion-signal"
+      ],
+      "module_map": {
+        "feed-integration": "applicable",
+        "conversion-signal": null,
+        "asset-groups": "applicable",
+        "brand-defense": "applicable",
+        "nca-lifecycle": "applicable",
+        "asset-performance": "applicable",
+        "audience-signals": "applicable",
+        "channel-allocation": "applicable",
+        "url-expansion": "applicable"
+      },
+      "nca": {
+        "mode_detected": "BID_HIGHER_FOR_NEW_CUSTOMER",
+        "value": null,
+        "high_lifetime_value": null,
+        "account_default_value": "42.2",
+        "source": "campaign_lifecycle_goal"
+      },
+      "classification_reasons": {
+        "vertical": [
+          "10 listing-group filter rows (product feed surface present)",
+          "account conversion actions look ecom (purchase_gads_mable)",
+          "business.md vertical = \"ecommerce\""
+        ],
+        "setup": [
+          "124 advertiser/auto creative assets across 3 asset group(s)"
+        ]
+      },
+      "_needsQuestion": false,
+      "learning": {
+        "in_learning": false,
+        "status": "stable",
+        "note": "no recent learning-resetting change in changelog window"
+      }
+    },
+    {
+      "id": "20369175508",
+      "name": "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX",
+      "resource": "customers/3599116618/campaigns/20369175508",
+      "status": "ENABLED",
+      "experiment_type": "BASE",
+      "is_experiment": false,
+      "metrics": {
+        "impressions": 651664,
+        "clicks": 3793,
+        "cost": 1574.39,
+        "conversions": 41.88573,
+        "conversions_value": 6619.502920568
+      },
+      "report": {
+        "included": true,
+        "exclusion_reason": null
+      },
+      "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+      "target_roas": "3.5",
+      "target_cpa": null,
+      "vertical": "ecom",
+      "vertical_confidence": "high",
+      "setup": "feed-only",
+      "setup_confidence": "high",
+      "evidence": {
+        "assetGroupCount": 1,
+        "creativeCount": 0,
+        "minimalCount": 0,
+        "listingCount": 5
+      },
+      "applicable_modules": [
+        "feed-integration",
+        "brand-defense",
+        "nca-lifecycle",
+        "channel-allocation",
+        "url-expansion"
+      ],
+      "not_applicable_modules": [
+        "conversion-signal",
+        "asset-groups",
+        "asset-performance",
+        "audience-signals"
+      ],
+      "module_map": {
+        "feed-integration": "applicable",
+        "conversion-signal": null,
+        "asset-groups": null,
+        "brand-defense": "applicable",
+        "nca-lifecycle": "applicable",
+        "asset-performance": null,
+        "audience-signals": null,
+        "channel-allocation": "applicable",
+        "url-expansion": "applicable"
+      },
+      "nca": {
+        "mode_detected": "TARGET_NEW_CUSTOMER",
+        "value": null,
+        "high_lifetime_value": null,
+        "account_default_value": "42.2",
+        "source": "campaign_lifecycle_goal"
+      },
+      "classification_reasons": {
+        "vertical": [
+          "5 listing-group filter rows (product feed surface present)",
+          "account conversion actions look ecom (purchase_gads_mable)",
+          "business.md vertical = \"ecommerce\""
+        ],
+        "setup": [
+          "zero creative assets across all asset groups (feed + listing groups only)"
+        ]
+      },
+      "_needsQuestion": false,
+      "learning": {
+        "in_learning": false,
+        "status": "stable",
+        "note": "no recent learning-resetting change in changelog window"
+      }
+    },
+    {
+      "id": "20521524704",
+      "name": "EX I USA I PMAX I TESTING I BROAD",
+      "resource": "customers/3599116618/campaigns/20521524704",
+      "status": "ENABLED",
+      "experiment_type": "BASE",
+      "is_experiment": false,
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "cost": 0,
+        "conversions": 0,
+        "conversions_value": 0
+      },
+      "report": {
+        "included": true,
+        "exclusion_reason": null
+      },
+      "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+      "target_roas": "3.5",
+      "target_cpa": null,
+      "vertical": "ecom",
+      "vertical_confidence": "high",
+      "setup": "full",
+      "setup_confidence": "high",
+      "evidence": {
+        "assetGroupCount": 9,
+        "creativeCount": 349,
+        "minimalCount": 29,
+        "listingCount": 98
+      },
+      "applicable_modules": [
+        "feed-integration",
+        "asset-groups",
+        "brand-defense",
+        "nca-lifecycle",
+        "asset-performance",
+        "audience-signals",
+        "channel-allocation",
+        "url-expansion"
+      ],
+      "not_applicable_modules": [
+        "conversion-signal"
+      ],
+      "module_map": {
+        "feed-integration": "applicable",
+        "conversion-signal": null,
+        "asset-groups": "applicable",
+        "brand-defense": "applicable",
+        "nca-lifecycle": "applicable",
+        "asset-performance": "applicable",
+        "audience-signals": "applicable",
+        "channel-allocation": "applicable",
+        "url-expansion": "applicable"
+      },
+      "nca": {
+        "mode_detected": "BID_HIGHER_FOR_NEW_CUSTOMER",
+        "value": null,
+        "high_lifetime_value": null,
+        "account_default_value": "42.2",
+        "source": "campaign_lifecycle_goal"
+      },
+      "classification_reasons": {
+        "vertical": [
+          "98 listing-group filter rows (product feed surface present)",
+          "account conversion actions look ecom (purchase_gads_mable)",
+          "business.md vertical = \"ecommerce\""
+        ],
+        "setup": [
+          "349 advertiser/auto creative assets across 9 asset group(s)"
+        ]
+      },
+      "_needsQuestion": false,
+      "learning": {
+        "in_learning": false,
+        "status": "stable",
+        "note": "no recent learning-resetting change in changelog window"
+      }
+    },
+    {
+      "id": "21127105111",
+      "name": "EX I WW I PMAX I PROSPECTING I BROAD",
+      "resource": "customers/3599116618/campaigns/21127105111",
+      "status": "ENABLED",
+      "experiment_type": "BASE",
+      "is_experiment": false,
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "cost": 0,
+        "conversions": 0,
+        "conversions_value": 0
+      },
+      "report": {
+        "included": true,
+        "exclusion_reason": null
+      },
+      "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+      "target_roas": "2.5",
+      "target_cpa": null,
+      "vertical": "ecom",
+      "vertical_confidence": "high",
+      "setup": "full",
+      "setup_confidence": "high",
+      "evidence": {
+        "assetGroupCount": 13,
+        "creativeCount": 503,
+        "minimalCount": 7,
+        "listingCount": 113
+      },
+      "applicable_modules": [
+        "feed-integration",
+        "asset-groups",
+        "brand-defense",
+        "nca-lifecycle",
+        "asset-performance",
+        "audience-signals",
+        "channel-allocation",
+        "url-expansion"
+      ],
+      "not_applicable_modules": [
+        "conversion-signal"
+      ],
+      "module_map": {
+        "feed-integration": "applicable",
+        "conversion-signal": null,
+        "asset-groups": "applicable",
+        "brand-defense": "applicable",
+        "nca-lifecycle": "applicable",
+        "asset-performance": "applicable",
+        "audience-signals": "applicable",
+        "channel-allocation": "applicable",
+        "url-expansion": "applicable"
+      },
+      "nca": {
+        "mode_detected": "TARGET_NEW_CUSTOMER",
+        "value": null,
+        "high_lifetime_value": null,
+        "account_default_value": "42.2",
+        "source": "campaign_lifecycle_goal"
+      },
+      "classification_reasons": {
+        "vertical": [
+          "113 listing-group filter rows (product feed surface present)",
+          "account conversion actions look ecom (purchase_gads_mable)",
+          "business.md vertical = \"ecommerce\""
+        ],
+        "setup": [
+          "503 advertiser/auto creative assets across 13 asset group(s)"
+        ]
+      },
+      "_needsQuestion": false,
+      "learning": {
+        "in_learning": false,
+        "status": "stable",
+        "note": "no recent learning-resetting change in changelog window"
+      }
+    },
+    {
+      "id": "21133530647",
+      "name": "EX I WW I PMAX I PROSPECTING I RoB",
+      "resource": "customers/3599116618/campaigns/21133530647",
+      "status": "PAUSED",
+      "experiment_type": "BASE",
+      "is_experiment": false,
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "cost": 0,
+        "conversions": 0,
+        "conversions_value": 0
+      },
+      "report": {
+        "included": false,
+        "exclusion_reason": "dormant"
+      },
+      "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+      "target_roas": "3.5",
+      "target_cpa": null,
+      "vertical": "ecom",
+      "vertical_confidence": "high",
+      "setup": "full",
+      "setup_confidence": "high",
+      "evidence": {
+        "assetGroupCount": 2,
+        "creativeCount": 76,
+        "minimalCount": 2,
+        "listingCount": 23
+      },
+      "applicable_modules": [
+        "feed-integration",
+        "asset-groups",
+        "brand-defense",
+        "nca-lifecycle",
+        "asset-performance",
+        "audience-signals",
+        "channel-allocation",
+        "url-expansion"
+      ],
+      "not_applicable_modules": [
+        "conversion-signal"
+      ],
+      "module_map": {
+        "feed-integration": "applicable",
+        "conversion-signal": null,
+        "asset-groups": "applicable",
+        "brand-defense": "applicable",
+        "nca-lifecycle": "applicable",
+        "asset-performance": "applicable",
+        "audience-signals": "applicable",
+        "channel-allocation": "applicable",
+        "url-expansion": "applicable"
+      },
+      "nca": {
+        "mode_detected": "TARGET_NEW_CUSTOMER",
+        "value": null,
+        "high_lifetime_value": null,
+        "account_default_value": "42.2",
+        "source": "campaign_lifecycle_goal"
+      },
+      "classification_reasons": {
+        "vertical": [
+          "23 listing-group filter rows (product feed surface present)",
+          "account conversion actions look ecom (purchase_gads_mable)",
+          "business.md vertical = \"ecommerce\""
+        ],
+        "setup": [
+          "76 advertiser/auto creative assets across 2 asset group(s)"
+        ]
+      },
+      "_needsQuestion": false,
+      "learning": {
+        "in_learning": false,
+        "status": "stable",
+        "note": "no recent learning-resetting change in changelog window"
+      }
+    },
+    {
+      "id": "21137012770",
+      "name": "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING",
+      "resource": "customers/3599116618/campaigns/21137012770",
+      "status": "ENABLED",
+      "experiment_type": "BASE",
+      "is_experiment": false,
+      "metrics": {
+        "impressions": 5596526,
+        "clicks": 36733,
+        "cost": 30762.53,
+        "conversions": 731.8888,
+        "conversions_value": 111506.758151705
+      },
+      "report": {
+        "included": true,
+        "exclusion_reason": null
+      },
+      "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+      "target_roas": "3.6",
+      "target_cpa": null,
+      "vertical": "ecom",
+      "vertical_confidence": "high",
+      "setup": "feed-only",
+      "setup_confidence": "high",
+      "evidence": {
+        "assetGroupCount": 5,
+        "creativeCount": 0,
+        "minimalCount": 0,
+        "listingCount": 46
+      },
+      "applicable_modules": [
+        "feed-integration",
+        "brand-defense",
+        "nca-lifecycle",
+        "channel-allocation",
+        "url-expansion"
+      ],
+      "not_applicable_modules": [
+        "conversion-signal",
+        "asset-groups",
+        "asset-performance",
+        "audience-signals"
+      ],
+      "module_map": {
+        "feed-integration": "applicable",
+        "conversion-signal": null,
+        "asset-groups": null,
+        "brand-defense": "applicable",
+        "nca-lifecycle": "applicable",
+        "asset-performance": null,
+        "audience-signals": null,
+        "channel-allocation": "applicable",
+        "url-expansion": "applicable"
+      },
+      "nca": {
+        "mode_detected": "TARGET_NEW_CUSTOMER",
+        "value": null,
+        "high_lifetime_value": null,
+        "account_default_value": "42.2",
+        "source": "campaign_lifecycle_goal"
+      },
+      "classification_reasons": {
+        "vertical": [
+          "46 listing-group filter rows (product feed surface present)",
+          "account conversion actions look ecom (purchase_gads_mable)",
+          "business.md vertical = \"ecommerce\""
+        ],
+        "setup": [
+          "zero creative assets across all asset groups (feed + listing groups only)"
+        ]
+      },
+      "_needsQuestion": false,
+      "learning": {
+        "in_learning": false,
+        "status": "stable",
+        "note": "no recent learning-resetting change in changelog window"
+      }
+    },
+    {
+      "id": "21889006014",
+      "name": "SMART VS ST SHOPPING TOF I HOODIE TEST",
+      "resource": "customers/3599116618/campaigns/21889006014",
+      "status": "PAUSED",
+      "experiment_type": "BASE",
+      "is_experiment": false,
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "cost": 0,
+        "conversions": 0,
+        "conversions_value": 0
+      },
+      "report": {
+        "included": false,
+        "exclusion_reason": "dormant"
+      },
+      "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+      "target_roas": "3.5",
+      "target_cpa": null,
+      "vertical": "ecom",
+      "vertical_confidence": "high",
+      "setup": "feed-only",
+      "setup_confidence": "high",
+      "evidence": {
+        "assetGroupCount": 1,
+        "creativeCount": 0,
+        "minimalCount": 0,
+        "listingCount": 3
+      },
+      "applicable_modules": [
+        "feed-integration",
+        "brand-defense",
+        "nca-lifecycle",
+        "channel-allocation",
+        "url-expansion"
+      ],
+      "not_applicable_modules": [
+        "conversion-signal",
+        "asset-groups",
+        "asset-performance",
+        "audience-signals"
+      ],
+      "module_map": {
+        "feed-integration": "applicable",
+        "conversion-signal": null,
+        "asset-groups": null,
+        "brand-defense": "applicable",
+        "nca-lifecycle": "applicable",
+        "asset-performance": null,
+        "audience-signals": null,
+        "channel-allocation": "applicable",
+        "url-expansion": "applicable"
+      },
+      "nca": {
+        "mode_detected": "TARGET_NEW_CUSTOMER",
+        "value": null,
+        "high_lifetime_value": null,
+        "account_default_value": "42.2",
+        "source": "campaign_lifecycle_goal"
+      },
+      "classification_reasons": {
+        "vertical": [
+          "3 listing-group filter rows (product feed surface present)",
+          "account conversion actions look ecom (purchase_gads_mable)",
+          "business.md vertical = \"ecommerce\""
+        ],
+        "setup": [
+          "zero creative assets across all asset groups (feed + listing groups only)"
+        ]
+      },
+      "_needsQuestion": false,
+      "learning": {
+        "in_learning": false,
+        "status": "stable",
+        "note": "no recent learning-resetting change in changelog window"
+      }
+    },
+    {
+      "id": "23889033723",
+      "name": "PMAX I NC DEALS PUSH I SPLIT",
+      "resource": "customers/3599116618/campaigns/23889033723",
+      "status": "PAUSED",
+      "experiment_type": "BASE",
+      "is_experiment": false,
+      "metrics": {
+        "impressions": 0,
+        "clicks": 0,
+        "cost": 0,
+        "conversions": 0,
+        "conversions_value": 0
+      },
+      "report": {
+        "included": false,
+        "exclusion_reason": "dormant"
+      },
+      "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+      "target_roas": "14.156162294085032",
+      "target_cpa": null,
+      "vertical": "leadgen",
+      "vertical_confidence": "low",
+      "setup": null,
+      "setup_confidence": "n/a",
+      "evidence": {
+        "assetGroupCount": 1,
+        "creativeCount": 28,
+        "minimalCount": 1,
+        "listingCount": 0
+      },
+      "applicable_modules": [
+        "conversion-signal",
+        "asset-groups",
+        "brand-defense",
+        "nca-lifecycle",
+        "asset-performance",
+        "audience-signals",
+        "channel-allocation",
+        "url-expansion"
+      ],
+      "not_applicable_modules": [
+        "feed-integration"
+      ],
+      "module_map": {
+        "feed-integration": null,
+        "conversion-signal": "applicable",
+        "asset-groups": "applicable",
+        "brand-defense": "applicable",
+        "nca-lifecycle": "applicable",
+        "asset-performance": "applicable",
+        "audience-signals": "applicable",
+        "channel-allocation": "applicable",
+        "url-expansion": "applicable"
+      },
+      "nca": {
+        "mode_detected": "NONE",
+        "value": null,
+        "high_lifetime_value": null,
+        "source": "no campaign_lifecycle_goal row"
+      },
+      "classification_reasons": {
+        "vertical": [
+          "no listing-group / product-feed surface found on any asset group",
+          "account conversion actions look ecom (purchase_gads_mable)",
+          "business.md vertical = \"ecommerce\"",
+          "CONFLICT: signals disagree (leadgen vs ecom) — confirm with user"
+        ],
+        "setup": [
+          "lead-gen: Feed-Only/Full not applicable"
+        ]
+      },
+      "_needsQuestion": true,
+      "learning": {
+        "in_learning": false,
+        "status": "stable",
+        "note": "no recent learning-resetting change in changelog window"
+      }
+    }
+  ],
+  "decisions": {
+    "path": "C:\\Users\\Administrator\\OneDrive\\_PPC\\workspace\\PPC OS\\clients\\stay-cold\\context\\analysis\\pmax\\evidence\\pmax-decisions.json",
+    "exists": false,
+    "decisions": [],
+    "note": "no prior pmax-decisions.json — nothing to re-confirm"
+  },
+  "questions": [
+    {
+      "type": "vertical-conflict",
+      "campaign_id": "23889033723",
+      "campaign": "PMAX I NC DEALS PUSH I SPLIT",
+      "question": "Classification signals conflict for \"PMAX I NC DEALS PUSH I SPLIT\". Is this an ecommerce or lead-gen campaign?",
+      "evidence": [
+        "no listing-group / product-feed surface found on any asset group",
+        "account conversion actions look ecom (purchase_gads_mable)",
+        "business.md vertical = \"ecommerce\"",
+        "CONFLICT: signals disagree (leadgen vs ecom) — confirm with user"
+      ]
+    },
+    {
+      "type": "nca-intent",
+      "scope": "account",
+      "question": "New-customer acquisition (NCA) intent is not stated in business.md. For PMax campaigns intended to acquire new customers, should NCA bidding be ON, and is there a new- vs existing-customer value/LTV premium to validate? (business.md -> ask -> write back -> SKIP value-premium if genuinely unavailable)",
+      "evidence": [
+        "EX I WW I PMAX I SCALING I BROAD: API NCA mode = BID_HIGHER_FOR_NEW_CUSTOMER",
+        "EX I WW I PMAX I SCALING I RE/HOT: API NCA mode = TARGET_ALL_EQUALLY",
+        "EX I SKANDI I PMAX I TESTING I PROSPECTING: API NCA mode = BID_HIGHER_FOR_NEW_CUSTOMER",
+        "EX I FRA I PMAX I TESTING I BROAD: API NCA mode = TARGET_NEW_CUSTOMER",
+        "EX I ESP I PMAX I TESTING I BROAD: API NCA mode = BID_HIGHER_FOR_NEW_CUSTOMER",
+        "EX I WW I PMAX I SCALING I FEED ONLY I OVER-INDEX + INDEX + NEAR-INDEX: API NCA mode = TARGET_NEW_CUSTOMER",
+        "EX I USA I PMAX I TESTING I BROAD: API NCA mode = BID_HIGHER_FOR_NEW_CUSTOMER",
+        "EX I WW I PMAX I PROSPECTING I BROAD: API NCA mode = TARGET_NEW_CUSTOMER",
+        "EX I WW I PMAX I PROSPECTING I RoB: API NCA mode = TARGET_NEW_CUSTOMER",
+        "EX I WW I PMAX I SCALING I FEED ONLY I PROSPECTING: API NCA mode = TARGET_NEW_CUSTOMER",
+        "SMART VS ST SHOPPING TOF I HOODIE TEST: API NCA mode = TARGET_NEW_CUSTOMER"
+      ],
+      "note": "Unresolved acquisition strategy routes to strategy-specialist (plan NCA ladder)."
+    }
+  ]
+}

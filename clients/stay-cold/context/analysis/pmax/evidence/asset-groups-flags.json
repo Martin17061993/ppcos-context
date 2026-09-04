@@ -1,0 +1,419 @@
+{
+  "generated_by": "analyze.js (Phase 4–6 real scorer)",
+  "module": "asset-groups",
+  "weight": 18,
+  "campaigns": [
+    {
+      "campaign_id": "18788654586",
+      "campaign_name": "EX I WW I PMAX I SCALING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "branch": "ecom",
+        "asset_group_count": 14,
+        "eligible_groups": 14,
+        "below_minimum_count": 0,
+        "brand_assets_resolved": true,
+        "brand_guidelines_enabled": true,
+        "groups_missing_recommended": 0,
+        "generic_named_count": 0,
+        "zero_impression_groups": 0,
+        "auto_created_creative": 24,
+        "live_creative": 585,
+        "auto_created_share": 0.041,
+        "campaign_serving": true
+      },
+      "findings": [
+        {
+          "type": "minimum-composition",
+          "branch": "ecom",
+          "eligible_groups": 14,
+          "below_minimum_count": 0,
+          "minimums": {
+            "HEADLINE": 3,
+            "LONG_HEADLINE": 1,
+            "DESCRIPTION": 2,
+            "MARKETING_IMAGE": 1,
+            "SQUARE_MARKETING_IMAGE": 1
+          },
+          "below_minimum": [],
+          "detail": "All 14 asset group(s) meet the ecom minimum composition.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "brand-assets",
+          "brand_guidelines_enabled": true,
+          "missing": [],
+          "detail": "Brand assets (logo + business name) are managed at the campaign level via brand guidelines — present by design; per-group composition is not faulted for lacking them.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "recommended-assets",
+          "branch": "ecom",
+          "recommended": [
+            "PORTRAIT_MARKETING_IMAGE",
+            "YOUTUBE_VIDEO"
+          ],
+          "groups_missing_recommended": [],
+          "detail": "All groups include the ecom recommended assets (PORTRAIT_MARKETING_IMAGE, YOUTUBE_VIDEO).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "thematic-coherence",
+          "generic_named_groups": [],
+          "single_group": false,
+          "detail": "14 themed asset group(s), none generically named — thematic split looks intentional. Claude confirms deeper coherence from asset content.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "zero-impression-groups",
+          "count": 0,
+          "detail": "No ENABLED asset group with zero asset-level impressions in this serving campaign.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "auto-generated-assets",
+          "auto_created_creative": 24,
+          "live_creative": 585,
+          "auto_created_share": 0.041,
+          "watch_threshold": 0.6,
+          "detail": "4% of live creative is auto-generated (24/585) — within the ecom norm.",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20289440565",
+      "campaign_name": "EX I SKANDI I PMAX I TESTING I PROSPECTING",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "branch": "ecom",
+        "asset_group_count": 9,
+        "eligible_groups": 9,
+        "below_minimum_count": 0,
+        "brand_assets_resolved": true,
+        "brand_guidelines_enabled": false,
+        "groups_missing_recommended": 0,
+        "generic_named_count": 0,
+        "zero_impression_groups": 0,
+        "auto_created_creative": 6,
+        "live_creative": 372,
+        "auto_created_share": 0.016,
+        "campaign_serving": true
+      },
+      "findings": [
+        {
+          "type": "minimum-composition",
+          "branch": "ecom",
+          "eligible_groups": 9,
+          "below_minimum_count": 0,
+          "minimums": {
+            "HEADLINE": 3,
+            "LONG_HEADLINE": 1,
+            "DESCRIPTION": 2,
+            "MARKETING_IMAGE": 1,
+            "SQUARE_MARKETING_IMAGE": 1
+          },
+          "below_minimum": [],
+          "detail": "All 9 asset group(s) meet the ecom minimum composition.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "brand-assets",
+          "brand_guidelines_enabled": false,
+          "missing": [],
+          "detail": "Logo + business name present in the asset group(s).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "recommended-assets",
+          "branch": "ecom",
+          "recommended": [
+            "PORTRAIT_MARKETING_IMAGE",
+            "YOUTUBE_VIDEO"
+          ],
+          "groups_missing_recommended": [],
+          "detail": "All groups include the ecom recommended assets (PORTRAIT_MARKETING_IMAGE, YOUTUBE_VIDEO).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "thematic-coherence",
+          "generic_named_groups": [],
+          "single_group": false,
+          "detail": "9 themed asset group(s), none generically named — thematic split looks intentional. Claude confirms deeper coherence from asset content.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "zero-impression-groups",
+          "count": 0,
+          "detail": "No ENABLED asset group with zero asset-level impressions in this serving campaign.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "auto-generated-assets",
+          "auto_created_creative": 6,
+          "live_creative": 372,
+          "auto_created_share": 0.016,
+          "watch_threshold": 0.6,
+          "detail": "2% of live creative is auto-generated (6/372) — within the ecom norm.",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20311845501",
+      "campaign_name": "EX I FRA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "branch": "ecom",
+        "asset_group_count": 7,
+        "eligible_groups": 7,
+        "below_minimum_count": 0,
+        "brand_assets_resolved": true,
+        "brand_guidelines_enabled": true,
+        "groups_missing_recommended": 0,
+        "generic_named_count": 0,
+        "zero_impression_groups": 0,
+        "auto_created_creative": 0,
+        "live_creative": 289,
+        "auto_created_share": 0,
+        "campaign_serving": true
+      },
+      "findings": [
+        {
+          "type": "minimum-composition",
+          "branch": "ecom",
+          "eligible_groups": 7,
+          "below_minimum_count": 0,
+          "minimums": {
+            "HEADLINE": 3,
+            "LONG_HEADLINE": 1,
+            "DESCRIPTION": 2,
+            "MARKETING_IMAGE": 1,
+            "SQUARE_MARKETING_IMAGE": 1
+          },
+          "below_minimum": [],
+          "detail": "All 7 asset group(s) meet the ecom minimum composition.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "brand-assets",
+          "brand_guidelines_enabled": true,
+          "missing": [],
+          "detail": "Brand assets (logo + business name) are managed at the campaign level via brand guidelines — present by design; per-group composition is not faulted for lacking them.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "recommended-assets",
+          "branch": "ecom",
+          "recommended": [
+            "PORTRAIT_MARKETING_IMAGE",
+            "YOUTUBE_VIDEO"
+          ],
+          "groups_missing_recommended": [],
+          "detail": "All groups include the ecom recommended assets (PORTRAIT_MARKETING_IMAGE, YOUTUBE_VIDEO).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "thematic-coherence",
+          "generic_named_groups": [],
+          "single_group": false,
+          "detail": "7 themed asset group(s), none generically named — thematic split looks intentional. Claude confirms deeper coherence from asset content.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "zero-impression-groups",
+          "count": 0,
+          "detail": "No ENABLED asset group with zero asset-level impressions in this serving campaign.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "auto-generated-assets",
+          "auto_created_creative": 0,
+          "live_creative": 289,
+          "auto_created_share": 0,
+          "watch_threshold": 0.6,
+          "detail": "0% of live creative is auto-generated (0/289) — within the ecom norm.",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "20521524704",
+      "campaign_name": "EX I USA I PMAX I TESTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 95,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "branch": "ecom",
+        "asset_group_count": 9,
+        "eligible_groups": 9,
+        "below_minimum_count": 0,
+        "brand_assets_resolved": true,
+        "brand_guidelines_enabled": false,
+        "groups_missing_recommended": 0,
+        "generic_named_count": 1,
+        "zero_impression_groups": 0,
+        "auto_created_creative": 0,
+        "live_creative": 349,
+        "auto_created_share": 0,
+        "campaign_serving": true
+      },
+      "findings": [
+        {
+          "type": "minimum-composition",
+          "branch": "ecom",
+          "eligible_groups": 9,
+          "below_minimum_count": 0,
+          "minimums": {
+            "HEADLINE": 3,
+            "LONG_HEADLINE": 1,
+            "DESCRIPTION": 2,
+            "MARKETING_IMAGE": 1,
+            "SQUARE_MARKETING_IMAGE": 1
+          },
+          "below_minimum": [],
+          "detail": "All 9 asset group(s) meet the ecom minimum composition.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "brand-assets",
+          "brand_guidelines_enabled": false,
+          "missing": [],
+          "detail": "Logo + business name present in the asset group(s).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "recommended-assets",
+          "branch": "ecom",
+          "recommended": [
+            "PORTRAIT_MARKETING_IMAGE",
+            "YOUTUBE_VIDEO"
+          ],
+          "groups_missing_recommended": [],
+          "detail": "All groups include the ecom recommended assets (PORTRAIT_MARKETING_IMAGE, YOUTUBE_VIDEO).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "thematic-coherence",
+          "generic_named_groups": [
+            "NEW ASSETS BROAD"
+          ],
+          "single_group": false,
+          "detail": "1 asset group(s) use generic/default names (e.g. \"NEW ASSETS BROAD\") — a weak signal of missing thematic structure. Mechanical hint only; Claude confirms true thematic coherence from the asset content + landing pages.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "zero-impression-groups",
+          "count": 0,
+          "detail": "No ENABLED asset group with zero asset-level impressions in this serving campaign.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "auto-generated-assets",
+          "auto_created_creative": 0,
+          "live_creative": 349,
+          "auto_created_share": 0,
+          "watch_threshold": 0.6,
+          "detail": "0% of live creative is auto-generated (0/349) — within the ecom norm.",
+          "handoff": "pmax-local"
+        }
+      ]
+    },
+    {
+      "campaign_id": "21127105111",
+      "campaign_name": "EX I WW I PMAX I PROSPECTING I BROAD",
+      "vertical": "ecom",
+      "setup": "full",
+      "score": 100,
+      "band": "strong",
+      "confidence": "medium",
+      "metrics": {
+        "branch": "ecom",
+        "asset_group_count": 13,
+        "eligible_groups": 13,
+        "below_minimum_count": 0,
+        "brand_assets_resolved": true,
+        "brand_guidelines_enabled": true,
+        "groups_missing_recommended": 0,
+        "generic_named_count": 0,
+        "zero_impression_groups": 0,
+        "auto_created_creative": 0,
+        "live_creative": 503,
+        "auto_created_share": 0,
+        "campaign_serving": true
+      },
+      "findings": [
+        {
+          "type": "minimum-composition",
+          "branch": "ecom",
+          "eligible_groups": 13,
+          "below_minimum_count": 0,
+          "minimums": {
+            "HEADLINE": 3,
+            "LONG_HEADLINE": 1,
+            "DESCRIPTION": 2,
+            "MARKETING_IMAGE": 1,
+            "SQUARE_MARKETING_IMAGE": 1
+          },
+          "below_minimum": [],
+          "detail": "All 13 asset group(s) meet the ecom minimum composition.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "brand-assets",
+          "brand_guidelines_enabled": true,
+          "missing": [],
+          "detail": "Brand assets (logo + business name) are managed at the campaign level via brand guidelines — present by design; per-group composition is not faulted for lacking them.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "recommended-assets",
+          "branch": "ecom",
+          "recommended": [
+            "PORTRAIT_MARKETING_IMAGE",
+            "YOUTUBE_VIDEO"
+          ],
+          "groups_missing_recommended": [],
+          "detail": "All groups include the ecom recommended assets (PORTRAIT_MARKETING_IMAGE, YOUTUBE_VIDEO).",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "thematic-coherence",
+          "generic_named_groups": [],
+          "single_group": false,
+          "detail": "13 themed asset group(s), none generically named — thematic split looks intentional. Claude confirms deeper coherence from asset content.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "zero-impression-groups",
+          "count": 0,
+          "detail": "No ENABLED asset group with zero asset-level impressions in this serving campaign.",
+          "handoff": "pmax-local"
+        },
+        {
+          "type": "auto-generated-assets",
+          "auto_created_creative": 0,
+          "live_creative": 503,
+          "auto_created_share": 0,
+          "watch_threshold": 0.6,
+          "detail": "0% of live creative is auto-generated (0/503) — within the ecom norm.",
+          "handoff": "pmax-local"
+        }
+      ]
+    }
+  ]
+}
